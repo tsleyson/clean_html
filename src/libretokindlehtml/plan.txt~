@@ -1,0 +1,5 @@
+Use json to store a configuration to replace the characters.
+The keys are the transformations to apply and the values are
+the selectors.
+Write a key-fn to translate the string names of the functions
+into functions.
