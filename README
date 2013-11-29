@@ -1,10 +1,28 @@
-# libretokindlehtml
+# clean_html
 
-FIXME: write description
+A Clojure program to clean up the HTML output from Libre Office and make
+it suitable for publishing on the Amazon Kindle Store. I intend to read
+the instructions for cleaning up the HTML (i.e. which tags to remove,
+which attributes to add or remove, what to rename classes, etc) from
+a file as JSON, so even though I'm just working on Libre Office right now
+I also want to write files to fix Word and other word processors' lousy
+HTML. Will also have the capability to merge several HTML files into a
+single document; I don't know about you, but I kind of like having each
+chapter in its own file so it's easy to navigate them.
 
 ## Usage
 
-FIXME: write
+Not implemented yet. The intention is to have the program read the directory
+where you files are and the name of your config file, full of JSON,
+from the command line. The sophisticated options will all go in the JSON
+file; they'll let you do things like merge all files under a directory
+into one file, get rid of extraneous tags like all those useless extra
+span and div tags that word processors throw in, and change the attributes
+so you can give your paragraph classes descriptive names instead of
+"P1".
+
+When it's closer to being done, I'll put up an example JSON config file
+and some more explanation of the options.
 
 ## License
 
