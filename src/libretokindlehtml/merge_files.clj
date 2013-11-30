@@ -26,11 +26,15 @@
   (re-find #"(?<=/)[^/.]+(?=\.)" path))
 
 (defn list-of-resources
-  "Returns a list of html resources from the given directory."
-  [directory, order]
-  (map #(with-meta (enlive/html-resource %) 
-          {:position (get order (str %)), :name (str %)}) 
-       (.listFiles (clojure.java.io/file directory))))
+  "Returns a list of html resources from the files in the config map's :order field."
+  [config]
+  (let [{order :order, direc :directory} config
+        files (keys order)]
+    (map #(with-meta (enlive/html-resource (clojure.java.io/file (str direc %)))
+           {:position (get order %), :name %})
+          files))) 
+    ; opens the files, using the full path, but uses just the file name
+    ; as the name metadatum and to get the position.
 
 (defn write-resource
   "Writes an Enlive resource, optionally to a file"

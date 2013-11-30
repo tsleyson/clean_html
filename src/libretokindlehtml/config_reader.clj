@@ -20,10 +20,11 @@
   [key value]
   (if (= key :order)
       (loop [ordering {}, pos 0, chapters value]
-        (if (= pos (count value))
+        (if (empty? chapters)
           ordering
-          (recur (assoc ordering (first chapters) pos) (inc pos) 
-                  (rest chapters))))
+          (recur (assoc ordering (first chapters) pos)
+                 (inc pos) 
+                 (rest chapters))))
       value))
 ; Loop/recur is sort of clunky in general, but this is shorter, cleaner,
 ; and more elegant than the above one, and as a bonus it gets the data in
