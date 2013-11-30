@@ -27,8 +27,10 @@
 
 (defn list-of-resources
   "Returns a list of html resources from the given directory."
-  [directory]
-  (map enlive/html-resource (.listFiles (clojure.java.io/file directory))))
+  [directory, order]
+  (map #(with-meta (enlive/html-resource %) 
+          {:position (get order (str %)), :name (str %)}) 
+       (.listFiles (clojure.java.io/file directory))))
 
 (defn write-resource
   "Writes an Enlive resource, optionally to a file"
@@ -36,3 +38,8 @@
   (apply str (enlive/emit* resource)))
   ([resource f]
   (spit f (apply str (enlive/emit* resource)))))
+
+;; (defn merge-resources
+;;   "Merges all resources in a given list into one."
+;;   [resource-list]
+;;   (   
