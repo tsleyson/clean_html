@@ -10,7 +10,7 @@
 ; The built-in sort sorts them lexicographically, so Chapter 10 
 ; comes after Chapter 1.
 ; Here's the idea:
-; - Read the ordering from somwhere. For now I'm going to parse
+; - Read the ordering from somewhere. For now I'm going to parse
 ; it out of the file name with regular expressions, but for
 ; e.g. Strawberry Sunflower that wouldn't work, so try to 
 ; leave an option to take the ordering as a map from somewhere.
@@ -30,11 +30,13 @@
   [config]
   (let [{order :order, direc :directory} config
         files (keys order)]
-    (map #(with-meta (enlive/html-resource (clojure.java.io/file (str direc %)))
-           {:position (get order %), :name %})
-          files))) 
+    (sort-by #((meta %) :position) 
+             (map #(with-meta (enlive/html-resource (clojure.java.io/file (str direc %)))
+                     {:position (get order %), :name %})
+                  files)))) 
     ; opens the files, using the full path, but uses just the file name
-    ; as the name metadatum and to get the position.
+    ; as the name metadatum and to get the position. Then sorts the
+    ; resulting list by metadata position.
 
 (defn write-resource
   "Writes an Enlive resource, optionally to a file"
