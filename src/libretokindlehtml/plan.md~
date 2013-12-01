@@ -4,3 +4,6 @@ Write a key-fn to translate the string names of the functions
 into functions.
 Also have to merge the files. Have to get rid of extra html, head, body etc. tags and the duplicated stylesheets.
 
+# The configuration file
+A JSON file with the following fields:
+* 

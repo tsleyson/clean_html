@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>plan.html</title>
+
+</head>
+
+<body>
+
+<h1>Fundamentals</h1>
+
+<p>Use json to store a configuration to replace the characters.
+Write a key-fn to translate the string names of the functions
+into functions.
+Also have to merge the files. Have to get rid of extra html, head, body etc. tags and the duplicated stylesheets.</p>
+
+<h1>The configuration file</h1>
+
+<p>A JSON file with the following fields:
+- directory: Where your files are stored. Currently they all have to be under the same
+  directory.
+- order: A list of all your files, in the order you want them to be when merged.
+  If you're not merging, it doesn't matter what order they're in.
+- merge: Optional. If true, all the files in "order" will be merged into one file.
+  If false or absent, they won't be.</p>
+
+</body>
+</html>

@@ -43,7 +43,15 @@
   ([resource f]
   (spit f (apply str (enlive/emit* resource)))))
 
-;; (defn merge-resources
-;;   "Merges all resources in a given list into one."
-;;   [resource-list]
-;;   (   
+
+; note: doesn't quite work yet. Doesn't get rid of html tag.
+(defn mine-content 
+  "Mines content of body tag to merge with head file." 
+  [page] 
+  (enlive/at page [[:head :dtd]] nil [[:html :body]] enlive/unwrap))
+
+; Will mine all content and append to content of first given page.
+(defn merge-resources
+  "Merges all resources in a given list into one."
+  [resource-list]
+  ())
