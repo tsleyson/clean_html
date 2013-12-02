@@ -8,20 +8,6 @@
     (:require [libretokindlehtml.config-reader :refer [read-config]]
               [net.cgrand.enlive-html :as enlive]))
 
-; have to find some way to sort the files so they're in the correct order.
-; The built-in sort sorts them lexicographically, so Chapter 10 
-; comes after Chapter 1.
-; Here's the idea:
-; - Read the ordering from somewhere. For now I'm going to parse
-; it out of the file name with regular expressions, but for
-; e.g. Strawberry Sunflower that wouldn't work, so try to 
-; leave an option to take the ordering as a map from somewhere.
-; - Attach the position of the file in the ordering as metadata
-; on the resource when the list of resources is constructed.
-; - Write a comparator that sorts based on metadata position.
-; - Sort and merge into a single html file.
-; - Profit!!
-
 ; Here's how to get just the children of the body tag:
 ; (enlive/at resource [#{:html :body}] enlive/unwrap [:head] nil)
 ; It still has the dtd and stuff.
@@ -40,7 +26,8 @@
   (re-find #"(?<=/)[^/.]+(?=\.)" path))
 
 (defmulti list-of-resources
-  "Returns a list of html resources from the files in the config map's :order field."
+  "Returns a list of html resources from the files in the config map's :order field.
+   Can take either an already-read config map or a path to a config file."
   type)
 
 (defmethod list-of-resources clojure.lang.PersistentArrayMap
@@ -80,3 +67,17 @@
   [resource-list]
   (let [[head & subords] resource-list]
     (enlive/transform head [:body] (apply enlive/append (map mine-content subords)))))
+
+(defn merge-resources-with
+  "Like merge-resources, but takes a function to apply to each element 
+   before folding it into the head."
+  ; e.g. a function that wraps every element in a div, inserts
+  ; an mb pagebreak before, modifies the style attribute of the
+  ; first thing in every element.
+  [resource-list merge-fn]
+  (let [[head & subords] resource-list]
+    (->> subords
+         (map mine-content)
+         (map merge-fn)
+         (apply enlive/append)
+         (enlive/transform head [:body]))))
