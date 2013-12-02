@@ -4,7 +4,9 @@
 ; a list of enlive resources, and you can get them all merged
 ; into one html resource which can be written back to a file
 ; by write-resource.
-(in-ns 'libretokindlehtml.core)
+(ns libretokindlehtml.merge-files
+    (:require [libretokindlehtml.config-reader :refer [read-config]]
+              [net.cgrand.enlive-html :as enlive]))
 
 ; have to find some way to sort the files so they're in the correct order.
 ; The built-in sort sorts them lexicographically, so Chapter 10 
@@ -41,7 +43,7 @@
   "Returns a list of html resources from the files in the config map's :order field."
   type)
 
-(defmethod list-of-resources 'clojure.lang.PersistentArrayMap
+(defmethod list-of-resources clojure.lang.PersistentArrayMap
   [config]
   (let [{order :order, direc :directory} config
         files (keys order)]
@@ -52,7 +54,8 @@
     ; opens the files, using the full path, but uses just the file name
     ; as the name metadatum and to get the position. Then sorts the
     ; resulting list by metadata position.
-(defmethod list-of-resources 'java.lang.String
+
+(defmethod list-of-resources java.lang.String
   [path-to-config]
   (list-of-resources (read-config path-to-config)))
 

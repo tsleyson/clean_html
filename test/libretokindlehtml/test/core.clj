@@ -1,9 +1,11 @@
 (ns libretokindlehtml.test.core
-  (:use [libretokindlehtml.core])
-  (:use [clojure.test])
-  (:use clojure.pprint)
-  (:use net.cgrand.enlive-html)
-  (:use clojure.java.io))
+  (:require [libretokindlehtml.core :refer :all]
+            [libretokindlehtml.merge-files :refer :all]
+            [libretokindlehtml.config-reader :refer :all]
+            [clojure.test :refer :all]
+            [clojure.pprint :refer [pprint]]
+            [clojure.java.io :refer :all]
+            [net.cgrand.enlive-html :as enlive]))
 
 ; Helper functions for the tests.
 (defn config-map
@@ -20,7 +22,7 @@
   "Checks whether a metadata map is correct."
   [obj metamap]
   (do
-    (pprint (meta obj))
+    ;(pprint (meta obj))
     (= (meta obj) metamap)))
 
 ; The tests! Starting with config-reader.
@@ -37,9 +39,11 @@
 ; merge-files.
 (deftest test-list-of-resources
   (let [correct-str (slurp "test-resources/listofres.txt")
-        result  (list-of-resources (config-map))]
+        result  (list-of-resources (config-map))
+        fromstr (list-of-resources "test-resources/testconfig.json")]
     (do
       (is (= (pr-str result) correct-str))
+      (is (= (pr-str fromstr) correct-str))
       (let [metas [{:name "ClojureDocs - clojure.core_atom.html", 
                     :position 0}
                    {:name "ClojureDocs - clojure.core_for.html", 
@@ -55,3 +59,11 @@
                     (net.cgrand.enlive-html/html-resource)
                     (mine-content))]    
     (is (= (with-out-str (pprint result)) correct))))
+
+(deftest test-merge-resources
+  (let [correct (slurp "test-resources/test-merge-resources.txt")
+        result  (merge-resources (list-of-resources "test-resources/testhtml/config.json"))]
+    (do
+      (is (= (with-out-str (pprint result)) correct))
+      (is (= 3 (count (enlive/select result [#{:html :head :body}]))))
+       (comment "Should only have one of each of those tags"))))
