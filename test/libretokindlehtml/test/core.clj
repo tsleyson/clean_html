@@ -1,8 +1,11 @@
 (ns libretokindlehtml.test.core
   (:use [libretokindlehtml.core])
   (:use [clojure.test])
-  (:use clojure.pprint))
+  (:use clojure.pprint)
+  (:use net.cgrand.enlive-html)
+  (:use clojure.java.io))
 
+; Helper functions for the tests.
 (defn config-map
   "The fixture facility doesn't do exactly what I want so 
    this is my primitive workaround. Returns fake config data."
@@ -20,6 +23,7 @@
     (pprint (meta obj))
     (= (meta obj) metamap)))
 
+; The tests! Starting with config-reader.
 (deftest test-order-map
   (do
     (is (= (order-map :notorder 'something) 'something))
@@ -30,6 +34,7 @@
 (deftest test-read-config
   (is (= (config-map) (read-config "test-resources/testconfig.json"))))
 
+; merge-files.
 (deftest test-list-of-resources
   (let [correct-str (slurp "test-resources/listofres.txt")
         result  (list-of-resources (config-map))]
@@ -42,3 +47,11 @@
                    {:name "ClojureDocs - clojure.pprint.html", 
                     :position 2}]]
         (is (every? identity (map check-meta result metas)))))))
+
+(deftest test-mine-content
+  (let [correct (slurp "test-resources/test-mine-content.txt")
+        result  (-> "test-resources/testhtml/Coolish Walk.html"
+                    (file)
+                    (net.cgrand.enlive-html/html-resource)
+                    (mine-content))]    
+    (is (= (with-out-str (pprint result)) correct))))
