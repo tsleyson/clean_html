@@ -1,9 +1,12 @@
 (ns libretokindlehtml.core
   (:require [net.cgrand.enlive-html :as enlive]
-            [clojure.data.json :as json])
-  (:use clojure.pprint clojure.java.io))
-(load "merge_files")
-(load "config_reader")
+            [clojure.data.json :as json]
+            [libretokindlehtml.merge-files :refer :all]
+            [libretokindlehtml.config-reader :refer :all]
+            [clojure.pprint :refer [pprint]]
+            [clojure.java.io :refer [file]]))
+;; (load "merge_files")
+;; (load "config_reader")
 
 ; to load an html resource
 ; (enlive/html-resource (java.net.URL. pathofresource))

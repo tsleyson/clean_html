@@ -1,7 +1,9 @@
 ; config_reader.clj
 ; Functions that read the configuration files. The config files are
 ; written in JSON and decoded using clojure.data.json
-(in-ns 'libretokindlehtml.core)
+(ns libretokindlehtml.config-reader
+  (:require [clojure.data.json :as json]
+            [clojure.java.io :refer [reader writer file]]))
 
 ;; (defn order-map
 ;;   "Returns a map giving the ordering for the chapters."
