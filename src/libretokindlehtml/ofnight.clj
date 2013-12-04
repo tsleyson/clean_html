@@ -12,13 +12,28 @@
 ; contents, etc.
 ; Template: The final template.
 
+; cleanup functions.
+(defn remove-br-in-p
+  "Removes any <br> tag inside a <p> tag." ; with a very elispy name.
+  [page]
+  (transform [:p :br] nil))
+
 ; snippets here.
 (defsnippet chapter (file "resources/ofnight/chaptersnip.html") [:div.chapter]
-  [[header & body]]
+  [[header & body] & cleanup]
   [:span.chapheading] (let [cname (first (select header [[:h3 first-of-type] :> text-node]))]
                              ; I've no idea what :> does but altogether we cut out
                              ; all the crap and get just the text node.
                         (html-content (str "<a id='" cname "'>" cname "</a>")))
-
   [:div#chaptertext :p.standard]  (clone-for [para body]
-                                             [:p.standard] (content (para :content))))
+                                             [:p.standard] (content ((if cleanup
+                                                                       (apply comp cleanup)
+                                                                       identity)
+                                                                     (para :content)))))
+
+; cleanup is a collection of functions to clean up the paragraph text. In this case
+; we'll probably want to unnest from those pointless spans and get rid of all the
+; pointless brs inside the paragraphs. Since I couldn't figure out any nicer way to do
+; it (using a let wasn't really nicer), I used an if that returns the composition of
+; all the cleanup functions if the cleanup argument has been passed, and otherwise uses
+; the identity function.

@@ -2,10 +2,14 @@
   (:require [libretokindlehtml.core :refer :all]
             [libretokindlehtml.merge-files :refer :all]
             [libretokindlehtml.config-reader :refer :all]
+            [libretokindlehtml.ofnight :refer :all]
             [clojure.test :refer :all]
             [clojure.pprint :refer [pprint]]
             [clojure.java.io :refer :all]
             [net.cgrand.enlive-html :as enlive]))
+; It's probably fine now, but in future you might want to make separate testing
+; files and namespaces for each file. Then you can use fixtures. With this I can't
+; use them because the data for each test is completely different.
 
 ; Helper functions for the tests.
 (defn config-map
@@ -67,3 +71,12 @@
       (is (= (with-out-str (pprint result)) correct))
       (is (= 3 (count (enlive/select result [#{:html :head :body}]))))
        (comment "Should only have one of each of those tags"))))
+
+(deftest test-chapter
+  (let [correct (slurp "test-resources/test-chapter.txt")
+        result (->> "resources/ofnight/Chapter 3.html"
+                    (file)
+                    (enlive/html-resource)
+                    (mine-content)
+                    (chapter))]
+    (is (= (with-out-str (pprint result)) correct))))
