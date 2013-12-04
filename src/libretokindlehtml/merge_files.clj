@@ -56,10 +56,24 @@
 ; In the merge code, the head file is the first file in the
 ; list of resources. It's called that because it's the only
 ; one that keeps its head tag.
-(defn mine-content 
-  "Mines content of body tag to merge with head file." 
+(defmulti mine-content
+  "Mines content of body tag. Has the following signatures:
+   - [html resource]
+   - [file]
+   - [path to a file (string)]"
+  type)
+
+(defmethod mine-content clojure.lang.LazySeq
   [page] 
   (enlive/at (enlive/select page [:html :body]) [:head] nil [:body] enlive/unwrap))
+
+(defmethod mine-content java.io.File
+  [page]
+  (mine-content (enlive/html-resource page)))
+
+(defmethod mine-content java.lang.String
+  [page]
+  (mine-content (-> page (clojure.java.io/file) (enlive/html-resource))))
 
 ; Will mine all content and append to content of first given page.
 (defn merge-resources

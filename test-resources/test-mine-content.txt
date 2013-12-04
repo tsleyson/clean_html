@@ -1,0 +1,51 @@
+[{:tag :p, :attrs {:class "P1"}, :content ["Coolish Walk"]}
+ {:tag :p, :attrs {:class "P1"}, :content [" "]}
+ {:tag :p,
+  :attrs {:class "P2"},
+  :content ["I want to embrace someone! (PAN PAN PAN)"]}
+ {:tag :p,
+  :attrs {:class "P2"},
+  :content ["I want to chew well! (MON MON)"]}
+ {:tag :p,
+  :attrs {:class "P2"},
+  :content ["I want to threaten someone!"]}
+ {:tag :p,
+  :attrs {:class "P2"},
+  :content ["Now, let's put up with it, Coolish Walk"]}
+ {:tag :p, :attrs {:class "P2"}, :content [" "]}
+ {:tag :p,
+  :attrs {:class "P2"},
+  :content ["A peaceful everyday heart is important (PAN PAN PAN)"]}
+ {:tag :p,
+  :attrs {:class "P2"},
+  :content ["Control your hotblooded heart (mon mon mon mon)"]}
+ {:tag :p,
+  :attrs {:class "P2"},
+  :content ["Let's become people with common sense (pan pan pan pan)"]}
+ {:tag :p,
+  :attrs {:class "P2"},
+  :content ["We can easily become screwups"]}
+ {:tag :p, :attrs {:class "P2"}, :content [" "]}
+ {:tag :p,
+  :attrs {:class "P2"},
+  :content ["I want to trace our own blue heaven,"]}
+ {:tag :p,
+  :attrs {:class "P2"},
+  :content ["and a dream about becoming a dog (lair?)"]}
+ {:tag :p,
+  :attrs {:class "P2"},
+  :content ["in my pleasant and unusually prosperous brain"]}
+ {:tag :p,
+  :attrs {:class "P2"},
+  :content ["(and run around the sky!)"]}
+ {:tag :p, :attrs {:class "P2"}, :content [" "]}
+ {:tag :p,
+  :attrs {:class "P2"},
+  :content ["In the flesh under the swaying the memories"]}
+ {:tag :p,
+  :attrs {:class "P2"},
+  :content ["only the deliciousness of love is swelling."]}
+ {:tag :p,
+  :attrs {:class "P2"},
+  :content ["If we make an amazing menu"]}
+ {:tag :p, :attrs {:class "P2"}, :content [" "]}]

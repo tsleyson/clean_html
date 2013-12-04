@@ -1,0 +1,1811 @@
+[{:type :dtd,
+  :data
+  ["html"
+   "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"
+   "http://www.w3.org/Math/DTD/mathml2/xhtml-math11-f.dtd"]}
+ {:tag :html,
+  :attrs nil,
+  :content
+  [{:type :comment,
+    :data
+    "This file was converted to xhtml by OpenOffice.org - see http://xml.openoffice.org/odf2xhtml for more info."}
+   {:tag :head,
+    :attrs {:profile "http://dublincore.org/documents/dcmi-terms/"},
+    :content
+    [{:tag :meta,
+      :attrs
+      {:content "application/xhtml+xml; charset=utf-8",
+       :http-equiv "Content-Type"},
+      :content []}
+     {:tag :title,
+      :attrs {:xml:lang "en-US"},
+      :content ["- no title specified"]}
+     {:tag :meta,
+      :attrs {:xml:lang "en-US", :content "", :name "DCTERMS.title"},
+      :content []}
+     {:tag :meta,
+      :attrs
+      {:scheme "DCTERMS.RFC4646",
+       :content "en-US",
+       :name "DCTERMS.language"},
+      :content []}
+     {:tag :meta,
+      :attrs
+      {:content "http://xml.openoffice.org/odf2xhtml",
+       :name "DCTERMS.source"},
+      :content []}
+     {:tag :meta,
+      :attrs {:content "Trisdan Leyson", :name "DCTERMS.creator"},
+      :content []}
+     {:tag :meta,
+      :attrs
+      {:scheme "DCTERMS.W3CDTF",
+       :content "2012-08-20T17:40:02.60",
+       :name "DCTERMS.issued"},
+      :content []}
+     {:tag :meta,
+      :attrs {:content "Trisdan Leyson", :name "DCTERMS.contributor"},
+      :content []}
+     {:tag :meta,
+      :attrs
+      {:scheme "DCTERMS.W3CDTF",
+       :content "2012-08-20T17:58:29.90",
+       :name "DCTERMS.modified"},
+      :content []}
+     {:tag :meta,
+      :attrs
+      {:xml:lang "en-US", :content "", :name "DCTERMS.provenance"},
+      :content []}
+     {:tag :meta,
+      :attrs
+      {:xml:lang "en-US", :content ",", :name "DCTERMS.subject"},
+      :content []}
+     {:tag :link,
+      :attrs
+      {:hreflang "en",
+       :href "http://purl.org/dc/elements/1.1/",
+       :rel "schema.DC"},
+      :content []}
+     {:tag :link,
+      :attrs
+      {:hreflang "en",
+       :href "http://purl.org/dc/terms/",
+       :rel "schema.DCTERMS"},
+      :content []}
+     {:tag :link,
+      :attrs
+      {:hreflang "en",
+       :href "http://purl.org/dc/dcmitype/",
+       :rel "schema.DCTYPE"},
+      :content []}
+     {:tag :link,
+      :attrs
+      {:hreflang "en",
+       :href "http://purl.org/dc/dcam/",
+       :rel "schema.DCAM"},
+      :content []}
+     {:tag :style,
+      :attrs {:type "text/css"},
+      :content
+      ["\n\t@page {  }\n\ttable { border-collapse:collapse; border-spacing:0; empty-cells:show }\n\ttd, th { vertical-align:top; font-size:12pt;}\n\th1, h2, h3, h4, h5, h6 { clear:both }\n\tol, ul { margin:0; padding:0;}\n\tli { list-style: none; margin:0; padding:0;}\n\t<!-- \"li span.odfLiEnd\" - IE 7 issue-->\n\tli span. { clear: both; line-height:0; width:0; height:0; margin:0; padding:0; }\n\tspan.footnodeNumber { padding-right:1em; }\n\tspan.annotation_style_by_filter { font-size:95%; font-family:Arial; background-color:#fff000;  margin:0; border:0; padding:0;  }\n\t* { margin:0;}\n\t.P1 { font-size:12pt; font-family:Times New Roman; writing-mode:page; text-decoration:underline; }\n\t.P2 { font-size:12pt; font-family:Times New Roman; writing-mode:page; text-decoration:none ! important; }\n\t.P3 { font-size:12pt; font-family:Times New Roman; writing-mode:lr-tb; text-decoration:none ! important; }\n\t<!-- ODF styles with no properties representable as CSS -->\n\t{ }\n\t"]}]}
+   {:tag :body,
+    :attrs
+    {:style
+     "max-width:21.59cm;margin:2cm; margin-top:2cm; margin-bottom:2cm; margin-left:2cm; margin-right:2cm; writing-mode:lr-tb; ",
+     :dir "ltr"},
+    :content
+    ({:tag :p, :attrs {:class "P1"}, :content ["Check My Soul"]}
+     {:tag :p, :attrs {:class "P1"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content
+      [{:tag :a, :attrs {:name "content_0"}, :content []}
+       "Deatta shunkan"
+       {:tag :br, :attrs nil, :content []}
+       "kanjiteta unmei wo"
+       {:tag :br, :attrs nil, :content []}
+       "Kakushin ni"
+       {:tag :br, :attrs nil, :content []}
+       "kaetakute kyou mo"
+       {:tag :br, :attrs nil, :content []}
+       "Kimi no soba ni iru no kana"
+       {:tag :br, :attrs nil, :content []}
+       "kimi no subete ni"
+       {:tag :br, :attrs nil, :content []}
+       {:tag :br, :attrs nil, :content []}
+       "Check my soul Check my soul"
+       {:tag :br, :attrs nil, :content []}
+       "HAATO ga ugokidashita"
+       {:tag :br, :attrs nil, :content []}
+       "ima kimi to issho ni kakedasou"
+       {:tag :br, :attrs nil, :content []}
+       "Check my soul Check my soul"
+       {:tag :br, :attrs nil, :content []}
+       "Kokoro no koe kiite"
+       {:tag :br, :attrs nil, :content []}
+       "yukou kono mune ga takanaru basho he"
+       {:tag :br, :attrs nil, :content []}
+       {:tag :br, :attrs nil, :content []}
+       "Aitai shiritai"
+       {:tag :br, :attrs nil, :content []}
+       "niyakeru kuchimoto"
+       {:tag :br, :attrs nil, :content []}
+       "Doremo gaman"
+       {:tag :br, :attrs nil, :content []}
+       "dekinai yo kimi wo"
+       {:tag :br, :attrs nil, :content []}
+       "suki ni natta sono hi kara kimi no subete ni"
+       {:tag :br, :attrs nil, :content []}
+       {:tag :br, :attrs nil, :content []}
+       "Check my soul Check my soul"
+       {:tag :br, :attrs nil, :content []}
+       "HAATO ni yudaneta mirai"
+       {:tag :br, :attrs nil, :content []}
+       "chizu KONPASU no hari awase"
+       {:tag :br, :attrs nil, :content []}
+       "Check my soul Check my soul"
+       {:tag :br, :attrs nil, :content []}
+       "Riyuu nanka iranai tada kimi to zutto tabi shitai na"
+       {:tag :br, :attrs nil, :content []}
+       {:tag :br, :attrs nil, :content []}
+       "Yume no you na"
+       {:tag :br, :attrs nil, :content []}
+       "toki no naka demo shi"
+       {:tag :br, :attrs nil, :content []}
+       "njitsu dake wo mitsumete itai"
+       {:tag :br, :attrs nil, :content []}
+       "Hitomi no oku no"
+       {:tag :br, :attrs nil, :content []}
+       {:tag :br, :attrs nil, :content []}
+       "Check my soul Check my soul"
+       {:tag :br, :attrs nil, :content []}
+       "HAATO ga ugokidashita ima kimi to issho ni kakedasouwo"
+       {:tag :br, :attrs nil, :content []}
+       "Check my soul Check my soul"
+       {:tag :br, :attrs nil, :content []}
+       "Kokoro no koe kiite"
+       {:tag :br, :attrs nil, :content []}
+       "yukou kono mune ga takanaru basho he "]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p, :attrs {:class "P1"}, :content [" "]}
+     {:tag :p, :attrs {:class "P2"}, :content ["The moment we met,"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["I confidently wanted to change"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["the destiny I felt. Today,"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["will I be at your side? "]}
+     {:tag :p, :attrs {:class "P2"}, :content ["Entirely yours?"]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["Check my soul, check my soul"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["My heart has started to move."]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["Now, I'll run out together with you."]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["Check my soul, check my soul"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["Let's listen to the voices of our hearts"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["and go, to where our hearts sing out high."]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["I want to meet you. I want to know you."]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["The shape of a smiling mouth"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["I can't stand anything! Since "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content
+      ["the day I came to like you, I have been entirely yours."]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["Check my soul, check my soul."]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["The future that I've entrusted my heart to"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["The map and compass needle together."]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["Check my soul, check my soul"]}
+     {:tag :p,
+      :attrs {:class "P3"},
+      :content
+      ["I don't need a reason or anything, I just want to travel with you forever."]}
+     {:tag :p, :attrs {:class "P3"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P3"},
+      :content ["Even though I'm inside a time like a dream, "]}
+     {:tag :p,
+      :attrs {:class "P3"},
+      :content ["I only want to look at honesty"]}
+     {:tag :p,
+      :attrs {:class "P3"},
+      :content ["inside the pupil of your eyes."]}
+     {:tag :p, :attrs {:class "P3"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["Check my soul, check my soul"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["My heart has started to move."]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["Now, I'll run out together with you."]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["Check my soul, check my soul"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["Let's listen to the voices of our hearts"]}
+     {:tag :p,
+      :attrs {:class "P3"},
+      :content ["and go, to where our hearts sing out high."]}
+     {:tag :p,
+      :attrs {:class "P1"},
+      :content ["Coloring Palettes Kisaragi-iro"]}
+     {:tag :p, :attrs {:class "P1"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["koronde bakari bukiyou sugite"]}
+     {:tag :p, :attrs {:class "P2"}, :content ["umakuikazu sumimasen"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["dakedo kaku no daisuki nan desu"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["sugu ni sukebu ha ippai"]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["takai torepe no daiyouhin ha"]}
+     {:tag :p, :attrs {:class "P2"}, :content ["ea meeru you binsen"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["uwabaki na no ni sotoba ki ni shite"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["mata mata gomen nasai"]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["taisetsu na mono ha doushite mo tsukaenai"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["takaramono desu yo kama-sama kara no enpitsu"]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["danbooru wo kiritotta"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["gakubuchi kara nozoiteta geijutsu ha"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["sora no iro kumo no moderu suteki desu ne"]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["ugokidashita akogare ha"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["yume no iro wo paretto ni hirogeteku"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["sora no e to suneko tachi wo someteikimasu"]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["ohirugohan no akusento nara"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["soosu yorimo shouyu desu"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["gogo no jugyou ohirune no kamoku"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["sonna no nai deshou ka??"]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["mahou no dougu ya kakomarete ureshikute"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["suisaie no gu ha hajimete tsukau sora-iro"]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["yawarakasa ni tsutsumareta"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["magu kappu ha otoshite mo kowarenai"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["nukumori mo sotto zutto tsuzuku you ni"]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["majirikenai musaishoku"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["kaitashiteku sukebu ni ha ikutsumono"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["dessan to suki no kimochi kometeikimasu"]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["egaiteru jikan ha sugu ni sugiteku"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content
+      ["me no mae ha itsudemo tsutsumikomu sora ga hirogaru ne"]}
+     {:tag :p, :attrs {:class "P1"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["danbooru wo kiritotta"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["gakubuchi kara nozoiteta geijutsu ha"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["sora no iro kumo no moderu suteki desu ne"]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["ugokidashita akogare ha"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["yume no iro wo paretto ni hirogeteku"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["sora no e to suneko tachi wo someteikimasu"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["I just fall down and I'm way too clumsy,"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["I'm sorry for not being at peace."]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["But I really love to draw."]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["My sketchbook immediately fills up."]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["As a substitute for expensive tracing paper,"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["I use air mail paper."]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content
+      ["Even though I'm wearing indoor slippers I notice the grave marker"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["Once again, I'm sorry."]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["What should I do? I don't use the important things."]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["They're treasures! A pencil from God."]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["I cut down [danbooru]."]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["I peered out from a picture frame. Art, "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content
+      ["the color of the sky, using clouds as a model, is beautiful, isn't it?"]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content
+      ["Because of my aspirations that have just started to move"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["I expand the palette of colors of my dreams"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["I dye the painting of the sky and the suneko."]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["When it comes to an accent at lunchtime,"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["I prefer soy sauce to sauce."]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["Why don't they have an afternoon class"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["on the subject of napping?"]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["A magic tool shop surrounds me, and I'm happy"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content
+      ["I start using a tool for watercolor painting, sky-color"]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p, :attrs {:class "P2"}, :content ["A soft-wrapped mug "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["won't break if I drop it"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["The warmth even continues softly, for a long time."]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content
+      ["I go out to buy more unmixed paint with no color [white paint?]"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["In my sketchbook, there are many dessins, and"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["I put what I like into all of them."]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["I go past drawing time"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content
+      ["In front of my eyes is always the full sky, spreading out."]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["I cut down [danbooru]."]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["I peered out from a picture frame. Art, "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content
+      ["the color of the sky, using clouds as a model, is beautiful, isn't it?"]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p, :attrs {:class "P1"}, :content ["Coolish Walk"]}
+     {:tag :p, :attrs {:class "P1"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["I want to embrace someone! (PAN PAN PAN)"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["I want to chew well! (MON MON)"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["I want to threaten someone!"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["Now, let's put up with it, Coolish Walk"]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content
+      ["A peaceful everyday heart is important (PAN PAN PAN)"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["Control your hotblooded heart (mon mon mon mon)"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content
+      ["Let's become people with common sense (pan pan pan pan)"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["We can easily become screwups"]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["I want to trace our own blue heaven,"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["and a dream about becoming a dog (lair?)"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["in my pleasant and unusually prosperous brain"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["(and run around the sky!)"]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["In the flesh under the swaying the memories"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["only the deliciousness of love is swelling."]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["If we make an amazing menu"]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p, :attrs {:class "P1"}, :content ["Golden Day"]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["Meeting with a pre-chosen smile,"]}
+     {:tag :p, :attrs {:class "P2"}, :content ["I want to leave."]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["For the first time, I want to"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["transmit that ever-pure echo"]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content
+      ["If I open the door on this love, what kind of love will it become? Today"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content
+      ["if I paint on the gloss, will I be a slightly different me?"]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["When it's sunny, because they can see space,"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["the lost kittens say \"Nyao\""]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["I think I'll lead everyone out"]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p, :attrs {:class "P1"}, :content ["Horaism"]}
+     {:tag :p, :attrs {:class "P1"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content
+      [{:tag :a, :attrs {:name "content_0"}, :content []}
+       "moshimo negai kanau nara"
+       {:tag :br, :attrs nil, :content []}
+       "zutto soba ni ite ne"
+       {:tag :br, :attrs nil, :content []}
+       {:tag :br, :attrs nil, :content []}
+       "mada tooi kaerimichi"
+       {:tag :br, :attrs nil, :content []}
+       "hanasenai himitsu wo"
+       {:tag :br, :attrs nil, :content []}
+       "poketto ni shimatta"
+       {:tag :br, :attrs nil, :content []}
+       {:tag :br, :attrs nil, :content []}
+       "taisetsu na kimi no koto"
+       {:tag :br, :attrs nil, :content []}
+       "hanasanaide itanda"
+       {:tag :br, :attrs nil, :content []}
+       "wasuretai koto bakari da ne, doushite?"
+       {:tag :br, :attrs nil, :content []}
+       {:tag :br, :attrs nil, :content []}
+       "mawari wo ki ni shiteru dare datte"
+       {:tag :br, :attrs nil, :content []}
+       "sou yatte atashi ha hitori ni naru"
+       {:tag :br, :attrs nil, :content []}
+       "karisome no kitai wo uragitte"
+       {:tag :br, :attrs nil, :content []}
+       "hora ochikonde mimi fusagu"
+       {:tag :br, :attrs nil, :content []}
+       {:tag :br, :attrs nil, :content []}
+       "sou ne kitto kudaranai koto de"
+       {:tag :br, :attrs nil, :content []}
+       "zutto nayanderu desho tte"
+       {:tag :br, :attrs nil, :content []}
+       "waratte sumaseteru kedo chigau no"
+       {:tag :br, :attrs nil, :content []}
+       "moshimo kimi ga inakute"
+       {:tag :br, :attrs nil, :content []}
+       "zettai kimi ni aenakutte"
+       {:tag :br, :attrs nil, :content []}
+       "sonna mirai ha iya dakara"
+       {:tag :br, :attrs nil, :content []}
+       "himitsu ni shiteite ne"
+       {:tag :br, :attrs nil, :content []}
+       {:tag :br, :attrs nil, :content []}
+       "hi ga kurete machitomori"
+       {:tag :br, :attrs nil, :content []}
+       "susumezu ni iru koto"
+       {:tag :br, :attrs nil, :content []}
+       "poketto ni tsumekonde"
+       {:tag :br, :attrs nil, :content []}
+       {:tag :br, :attrs nil, :content []}
+       "iwanakucha susumenai"
+       {:tag :br, :attrs nil, :content []}
+       "hanasenaide irunda"
+       {:tag :br, :attrs nil, :content []}
+       "kogarashi ga atashi wo semete tsurakute"
+       {:tag :br, :attrs nil, :content []}
+       {:tag :br, :attrs nil, :content []}
+       "kitto kako ni nareba waraibanashi"
+       {:tag :br, :attrs nil, :content []}
+       "demo tachidomaru wakatteru kedo"
+       {:tag :br, :attrs nil, :content []}
+       {:tag :br, :attrs nil, :content []}
+       "sou ne kitto kudaranai koto de"
+       {:tag :br, :attrs nil, :content []}
+       "zutto nayanderu kamo tte"
+       {:tag :br, :attrs nil, :content []}
+       "atashi kiduiteiru kamo soredemo"
+       {:tag :br, :attrs nil, :content []}
+       "kitto asu no jibun ga"
+       {:tag :br, :attrs nil, :content []}
+       "zettai suki ni nareruyo tte"
+       {:tag :br, :attrs nil, :content []}
+       "pojitibu na shikou kairo"
+       {:tag :br, :attrs nil, :content []}
+       "soredemo iiyo ne?"
+       {:tag :br, :attrs nil, :content []}
+       {:tag :br, :attrs nil, :content []}
+       "hora ne dandan suki ni natteiku"
+       {:tag :br, :attrs nil, :content []}
+       "chottozutsu kakujitsu ni"
+       {:tag :br, :attrs nil, :content []}
+       "toki ni ha yowaku naru koto de kidukuyo"
+       {:tag :br, :attrs nil, :content []}
+       "kitto sasaete kureru"
+       {:tag :br, :attrs nil, :content []}
+       "zettai soko ni iru kara"
+       {:tag :br, :attrs nil, :content []}
+       "maemuki uwamuki susumuyo"
+       {:tag :br, :attrs nil, :content []}
+       "jibun no michishirube"
+       {:tag :br, :attrs nil, :content []}
+       {:tag :br, :attrs nil, :content []}
+       "moshimo kimi ga inakute"
+       {:tag :br, :attrs nil, :content []}
+       "zettai kimi ni aenakutte"
+       {:tag :br, :attrs nil, :content []}
+       "sonna mirai ha iya dakara"
+       {:tag :br, :attrs nil, :content []}
+       "zutto soba ni ite ne "]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["If I could have a wish granted,"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["it would be for you be always by my side,"]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["On the still-long road home,"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["I hid an unspoken secret in my pocket."]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["I was separated from you, "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["someone important to me."]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content
+      ["Why is it that I just want to forget you? / Why is it that I just want to forget about it?"]}
+     {:tag :p, :attrs {:class "P2"}, :content ["[double check]"]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["Even someone who pays attention to his surroundings"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["did that, and I ended up alone."]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["The temporary hope betrayed me, "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["and look, I got sad and couldn't hear anything."]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["Like that, with the things that surely descend,"]}
+     {:tag :p, :attrs {:class "P2"}, :content ["I'm always worrying"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["I laugh, and though I've finished, it's wrong."]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["If you weren't there,"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["and I definitely couldn't see you,"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["that sort of future is awful."]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["But keep that a secret, okay?"]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["On a darkening street, as the lights come on,"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["so that I won't move on,"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["I stuff it into my pocket."]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["Saying nothing, I don't move on."]}
+     {:tag :p, :attrs {:class "P2"}, :content ["I'm not speaking."]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["The cold winter wind attacks me, and it hurts."]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content
+      ["[The kanji for "
+       {:tag :span, :attrs {:class "T1"}, :content ["semeru "]}
+       {:tag :span,
+        :attrs {:class "T2"},
+        :content
+        ["seem to go with a word that means \"criticize\" or \"blame\", but this is a homophone of a word that means \"assault\", so the word \"attack\" covers both meanings in English.]"]}]}
+     {:tag :p, :attrs {:class "P3"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P3"},
+      :content
+      ["Surely, the funny story may become part of the past,"]}
+     {:tag :p,
+      :attrs {:class "P3"},
+      :content ["but I halt, even though I understand that."]}
+     {:tag :p, :attrs {:class "P3"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P3"},
+      :content ["Like that, with the things that surely descend,"]}
+     {:tag :p,
+      :attrs {:class "P3"},
+      :content ["I may always be worrying."]}
+     {:tag :p,
+      :attrs {:class "P3"},
+      :content ["I might be noticing, but even so"]}
+     {:tag :p,
+      :attrs {:class "P3"},
+      :content
+      ["if the me of tomorrow could definitely fall in love,"]}
+     {:tag :p,
+      :attrs {:class "P3"},
+      :content
+      ["it would be okay to have a circuit of positive thoughts, right?"]}
+     {:tag :p, :attrs {:class "P3"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P3"},
+      :content ["Look, I gradually fell in love,"]}
+     {:tag :p,
+      :attrs {:class "P3"},
+      :content ["just a little certainly."]}
+     {:tag :p,
+      :attrs {:class "P3"},
+      :content ["At that time, I noticed I was becoming weak."]}
+     {:tag :p,
+      :attrs {:class "P3"},
+      :content ["I'll support you for sure"]}
+     {:tag :p,
+      :attrs {:class "P3"},
+      :content ["Because I'll definitely be there."]}
+     {:tag :p,
+      :attrs {:class "P3"},
+      :content ["Facing forward, looking upward, I'll advance!"]}
+     {:tag :p, :attrs {:class "P3"}, :content ["By my own guidepost."]}
+     {:tag :p, :attrs {:class "P3"}, :content [" "]}
+     {:tag :p, :attrs {:class "P3"}, :content ["If you weren't here,"]}
+     {:tag :p,
+      :attrs {:class "P3"},
+      :content ["and I definitely couldn't see you,"]}
+     {:tag :p,
+      :attrs {:class "P3"},
+      :content ["that sort of future is awful."]}
+     {:tag :p, :attrs {:class "P3"}, :content ["Stay with me, okay?"]}
+     {:tag :p, :attrs {:class "P3"}, :content [" "]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P1"},
+      :content
+      ["Kin no Nami, Sen no Nami "
+       {:tag :span,
+        :attrs {:class "T1"},
+        :content ["(Golden Waves, Thousand Waves)"]}]}
+     {:tag :p, :attrs {:class "Standard"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["My yearning for waves of gold against the shore"]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["on the morning I awaken..."]}
+     {:tag :p, :attrs {:class "Standard"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["When I think strongly of someone"]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content
+      ["My meeting with that person is held in the palm of my raised hand."]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content
+      ["The hope that envelopes this planet is watching the future "]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content
+      ["that the wind and the direction of the water point to."]}
+     {:tag :p, :attrs {:class "Standard"}, :content [" "]}
+     {:tag :p, :attrs {:class "Standard"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content
+      ["The distant clouds and rays of light sway, as if inviting me in."]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["My yearning for waves of gold against the shore,"]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["on the morning I awaken, "]}
+     {:tag :p, :attrs {:class "Standard"}, :content ["it begins."]}
+     {:tag :p, :attrs {:class "Standard"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["The shining rain becomes a gentle song."]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["I paddle slowly, unafraid."]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["Whatever time it is, the sky is off with you."]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content
+      ["Let me receive the strength of merely looking up at it."]}
+     {:tag :p, :attrs {:class "Standard"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["It runs up into the heavens as if delivered,"]}
+     {:tag :p, :attrs {:class "Standard"}, :content ["this wish."]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["And I go towards the distant thousand waves,"]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["further than any dream."]}
+     {:tag :p, :attrs {:class "Standard"}, :content []}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content
+      ["The distant clouds and rays of light sway, as if inviting me in."]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["My yearning for waves of gold against the shore"]}
+     {:tag :p, :attrs {:class "Standard"}, :content ["awakens."]}
+     {:tag :p, :attrs {:class "Standard"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["It runs up into the heavens as if delivered,"]}
+     {:tag :p, :attrs {:class "Standard"}, :content ["this wish."]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["And I go towards the distant thousand waves,"]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["further than any dream."]}
+     {:tag :p, :attrs {:class "Standard"}, :content [" "]}
+     {:tag :p, :attrs {:class "Standard"}, :content ["It will begin."]}
+     {:tag :p, :attrs {:class "Standard"}, :content ["It will begin."]}
+     {:tag :p, :attrs {:class "P1"}, :content ["Koi no Shirushi"]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content
+      [{:tag :a, :attrs {:name "content_1"}, :content []}
+       "コイノシルシ　君の瞳（め）に　見つけたのあの日"
+       {:tag :br, :attrs nil, :content []}
+       "気づいた時　胸の磁石　回りだした"
+       {:tag :br, :attrs nil, :content []}
+       "探していた　ときめきに　やっと出逢えたの"
+       {:tag :br, :attrs nil, :content []}
+       "どこにいても　見つけ出すよ　もう　2度と迷わない"
+       {:tag :br, :attrs nil, :content []}
+       {:tag :br, :attrs nil, :content []}
+       "きっとふたりは　運命だよ　何億もの人がいて"
+       {:tag :br, :attrs nil, :content []}
+       "出逢うのは　コンピュータでも無理"
+       {:tag :br, :attrs nil, :content []}
+       "平凡すぎる　毎日に　ピリオドを打ったの"
+       {:tag :br, :attrs nil, :content []}
+       "ため息　卒業　できるのやっと"
+       {:tag :br, :attrs nil, :content []}
+       {:tag :br, :attrs nil, :content []}
+       "青空が眩しい　君がいる風景は"
+       {:tag :br, :attrs nil, :content []}
+       "幸せのオーラ　溢れ出すの　止まらないよ"
+       {:tag :br, :attrs nil, :content []}
+       "駅前の憤水　虹を作っているよ"
+       {:tag :br, :attrs nil, :content []}
+       "君を待つ時間さえも　かけがえない　プレシャスな時"
+       {:tag :br, :attrs nil, :content []}
+       {:tag :br, :attrs nil, :content []}
+       "コイノシルシ　私にも　見つけてくれたね"
+       {:tag :br, :attrs nil, :content []}
+       "同じ気持ち　同じかけら　分け合ってる"
+       {:tag :br, :attrs nil, :content []}
+       "はぐれそうな　時だって　大丈夫だよね?"
+       {:tag :br, :attrs nil, :content []}
+       "どこにいても　見つけ出して　そう　私ここにいる"
+       {:tag :br, :attrs nil, :content []}
+       {:tag :br, :attrs nil, :content []}
+       "手を繋いだら　未来のドア　すっと開いた気がするの"
+       {:tag :br, :attrs nil, :content []}
+       "もう何も　恐いものないから"
+       {:tag :br, :attrs nil, :content []}
+       "新しい夢　膨らんで　毎日がMerry-go-round"
+       {:tag :br, :attrs nil, :content []}
+       "逢えない　時には　せつないけど"
+       {:tag :br, :attrs nil, :content []}
+       {:tag :br, :attrs nil, :content []}
+       "雨の日も好きだよ　君の傘温かい"
+       {:tag :br, :attrs nil, :content []}
+       "愛しさ永遠　なくならない　信じてるよ"
+       {:tag :br, :attrs nil, :content []}
+       "雨上がりの空に　虹を見上げてふたり"
+       {:tag :br, :attrs nil, :content []}
+       "いつまでも手を繋いで　歩きたいよ　光の中を"
+       {:tag :br, :attrs nil, :content []}
+       {:tag :br, :attrs nil, :content []}
+       "青空が眩しい　君がいる風景は"
+       {:tag :br, :attrs nil, :content []}
+       "幸せのオーラ　溢れ出すの　止まらないよ"
+       {:tag :br, :attrs nil, :content []}
+       "駅前の憤水　虹を作っているよ"
+       {:tag :br, :attrs nil, :content []}
+       "君を待つ時間さえも　かけがえない　プレシャスな時"
+       {:tag :br, :attrs nil, :content []}
+       {:tag :br, :attrs nil, :content []}
+       "雨の日も好きだよ　君の傘温かい"
+       {:tag :br, :attrs nil, :content []}
+       "愛しさ永遠　なくならない　信じてるよ"
+       {:tag :br, :attrs nil, :content []}
+       "雨上がりの空に　虹を見上げてふたり"
+       {:tag :br, :attrs nil, :content []}
+       "いつまでも手を繋いで　歩きたいよ　光の中を"
+       {:tag :br, :attrs nil, :content []}
+       {:tag :br, :attrs nil, :content []}
+       "ラララ "]}
+     {:tag :p, :attrs {:class "Standard"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content
+      [{:tag :a, :attrs {:name "content_0"}, :content []}
+       "KOI NO SHIRUSHI kimi no me ni mitsuketa no ano hi"
+       {:tag :br, :attrs nil, :content []}
+       "kizuita toki mune no jishaku mawari dashita"
+       {:tag :br, :attrs nil, :content []}
+       "sagashiteita tokimeki ni yatto deaetta no"
+       {:tag :br, :attrs nil, :content []}
+       "doko ni ite mo mitsuke dasu yo mou nidoto mayowanai"
+       {:tag :br, :attrs nil, :content []}
+       {:tag :br, :attrs nil, :content []}
+       "kitto futari wa unmei da yo nan oku mono hito ga ite"
+       {:tag :br, :attrs nil, :content []}
+       "deau no wa KONPYUUTA de mo muri"
+       {:tag :br, :attrs nil, :content []}
+       "heibon sugiru mainichi ni PIRIODO o utta no"
+       {:tag :br, :attrs nil, :content []}
+       "tameiki sotsugyou dekiru no yatto"
+       {:tag :br, :attrs nil, :content []}
+       {:tag :br, :attrs nil, :content []}
+       "aozora ga mabushii kimi ga iru fuukei wa"
+       {:tag :br, :attrs nil, :content []}
+       "shiawase no OORA afuredasu no tomaranai yo"
+       {:tag :br, :attrs nil, :content []}
+       "ekimae no funsui niji o tsukutteiru yo"
+       {:tag :br, :attrs nil, :content []}
+       "kimi o matsu jikan sae mo kakegae nai PURESHASU na toki"
+       {:tag :br, :attrs nil, :content []}
+       {:tag :br, :attrs nil, :content []}
+       "KOI NO SHIRUSHI watashi ni mo mitsukete kureta ne"
+       {:tag :br, :attrs nil, :content []}
+       "onaji kimochi onaji kakera wakeatteru"
+       {:tag :br, :attrs nil, :content []}
+       "hagure sou na toki datte daijoubu da yo ne"
+       {:tag :br, :attrs nil, :content []}
+       "doko ni ite mo mitsuke dashita sou watashi koko ni iru"
+       {:tag :br, :attrs nil, :content []}
+       {:tag :br, :attrs nil, :content []}
+       "te o tsunaidara mirai no DOA sutto aita kigasuru no"
+       {:tag :br, :attrs nil, :content []}
+       "mou nani mo kowaimono nai kara"
+       {:tag :br, :attrs nil, :content []}
+       "atarashii yume fukurande mainichi ga MERRY GO ROUND"
+       {:tag :br, :attrs nil, :content []}
+       "aenai toki ni wa setsunai kedo"
+       {:tag :br, :attrs nil, :content []}
+       {:tag :br, :attrs nil, :content []}
+       "ame no hi mo suki da yo kimi no kasa atatakai"
+       {:tag :br, :attrs nil, :content []}
+       "itoshiisa eien naku nara nai shinjiteru yo"
+       {:tag :br, :attrs nil, :content []}
+       "ameagari no sora ni niji o miagete futari"
+       {:tag :br, :attrs nil, :content []}
+       "itsumademo te o tsunaide arukitai yo hikari no naka o"
+       {:tag :br, :attrs nil, :content []}
+       {:tag :br, :attrs nil, :content []}
+       "aozora ga mabushii kimi ga iru fuukei wa"
+       {:tag :br, :attrs nil, :content []}
+       "shiawase no OORA afuredasu no tomaranai yo"
+       {:tag :br, :attrs nil, :content []}
+       "ekimae no funsui niji o tsukutteiru yo"
+       {:tag :br, :attrs nil, :content []}
+       "kimi o matsu jikan sae mo kakegae nai PURESHASU na toki"
+       {:tag :br, :attrs nil, :content []}
+       {:tag :br, :attrs nil, :content []}
+       "ame no hi mo suki da yo kimi no kasa atatakai"
+       {:tag :br, :attrs nil, :content []}
+       "itoshiisa eien naku nara nai shinjiteru yo"
+       {:tag :br, :attrs nil, :content []}
+       "ameagari no sora ni niji o miagete futari"
+       {:tag :br, :attrs nil, :content []}
+       "itsumademo te o tsunaide arukitai yo hikari no naka o"
+       {:tag :br, :attrs nil, :content []}
+       {:tag :br, :attrs nil, :content []}
+       "RA RA RA "]}
+     {:tag :p, :attrs {:class "Standard"}, :content [" "]}
+     {:tag :p, :attrs {:class "P1"}, :content ["English"]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content
+      ["When I noticed that I had found the sign of love in your eyes,"]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["the magnet in my chest revolved."]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content
+      ["I had finally found the throbbing I'd been searching for."]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["Wherever you go, I'll track you down--"]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["I'm already twice as sure."]}
+     {:tag :p, :attrs {:class "Standard"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["Surely being together is our destiny."]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["But when some hundred million people are there,"]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["meeting is hard, even on the computer."]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content
+      ["I destroyed this period when every day was so boring and ordinary,"]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["sighed, and finally finished graduation."]}
+     {:tag :p, :attrs {:class "Standard"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["The blue sky is shining, and with you present here,"]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["the aura of happiness overflows—it won't stop!"]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content
+      ["The fountain in front of the train station is making a rainbow!"]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content
+      ["Even the time I spend waiting for you is irreplaceable—a precious time."]}
+     {:tag :p, :attrs {:class "Standard"}, :content [" "]}
+     {:tag :p, :attrs {:class "Standard"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["You discovered the sign of love in me, right?"]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["We shared the same feelings and the same shards."]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content
+      ["It's a time when you seem to get distracted, but it's all right!"]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content
+      ["The me who tracked you down wherever you went is here."]}
+     {:tag :p, :attrs {:class "Standard"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content
+      ["The door to a future when we might hold hands has opened, I have a feeling."]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content
+      ["Because there's already nothing more that scares me."]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content
+      ["My new dream is spreading out, and every day is a Merry-go-round,"]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content
+      ["Although the times when we don't see each other are painful."]}
+     {:tag :p, :attrs {:class "Standard"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content
+      ["I even like rainy days! We're warm under your umbrella."]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["This feeling will last forever; I believe it!"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content
+      ["I want to walk together, looking up at the rainbow in the sky after it stops raining,"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["hand-in-hand, forever, in the light."]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["The blue sky is shining, and with you present here,"]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["the aura of happiness overflows—it won't stop!"]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content
+      ["The fountain in front of the train station is making a rainbow!"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content
+      ["Even the time I spend waiting for you is irreplaceable—a precious time."]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content
+      ["I even like rainy days! We're warm under your umbrella."]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["This feeling will last forever; I believe it!"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content
+      ["I want to walk together, looking up at the rainbow in the sky after it stops raining,"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["hand-in-hand, forever, in the light."]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p, :attrs {:class "P2"}, :content ["La la la"]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p, :attrs {:class "P3"}, :content ["Spanish"]}
+     {:tag :p,
+      :attrs {:class "P4"},
+      :content
+      ["Cuando me di cuenta de que había encontrado el señal de amor en tus ojos,"]}
+     {:tag :p,
+      :attrs {:class "P4"},
+      :content ["the magnet en el pecho revolví."]}
+     {:tag :p,
+      :attrs {:class "P4"},
+      :content ["Al fin encontré the throbbing que había buscado."]}
+     {:tag :p,
+      :attrs {:class "P4"},
+      :content ["Donde vayas, te cazaré--"]}
+     {:tag :p,
+      :attrs {:class "P4"},
+      :content ["ya estoy dos veces más segura."]}
+     {:tag :p, :attrs {:class "P4"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P4"},
+      :content ["Por seguro el estar juntos es nuestro destino."]}
+     {:tag :p,
+      :attrs {:class "P4"},
+      :content ["Pero cuando hay un cien millón personas,"]}
+     {:tag :p,
+      :attrs {:class "P4"},
+      :content ["el conocer es difícil--aunque en la red."]}
+     {:tag :p,
+      :attrs {:class "P4"},
+      :content
+      ["Destrocé el periódo donde todos los días eran tan aburridos,"]}
+     {:tag :p,
+      :attrs {:class "P4"},
+      :content ["sighed, y me acabé graduar."]}
+     {:tag :p, :attrs {:class "P4"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P4"},
+      :content
+      ["Brilla el cielo azul, y en la escena con tu presente"]}
+     {:tag :p,
+      :attrs {:class "P4"},
+      :content ["the aura de alegría overflows--no se deja!"]}
+     {:tag :p,
+      :attrs {:class "P4"},
+      :content
+      ["Hace The fountain en frente de la estación del tren un arco iris!"]}
+     {:tag :p,
+      :attrs {:class "P4"},
+      :content
+      ["Aún el tiempo que gasto esperándote no se puede reemplacer--es tiempo precioso."]}
+     {:tag :p, :attrs {:class "P4"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P4"},
+      :content
+      ["Te diste cuenta de que habías encontrado el señal de amor en mí, verdad?"]}
+     {:tag :p,
+      :attrs {:class "P4"},
+      :content
+      ["Entrecambiamos las emociones mismas y las piezas mismas."]}
+     {:tag :p,
+      :attrs {:class "P4"},
+      :content
+      ["Es una época donde te distraes mucho, pero está bien!"]}
+     {:tag :p,
+      :attrs {:class "P4"},
+      :content ["La yo que te cacé donde viniera, estoy contigo."]}
+     {:tag :p, :attrs {:class "P4"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P4"},
+      :content
+      ["La puerta al futuro donde we might hold hands está abierta, estoy seguro."]}
+     {:tag :p,
+      :attrs {:class "P4"},
+      :content ["Porque no hay nada que me teme a mí."]}
+     {:tag :p,
+      :attrs {:class "P4"},
+      :content
+      ["Mi sueño nuevo is spreading out, y todos los días son un Merry-go-round,"]}
+     {:tag :p,
+      :attrs {:class "P4"},
+      :content ["aunque me duele cuando no nos conozcamos."]}
+     {:tag :p, :attrs {:class "P4"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P4"},
+      :content
+      ["Me gustan aún los días de lluvia! Estamos warm bajo de tú paragua."]}
+     {:tag :p,
+      :attrs {:class "P4"},
+      :content ["Esta emoción permanecerá para siempre--lo creo!"]}
+     {:tag :p,
+      :attrs {:class "P4"},
+      :content
+      ["Deseo caminer contigo, mirando el arco iris en el cielo despues del dejar de llover,"]}
+     {:tag :p,
+      :attrs {:class "P4"},
+      :content ["mano en mano, para siempre, en la luz."]}
+     {:tag :p, :attrs {:class "P4"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P4"},
+      :content
+      ["Brilla el cielo azul, y en la escena con tu presente"]}
+     {:tag :p,
+      :attrs {:class "P4"},
+      :content ["the aura de alegría overflows--no se deja!"]}
+     {:tag :p,
+      :attrs {:class "P4"},
+      :content
+      ["Hace The fountain en frente de la estación del tren un arco iris!"]}
+     {:tag :p,
+      :attrs {:class "P4"},
+      :content
+      ["Aún el tiempo que gasto esperándote no se puede reemplacer--es tiempo precioso."]}
+     {:tag :p, :attrs {:class "P4"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P4"},
+      :content
+      ["Me gustan aún los días de lluvia! Estamos warm bajo de tú paragua."]}
+     {:tag :p,
+      :attrs {:class "P4"},
+      :content ["Esta emoción permanecerá para siempre--lo creo!"]}
+     {:tag :p,
+      :attrs {:class "P4"},
+      :content
+      ["Deseo caminer contigo, mirando el arco iris en el cielo despues del dejar de llover,"]}
+     {:tag :p,
+      :attrs {:class "P4"},
+      :content ["mano en mano, para siempre, en la luz."]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content
+      ["Mebae Drive (\"Bud Drive\" or \"Sprout Drive\")--Now we know why they have it in Japanese"]}
+     {:tag :p, :attrs {:class "Standard"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content
+      ["The voices that will disappear someday above the fleeting sky"]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content
+      ["will become faint as they vanish, going off to many places,"]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["melding together into a flashing cacophony."]}
+     {:tag :p, :attrs {:class "Standard"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content
+      ["There is only one body, and like one body, at infinity,"]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content
+      ["the drops that have overflowed are now out there for everyone to see"]}
+     {:tag :p, :attrs {:class "Standard"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["Budding Drive, run, sky, still barefoot "]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content
+      ["Now, close your eyes, and head towards the bridge made by the reflected rainbow"]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content
+      ["Budding Drive, shining spark, the familiar, friendly star"]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content
+      ["embedded in the sky, falls towards the fragmented dreams"]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["and the light held in my hand"]}
+     {:tag :p, :attrs {:class "Standard"}, :content [" "]}
+     {:tag :p, :attrs {:class "P1"}, :content ["Paradigm"]}
+     {:tag :p, :attrs {:class "Standard"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content
+      [{:tag :a, :attrs {:name "content_0"}, :content []}
+       "kokoro no sukima wo chotto yokogitte"
+       {:tag :br, :attrs nil, :content []}
+       "mabataki no supiido de kasanareba"
+       {:tag :br, :attrs nil, :content []}
+       {:tag :br, :attrs nil, :content []}
+       "toorisugiru hibi ga gyutto te wo nigiru"
+       {:tag :br, :attrs nil, :content []}
+       "tachidomatteru tsuyogari ni aizu shite"
+       {:tag :br, :attrs nil, :content []}
+       {:tag :br, :attrs nil, :content []}
+       "mitsumeru to tsutawatte yuku nara"
+       {:tag :br, :attrs nil, :content []}
+       "maboroshi mo kieru yo ne sugu ni"
+       {:tag :br, :attrs nil, :content []}
+       {:tag :br, :attrs nil, :content []}
+       "fui ni konekuto [connect] sekai ga kawaru"
+       {:tag :br, :attrs nil, :content []}
+       "biidamagoshi ni nozoitara"
+       {:tag :br, :attrs nil, :content []}
+       "ima yori motto kagayaku keshiki"
+       {:tag :br, :attrs nil, :content []}
+       "nani ga soko de mieru?"
+       {:tag :br, :attrs nil, :content []}
+       "yurete konekuto mata chigau sora"
+       {:tag :br, :attrs nil, :content []}
+       "tobidasu toki wa niji no iro"
+       {:tag :br, :attrs nil, :content []}
+       "kidzuitan da yo hajimari no oto"
+       {:tag :br, :attrs nil, :content []}
+       "nogasanai de kiite"
+       {:tag :br, :attrs nil, :content []}
+       {:tag :br, :attrs nil, :content []}
+       "boku-tachi ga eranda mirai tsunagu yo"
+       {:tag :br, :attrs nil, :content []}
+       {:tag :br, :attrs nil, :content []}
+       "kokoro no sukima wo chotto umete mite"
+       {:tag :br, :attrs nil, :content []}
+       "atarashii asu ga yatte kuru nara"
+       {:tag :br, :attrs nil, :content []}
+       {:tag :br, :attrs nil, :content []}
+       "itsumo doori massugu arukanai de"
+       {:tag :br, :attrs nil, :content []}
+       "zensokuryoku gyaku e yuku no mo ii ne"
+       {:tag :br, :attrs nil, :content []}
+       {:tag :br, :attrs nil, :content []}
+       "nobasu te ni tsutawatte yuku kara"
+       {:tag :br, :attrs nil, :content []}
+       "hontou no egao misete sugu ni"
+       {:tag :br, :attrs nil, :content []}
+       {:tag :br, :attrs nil, :content []}
+       "fui ni konekuto sekai ga mawaru"
+       {:tag :br, :attrs nil, :content []}
+       "kakera ni natta fukashigi e"
+       {:tag :br, :attrs nil, :content []}
+       "tomadoinagara chikadzuite yuku"
+       {:tag :br, :attrs nil, :content []}
+       "dare ga soko de mieru?"
+       {:tag :br, :attrs nil, :content []}
+       "yurete konekuto karuyaka na sora"
+       {:tag :br, :attrs nil, :content []}
+       "tobikomu yuuki wo ageru yo"
+       {:tag :br, :attrs nil, :content []}
+       "kasuka ni hibiku hajimari no oto"
+       {:tag :br, :attrs nil, :content []}
+       "nogasanai de kiite"
+       {:tag :br, :attrs nil, :content []}
+       {:tag :br, :attrs nil, :content []}
+       "kako mo mirai mo zenbu tsunaide"
+       {:tag :br, :attrs nil, :content []}
+       {:tag :br, :attrs nil, :content []}
+       "donna katachi? kokoro no iremono tte"
+       {:tag :br, :attrs nil, :content []}
+       "kantan ni dete icchau no kana"
+       {:tag :br, :attrs nil, :content []}
+       "tashikameyou boku-tachi no shinjitsu"
+       {:tag :br, :attrs nil, :content []}
+       "hirakareta doa ni hitasura mukau dake"
+       {:tag :br, :attrs nil, :content []}
+       {:tag :br, :attrs nil, :content []}
+       "kitto konekuto shikai ga hareru"
+       {:tag :br, :attrs nil, :content []}
+       "uchuu no saki wo mitsuketa mitai"
+       {:tag :br, :attrs nil, :content []}
+       "itsuka konekuto mada tarinai ne"
+       {:tag :br, :attrs nil, :content []}
+       "dareka no kimochi shitte yuku nara"
+       {:tag :br, :attrs nil, :content []}
+       {:tag :br, :attrs nil, :content []}
+       "fui ni konekuto sekai ga kawaru"
+       {:tag :br, :attrs nil, :content []}
+       "biidamagoshi nozoitara"
+       {:tag :br, :attrs nil, :content []}
+       "ima yori motto kagayaku keshiki"
+       {:tag :br, :attrs nil, :content []}
+       "nani ga soko de mieru?"
+       {:tag :br, :attrs nil, :content []}
+       "yurete konekuto mata chigau sora"
+       {:tag :br, :attrs nil, :content []}
+       "tobidasu toki wa niji no iro"
+       {:tag :br, :attrs nil, :content []}
+       "kidzuitan da yo hajimari no oto"
+       {:tag :br, :attrs nil, :content []}
+       "nogasanai de kiite"
+       {:tag :br, :attrs nil, :content []}
+       {:tag :br, :attrs nil, :content []}
+       "muda na koto demo zenbu"
+       {:tag :br, :attrs nil, :content []}
+       "matomete hikari ni shite"
+       {:tag :br, :attrs nil, :content []}
+       "boku-tachi de eranda mirai tsunagu yo "]}
+     {:tag :p, :attrs {:class "Standard"}, :content [" "]}
+     {:tag :p, :attrs {:class "Standard"}, :content [" "]}
+     {:tag :p, :attrs {:class "P1"}, :content ["Ready"]}
+     {:tag :p, :attrs {:class "P1"}, :content [" "]}
+     {:tag :p, :attrs {:class "P2"}, :content ["To be like myself,"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["I wonder how much courage I need."]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["I'm good at feigning courage,"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["and leaving what I want to say unsaid."]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["Without even saying 'Good morning'"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["I turn my back and depart."]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["Listen to me! With just that,"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["Something will start."]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["I'm going to live with all my might!"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content
+      ["It's not useless; this throbbing in my heart is drawing a rainbow."]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["I'm going to keep living with all my might!"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["Isn't it okay to like anything and everything?!"]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["Let's do the best we can!"]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p, :attrs {:class "P2"}, :content ["To be like myself,"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["I can't say it sweetly"]}
+     {:tag :p, :attrs {:class "P2"}, :content ["If I become big"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["the small things go 'Irari' *![]?"]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["You're going to talk to me!"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["You, on the other side of the monitor."]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["What you hear is the truth."]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["That now, at the last minute, I'm lonely."]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["I'm going to live with all my might!"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["That shooting star I chased is still shining!"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["I'm going to keep living with all my might!"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["Isn't it okay to dream, laugh, even cry?!"]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["Let's do the best we can"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["Ready, ready for change"]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["I finally faced the front."]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["I put my shaking tiptoes on the line,"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content
+      ["thinking things like \"I wonder if this is good enough?\""]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["At the front of this unseen lane that I imagined"]}
+     {:tag :p, :attrs {:class "P2"}, :content ["I just run through,"]}
+     {:tag :p, :attrs {:class "P2"}, :content ["and my legs are free"]}
+     {:tag :p, :attrs {:class "P2"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["I'm going to live with all my might!"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content
+      ["It's not useless; this throbbing in my heart is drawing a rainbow."]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["I'm going to keep living with all my might!"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["Isn't it okay to dream, laugh, even cry?!"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["Let's do the best we can!"]}
+     {:tag :p, :attrs {:class "P2"}, :content []}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["I'm going to keep living with all my might!"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["Isn't it okay to like anything and everything?!"]}
+     {:tag :p,
+      :attrs {:class "P2"},
+      :content ["Let's do the best we can!"]}
+     {:tag :p, :attrs {:class "P1"}, :content ["Tadaima"]}
+     {:tag :p, :attrs {:class "P1"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content
+      [{:tag :a, :attrs {:name "content_0"}, :content []}
+       "soshite itsumo doori kaze wa soshiranu kao de"
+       {:tag :br, :attrs nil, :content []}
+       "tereta futari no yoko sotto toorisugiru kara"
+       {:tag :br, :attrs nil, :content []}
+       "sakki made no koto mo itsuka wasurechau kana"
+       {:tag :br, :attrs nil, :content []}
+       "kyou mo waraiaeru yasashii netsu dake ga nokoru"
+       {:tag :br, :attrs nil, :content []}
+       {:tag :br, :attrs nil, :content []}
+       "itte shimau no? watashi ga saki kana?"
+       {:tag :br, :attrs nil, :content []}
+       "demo mou sukoshi dake issho ni iyou ne"
+       {:tag :br, :attrs nil, :content []}
+       {:tag :br, :attrs nil, :content []}
+       "itsumo hanashikakeru KOKORO no naka"
+       {:tag :br, :attrs nil, :content []}
+       "gyutto tsunagu kono shunkan"
+       {:tag :br, :attrs nil, :content []}
+       "tabidatsu hi made renshuu suru no"
+       {:tag :br, :attrs nil, :content []}
+       "kitto atarimae de arikitari de"
+       {:tag :br, :attrs nil, :content []}
+       "kakegaenai kyou ni kawaru"
+       {:tag :br, :attrs nil, :content []}
+       "watashi no memories"
+       {:tag :br, :attrs nil, :content []}
+       "KIRAKIRA shiteru, shiawase na hibi"
+       {:tag :br, :attrs nil, :content []}
+       "mabushii ne"
+       {:tag :br, :attrs nil, :content []}
+       {:tag :br, :attrs nil, :content []}
+       "TOUMEI na mirai ni yume ga kasanatteiku"
+       {:tag :br, :attrs nil, :content []}
+       "mada chiisana yokan dare mo kizukanai watashi"
+       {:tag :br, :attrs nil, :content []}
+       {:tag :br, :attrs nil, :content []}
+       "ittekimasu, to nankai mo iu kara"
+       {:tag :br, :attrs nil, :content []}
+       "koko ga zutto watashi no kaettekuru basho"
+       {:tag :br, :attrs nil, :content []}
+       {:tag :br, :attrs nil, :content []}
+       "itsumo sagashiteruyo doko ni itemo"
+       {:tag :br, :attrs nil, :content []}
+       "tsutaetai na kono shunkan"
+       {:tag :br, :attrs nil, :content []}
+       "aitaku nareba sugu aeru no ni"
+       {:tag :br, :attrs nil, :content []}
+       "ima mo omoidashite hotto shiteru"
+       {:tag :br, :attrs nil, :content []}
+       "omoiyari ni jinto shiteru"
+       {:tag :br, :attrs nil, :content []}
+       "watashi no every day"
+       {:tag :br, :attrs nil, :content []}
+       "hitori janai ne sono sonzai ni"
+       {:tag :br, :attrs nil, :content []}
+       "arigatou"
+       {:tag :br, :attrs nil, :content []}
+       {:tag :br, :attrs nil, :content []}
+       "itsumo hanashikakeru KOKORO no naka"
+       {:tag :br, :attrs nil, :content []}
+       "gyutto tsunagu kono shunkan"
+       {:tag :br, :attrs nil, :content []}
+       "tabidatsu hi made renshuu suru no"
+       {:tag :br, :attrs nil, :content []}
+       {:tag :br, :attrs nil, :content []}
+       "kitto atarimae de arikitari de"
+       {:tag :br, :attrs nil, :content []}
+       "kakegaenai kyou ni kawaru"
+       {:tag :br, :attrs nil, :content []}
+       "watashi no memories"
+       {:tag :br, :attrs nil, :content []}
+       "KIRAKIRA shiteru, shiawase na hibi"
+       {:tag :br, :attrs nil, :content []}
+       "mabushii ne "]}
+     {:tag :p, :attrs {:class "Standard"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content
+      ["And so, as always, the wind, with an uncritical face,"]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["passes softly between the shy pair."]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content
+      ["Will things from a long time ago be forgotten sometime?"]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content
+      ["Today, we see each other and laugh, and only the gentle heat will remain."]}
+     {:tag :p, :attrs {:class "Standard"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["Will you end up leaving? Will I go first, I wonder?"]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["But just a little more, I want to be together."]}
+     {:tag :p, :attrs {:class "Standard"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["Inside my always half-spoken heartbroken"]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["I hold it tightly, this moment."]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["Even the day I leave on a trip, I practice."]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["Surely, of course, the common things"]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content
+      ["are the ones with no substitute. Today things will change."]}
+     {:tag :p, :attrs {:class "Standard"}, :content ["My memories"]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["are sparkling, and the days of happiness"]}
+     {:tag :p, :attrs {:class "Standard"}, :content ["are radiant."]}
+     {:tag :p, :attrs {:class "Standard"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["In the transparent future, dreams are piling up."]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["No one notices the sign that's still small."]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["Because I've said \"I'll be back\" so many times,"]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["this is the place that I'll always come back to."]}
+     {:tag :p, :attrs {:class "Standard"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["I'm always looking for it, wherever it is,"]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["this moment that I want to communicate."]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content
+      ["If I want to see you, even though I see you right away,"]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["I remember and feel relieved."]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["I am considerately with people."]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["As for my every day"]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["I am not alone, and for being there,"]}
+     {:tag :p, :attrs {:class "Standard"}, :content ["thank you."]}
+     {:tag :p, :attrs {:class "Standard"}, :content [" "]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["Inside my always half-spoken heartbroken"]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["I hold it tightly, this moment."]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["Even the day I leave on a trip, I practice."]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["Surely, of course, the common things"]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content
+      ["are the ones with no substitute. Today things will change."]}
+     {:tag :p, :attrs {:class "Standard"}, :content ["My memories"]}
+     {:tag :p,
+      :attrs {:class "Standard"},
+      :content ["are sparkling, and the days of happiness"]}
+     {:tag :p, :attrs {:class "Standard"}, :content ["are radiant."]})}
+   "\n"]}]

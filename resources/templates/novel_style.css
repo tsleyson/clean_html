@@ -1,0 +1,5 @@
+div.chapter { page-break-before: always; }
+
+span.chapheading { position: center; font-size: 14pt; font-weight: bold;}
+
+p.standard { font-size: 12pt; }

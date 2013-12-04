@@ -4,9 +4,9 @@
             [clojure.data.json :as json]
             [libretokindlehtml.merge-files :refer :all]
             [libretokindlehtml.config-reader :refer :all]
-            [libretokindlehtml.ofnight :refer :all]
+            [libretokindlehtml.libreoffice :refer :all]
             [clojure.pprint :refer [pprint]]
-            [clojure.java.io :refer [file]]))
+            [clojure.java.io :refer [file reader writer]]))
 
 (defn usage
   []

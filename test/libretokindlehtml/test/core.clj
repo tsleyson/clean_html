@@ -2,7 +2,7 @@
   (:require [libretokindlehtml.core :refer :all]
             [libretokindlehtml.merge-files :refer :all]
             [libretokindlehtml.config-reader :refer :all]
-            [libretokindlehtml.ofnight :refer :all]
+            [libretokindlehtml.libreoffice :refer :all]
             [clojure.test :refer :all]
             [clojure.pprint :refer [pprint]]
             [clojure.java.io :refer :all]
@@ -10,6 +10,10 @@
 ; It's probably fine now, but in future you might want to make separate testing
 ; files and namespaces for each file. Then you can use fixtures. With this I can't
 ; use them because the data for each test is completely different.
+
+; You also might want to consider writing a macro for this common pattern
+; of setting up stuff in a let and then using a do form with a bunch of
+; ises in it (yay, finally a use for macros!!)
 
 ; Helper functions for the tests.
 (defn config-map
@@ -58,11 +62,11 @@
 
 (deftest test-mine-content
   (let [correct (slurp "test-resources/test-mine-content.txt")
-        result  (-> "test-resources/testhtml/Coolish Walk.html"
-                    (file)
-                    (net.cgrand.enlive-html/html-resource)
-                    (mine-content))]    
-    (is (= (with-out-str (pprint result)) correct))))
+        output  "test-resources/testhtml/Coolish Walk.html"]    
+    (do 
+      (is (= (with-out-str (pprint (mine-content output))) correct))
+      (is (= (-> output (file) (mine-content) (pprint) (with-out-str)) correct))
+      (is (= (-> output (file) (enlive/html-resource) (mine-content) (pprint) (with-out-str)))))))
 
 (deftest test-merge-resources
   (let [correct (slurp "test-resources/test-merge-resources.txt")
@@ -73,10 +77,13 @@
        (comment "Should only have one of each of those tags"))))
 
 (deftest test-chapter
-  (let [correct (slurp "test-resources/test-chapter.txt")
-        result (->> "resources/ofnight/Chapter 3.html"
-                    (file)
-                    (enlive/html-resource)
-                    (mine-content)
-                    (chapter))]
-    (is (= (with-out-str (pprint result)) correct))))
+  (let [dirty-correct (slurp "test-resources/test-chapter.txt")
+        clean-correct (slurp "test-resources/test-chapter-2.txt")
+        page1 (mine-content "resources/ofnight/Chapter 3.html")
+        mebae-correct (slurp "test-resources/test-chapter-3.txt")
+        mebae-page (mine-content "test-resources/testhtml/Mebae Drive.html")]
+    (do
+      ; test without giving a cleaner function to the snippet.
+      (is (= (with-out-str (pprint (chapter page1))) dirty-correct))
+      (is (= (with-out-str (pprint (chapter page1 (libre-maid)))) clean-correct))
+      (is (= (with-out-str (pprint (chapter mebae-page (libre-maid)))) mebae-correct)))))

@@ -25,14 +25,16 @@
 
 ; snippets here.
 
-(defsnippet chapter (file "resources/ofnight/chaptersnip.html") [:div.chapter]
+(defsnippet chapter (file "resources/templates/chaptersnip.html") [:div.chapter]
   [[header & body] & cleanup]
   [:span.chapheading] (let [cname (first (select header [[:h3 first-of-type] :> text-node]))]
                              ; I've no idea what :> does but altogether we cut out
                              ; all the crap and get just the text node.
                         (html-content (str "<a id='" cname "'>" cname "</a>")))
   [:div#chaptertext :p.standard]  (clone-for [para body]
-                                             [:p] (content (cleanup (para :content)))))
+                                             [:p] (content (if (nil? cleanup) 
+                                                             (para :content)
+                                                             ((first cleanup) (para :content))))))
 
 ; cleanup is a function to clean up the paragraph text. In this case
 ; we'll probably want to unnest from those pointless spans and get rid of all the

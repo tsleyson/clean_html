@@ -1,0 +1,55 @@
+({:tag :div,
+  :attrs {:class "chapter"},
+  :content
+  ["\n      "
+   {:tag :span,
+    :attrs {:class "chapheading"},
+    :content [{:tag :a, :attrs {:id ""}, :content []}]}
+   "\n      "
+   {:tag :div,
+    :attrs {:id "chaptertext"},
+    :content
+    ["\n        "
+     {:tag :p, :attrs {:class "standard"}, :content (" ")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("The voices that will disappear someday above the fleeting sky")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("will become faint as they vanish, going off to many places,")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content ("melding together into a flashing cacophony.")}
+     {:tag :p, :attrs {:class "standard"}, :content (" ")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("There is only one body, and like one body, at infinity,")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("the drops that have overflowed are now out there for everyone to see")}
+     {:tag :p, :attrs {:class "standard"}, :content (" ")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content ("Budding Drive, run, sky, still barefoot ")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("Now, close your eyes, and head towards the bridge made by the reflected rainbow")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("Budding Drive, shining spark, the familiar, friendly star")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("embedded in the sky, falls towards the fragmented dreams")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content ("and the light held in my hand")}
+     {:tag :p, :attrs {:class "standard"}, :content (" ")}
+     "\n      "]}
+   "\n    "]})

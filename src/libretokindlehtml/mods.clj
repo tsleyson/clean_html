@@ -32,6 +32,3 @@
   (cons {:tag :mp:pagebreak, :content nil} page-content))
 
 ; stuff for the new template-based approach.
-
-(defsnippet ofnightchapter (file "resources/ofnight/chaptersnip.html") [:div]
-  [])
