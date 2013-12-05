@@ -12,24 +12,29 @@
 ; contents, etc.
 ; Template: The final template.
 
+; selector definitions
+
+(def select-chapter-head  [[:h3 first-of-type] :> text-node])
+ ; Selects the text under the first h3 node.
+
 ; cleanup functions.
 
 (defn libre-maid
   "Runs a suite of cleanup functions on the given paragraph."
   []
   (transformation 
-   [:p :br] nil ; get rid of all br inside p tags.
-   [[:span (but (or (attr? :class) (attr? :id)))]] 
+   [:br] nil ; get rid of all br inside p tags.
+   [:> [:span first-child (but (or (attr? :class) (attr? :id)))]] 
     unwrap ; unwrap pointless spans at top of paragraph.
+   [:> text-node]
+    #(clojure.string/replace % #"^\S+?" "")
    ))
 
 ; snippets here.
 
 (defsnippet chapter (file "resources/templates/chaptersnip.html") [:div.chapter]
   [[header & body] & cleanup]
-  [:span.chapheading] (let [cname (first (select header [[:h3 first-of-type] :> text-node]))]
-                             ; I've no idea what :> does but altogether we cut out
-                             ; all the crap and get just the text node.
+  [:h2.chapheading] (let [cname (first (select header select-chapter-head))]
                         (html-content (str "<a id='" cname "'>" cname "</a>")))
   [:div#chaptertext :p.standard]  (clone-for [para body]
                                              [:p] (content (if (nil? cleanup) 

@@ -76,14 +76,20 @@
       (is (= 3 (count (enlive/select result [#{:html :head :body}]))))
        (comment "Should only have one of each of those tags"))))
 
-(deftest test-chapter
-  (let [dirty-correct (slurp "test-resources/test-chapter.txt")
-        clean-correct (slurp "test-resources/test-chapter-2.txt")
-        page1 (mine-content "resources/ofnight/Chapter 3.html")
-        mebae-correct (slurp "test-resources/test-chapter-3.txt")
-        mebae-page (mine-content "test-resources/testhtml/Mebae Drive.html")]
-    (do
-      ; test without giving a cleaner function to the snippet.
-      (is (= (with-out-str (pprint (chapter page1))) dirty-correct))
-      (is (= (with-out-str (pprint (chapter page1 (libre-maid)))) clean-correct))
-      (is (= (with-out-str (pprint (chapter mebae-page (libre-maid)))) mebae-correct)))))
+; It was too soon to write a test for this, especially for the cleaning
+; version. It might never be the right time to unit test this since
+; the output is so complex and subjective.
+
+;; (deftest test-chapter
+;;   (let [dirty-correct (slurp "test-resources/test-chapter.txt")
+;;         ;clean-correct (slurp "test-resources/test-chapter-2.txt")
+;;         page1 (mine-content "resources/ofnight/Chapter 3.html")
+;;         ;mebae-correct (slurp "test-resources/test-chapter-3.txt")
+;;         ;mebae-page (mine-content "test-resources/testhtml/Mebae Drive.html")
+;;         ]
+;;     (do
+;;       ; test without giving a cleaner function to the snippet.
+;;       (is (= (with-out-str (pprint (chapter page1))) dirty-correct))
+;;       ;(is (= (with-out-str (pprint (chapter page1 (libre-maid)))) clean-correct))
+;;       ;(is (= (with-out-str (pprint (chapter mebae-page (libre-maid)))) mebae-correct))
+;;       )))

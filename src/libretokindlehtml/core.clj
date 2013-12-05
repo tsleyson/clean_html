@@ -1,6 +1,7 @@
 (ns libretokindlehtml.core
+  {:all [usage -main]}
   (:refer-clojure)
-  (:require [net.cgrand.enlive-html :as enlive]
+  (:require [net.cgrand.enlive-html :refer :all]
             [clojure.data.json :as json]
             [libretokindlehtml.merge-files :refer :all]
             [libretokindlehtml.config-reader :refer :all]

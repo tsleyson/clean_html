@@ -5,6 +5,8 @@
 ; into one html resource which can be written back to a file
 ; by write-resource.
 (ns libretokindlehtml.merge-files
+  "Merge multiple html files into one file, get the content of the body
+   tag, or get a list of files as Enlive resources."
     (:require [libretokindlehtml.config-reader :refer [read-config]]
               [net.cgrand.enlive-html :as enlive]))
 
