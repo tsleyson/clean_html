@@ -10,7 +10,8 @@
 
 ; selector definitions
 
- ; Selects the text under the first h3 node.
+ ; Selects the text under the first h3 node. Made this a var
+ ; so it can be redefined for other types of heading.
 (def select-chapter-head  [[:h3 first-of-type] :> text-node])
 ; Be aware that using :> might cause some trouble since it only
 ; matches direct children of the h3 and not any deeper descendants.
@@ -31,6 +32,9 @@
 ; it too will have the metadata, and it can fill in its hrefs
 ; correctly.
 
+; Expects the output of mine-content, but with metadata, as its input.
+; You can also map it over the output of list-of-resources to get a bunch
+; of resources.
 (defsnippet chapter (file "resources/templates/chaptersnip.html") [:div.chapter]
   [paragraphs & cleanup]
   [:#heading] (insert-heading paragraphs)
@@ -49,3 +53,15 @@
 ; Also note that it might be wasteful to do the whole (if (nil? thing every time we do
 ; the loop, and you might look into using an outer let with identity to just bind the
 ; function once. But not now.
+
+; Expects the ordered list of chapters, with metadata, provided by list-of-resources.
+(defsnippet toc (file "resources/templates/toc.html") [:#toc]
+  [order-list]
+  [:li] (clone-for [i (range (count order-list))]
+                   [] (set-attr :id (str "chapter_" (order-list i)))
+                   [:a] (let [chapter (-> i
+                                              (order-list)
+                                              (meta)
+                                              (:name))]
+                              (comp (content chapter) 
+                                    (set-attr :href (s/replace chapter #"[\s:.,;\"']" ""))))))
