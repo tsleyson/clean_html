@@ -36,10 +36,10 @@
   [config]
   (let [{order :order, direc :directory} config
         files (keys order)]
-    (sort-by #((meta %) :position) 
-             (map #(with-meta (enlive/html-resource (clojure.java.io/file (str direc %)))
+    (->> (map #(with-meta (enlive/html-resource (clojure.java.io/file (str direc %)))
                      {:position (get order %), :name %})
-                  files))))
+              files) 
+         (sort-by #((meta %) :position)))))
     ; opens the files, using the full path, but uses just the file name
     ; as the name metadatum and to get the position. Then sorts the
     ; resulting list by metadata position.
@@ -77,6 +77,7 @@
   [page]
   (mine-content (-> page (clojure.java.io/file) (enlive/html-resource))))
 
+; Marked for deletion.
 ; Will mine all content and append to content of first given page.
 (defn merge-resources
   "Merges all resources in a given list into the first resource."
@@ -84,6 +85,7 @@
   (let [[head & subords] resource-list]
     (enlive/transform head [:body] (apply enlive/append (map mine-content subords)))))
 
+; Marked for deletion.
 (defn merge-resources-with
   "Like merge-resources, but takes a function to apply to each element 
    before folding it into the head."

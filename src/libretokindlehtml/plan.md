@@ -11,7 +11,7 @@ A file containing a single JSON object with the following fields:
   directory.
 
 - __order__: A list of all your files, in the order you want them to be when merged.
-  If you're not merging, it doesn't matter what order they're in.
+  If you're not merging, it doesn't matter what order they're in. I thought about various ways to make this automatic, but they all seem pretty creaky (regular expressions are a minefield, and I want it to be possible for authors who can't program to use this, and I don't want to have to debug regexes when I just want to compile my book into an HTML file). Even using Makefile-style aliases doesn't seem worth it because you only have to list the files in this one place, and the program does the rest. Besides, unless you have like a zillion chapters, it's not that hard to type them in, and if you do have like a zillion chapters, you can basically just go to your directory and do python -c "import os; os.listdir(os.get_cwd())" and there you have it, since JSON uses the same syntax as Python for lists. In fact, I might include a Python script that does that with the distribution. (Or a bash script, batch file, blah. In fact I bet it's easy to do that straight from bash, and at least possible from Windows cmd.)
 
 - __merge__: Optional. If true, all the files in "order" will be merged into one file.
   If false or absent, they won't be. [I think scratch merge, because we're using templates now. Plus, to be a real Kindle file it has to be a single file, so just merge by default.]
@@ -95,4 +95,6 @@ To-do items (roughly in order of priority, from high to low, and also in order o
 
 * Startup script. I want to package it as a JAR when it's done and write both a Linux bash script and a Windows Powershell or batch script to run it. (Macs, I think, can also run bash.)
 
-* [low priority] Define a snippet for the chapter headings. Then you can redefine the chapter heading snippet. So we'll have two user-configurable files: 
+* [low priority] Define a snippet for the chapter headings. Then you can redefine the chapter heading snippet. 
+
+* [lowest priority] Change the name. It's not restricted to Libre Office. This will be rather tedious because I have to change all the namespace declarations; I might look into learning some Awk, or just write a Python script (Clojure is a very parseable programming language, so it actually ought not to be that hard to write a Python script that matches (ns libretokindle[.].+\n, rips off the libretokindle part, and sticks on something else.)) There might be a way to do it in Emacs, too. (But I don't want to make a big production out of this, learning Awk or Emacs, so let's go with Python.)

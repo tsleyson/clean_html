@@ -1,25 +1,25 @@
 (ns libretokindlehtml.libreoffice
-  "Defines snippets and templates specifically for the conversion
-   from Libre Office html to nice html."
+  "Defines cleaning functions specifically for the conversion
+   from Libre Office html to nice html. (Libre Office generates
+   different HTML if you choose Save as HTML from the menu;
+   this is for HTML generated using libreoffice --headless
+   --convert-to html on the command line.)"
   (require [net.cgrand.enlive-html :refer :all]
            [clojure.java.io :refer [file]]
            [clojure.pprint :refer [pprint]]))
 
-; Three things we'll need in here:
-; Cleanup functions: transformations on the original html that clear out things like
-; pointless spans and extra line breaks.
-; Snippets: definitions for semantic elements of the text, like chapter, table of
-; contents, etc.
-; Template: The final template.
+; cleanup functions. The convention that I'm establishing is that
+; cleanup functions should be named <thing they clean up>-maid, because
+; I like maids. I bet Mahoro-san was programmed in Clojure. Rich Hickey
+; probably worked for Vesper and used an early version of Clojure to
+; program her.
+; By the way, <thing they clean up> is whatever kind of thing you're
+; passing to the snippet or template that uses the maid function.
+; Here I called it paragraph-maid because it goes to the chapter
+; snippet, and chapter receives paragraphs and uses this to clean
+; them up.
 
-; selector definitions
-
-(def select-chapter-head  [[:h3 first-of-type] :> text-node])
- ; Selects the text under the first h3 node.
-
-; cleanup functions.
-
-(defn libre-maid
+(defn paragraph-maid
   "Runs a suite of cleanup functions on the given paragraph."
   []
   (transformation 
@@ -27,22 +27,10 @@
    [:> [:span first-child (but (or (attr? :class) (attr? :id)))]] 
     unwrap ; unwrap pointless spans at top of paragraph.
    [:> text-node]
-    #(clojure.string/replace % #"^\S+?" "")
+    #(clojure.string/replace % #"^\S+?" "") 
+      ; remove extra whitespace at the start of a paragraph.
+      ; Libre Office stupidly puts this in sometimes.
+      ; For some unfathomable reason, doesn't work if you 
+      ; just give it (clojure.string/trim).
    ))
 
-; snippets here.
-
-(defsnippet chapter (file "resources/templates/chaptersnip.html") [:div.chapter]
-  [[header & body] & cleanup]
-  [:h2.chapheading] (let [cname (first (select header select-chapter-head))]
-                        (html-content (str "<a id='" cname "'>" cname "</a>")))
-  [:div#chaptertext :p.standard]  (clone-for [para body]
-                                             [:p] (content (if (nil? cleanup) 
-                                                             (para :content)
-                                                             ((first cleanup) (para :content))))))
-
-; cleanup is a function to clean up the paragraph text. In this case
-; we'll probably want to unnest from those pointless spans and get rid of all the
-; pointless brs inside the paragraphs.
-; Also note that I had to select :p under the clone-for because I used to have :p.standard
-; but you're actually selecting from the resource, not the template.

@@ -1,11 +1,11 @@
 (ns libretokindlehtml.core
-  {:all [usage -main]}
   (:refer-clojure)
   (:require [net.cgrand.enlive-html :refer :all]
             [clojure.data.json :as json]
             [libretokindlehtml.merge-files :refer :all]
             [libretokindlehtml.config-reader :refer :all]
             [libretokindlehtml.libreoffice :refer :all]
+            [libretokindlehtml.novel :refer :all]
             [clojure.pprint :refer [pprint]]
             [clojure.java.io :refer [file reader writer]]))
 
