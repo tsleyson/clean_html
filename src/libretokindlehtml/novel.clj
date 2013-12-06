@@ -7,16 +7,30 @@
   (:require [net.cgrand.enlive-html :refer :all]
             [clojure.java.io :refer [file]]
             [clojure.string :as s]))
+; Note to future self: I think the snippets you're defining are
+; too complicated because they're doing too much at once. It would
+; be simpler to make more of them and have several simple snippets
+; punched together into more complicated ones. E.g. you could have
+; had another snippet that defines the chapter heading, and just
+; used it inside the chapter snippet. Something to think about.
 
 ; selector definitions
 
  ; Selects the text under the first h3 node. Made this a var
  ; so it can be redefined for other types of heading.
 (def select-chapter-head  [[:h3 first-of-type] :> text-node])
-; Be aware that using :> might cause some trouble since it only
-; matches direct children of the h3 and not any deeper descendants.
 
-; snippets here.
+; utilities
+
+(defn to-id
+  "Replaces characters not allowed in HTML id attribute"
+  [string]
+  (s/replace string #"[\s:.,;\"']" "_"))
+
+(defn remove-extension
+  "Removes the file extension."
+  [filename]
+  (s/replace filename #"\.[^.]+$" ""))
 
 (defn insert-heading
   "Extracts heading text and inserts into tag."
@@ -24,17 +38,13 @@
   (let [[header & _] paragraphs,
         headtext (first (select header select-chapter-head))
         {name :name} (meta paragraphs)]
-    (html-content (str "<a id=\"" (s/replace name #"[\s:.,;\"']" "") "\">" headtext "</a>"))))
-; Since HTML ids can't have spaces, we're removing them all, along with all
-; the other punctuation.
-; This makes the heading's anchor name be the name given in the
-; metadata file. Then the toc snippet can use the same name, since
-; it too will have the metadata, and it can fill in its hrefs
-; correctly.
+    (html-content (str "<a id=\"" (to-id name) "\">" headtext "</a>"))))
+    ; Sets anchor whose id is the chapter's name, read from the
+    ; metadata. Used as target by table of contents.
+
+; snippets
 
 ; Expects the output of mine-content, but with metadata, as its input.
-; You can also map it over the output of list-of-resources to get a bunch
-; of resources.
 (defsnippet chapter (file "resources/templates/chaptersnip.html") [:div.chapter]
   [paragraphs & cleanup]
   [:#heading] (insert-heading paragraphs)
@@ -45,23 +55,26 @@
                                     (clone-for [para body]
                                                [:p] (content (maid (para :content))))))
 
-; cleanup is a function to clean up the paragraph text. In this case
-; we'll probably want to unnest from those pointless spans and get rid of all the
-; pointless brs inside the paragraphs.
-; Also note that I had to select :p under the clone-for because I used to have :p.standard
+; Note that I had to select :p under the clone-for because I used to have :p.standard
 ; but you're actually selecting from the resource, not the template.
-; Also note that it might be wasteful to do the whole (if (nil? thing every time we do
-; the loop, and you might look into using an outer let with identity to just bind the
-; function once. But not now.
 
 ; Expects the ordered list of chapters, with metadata, provided by list-of-resources.
 (defsnippet toc (file "resources/templates/toc.html") [:#toc]
   [order-list]
-  [:li] (clone-for [i (range (count order-list))]
-                   [] (set-attr :id (str "chapter_" (order-list i)))
-                   [:a] (let [chapter (-> i
-                                              (order-list)
-                                              (meta)
-                                              (:name))]
-                              (comp (content chapter) 
-                                    (set-attr :href (s/replace chapter #"[\s:.,;\"']" ""))))))
+  [:li] (let [cname-to-id (comp to-id :name meta)] 
+                (clone-for [chapter order-list]
+                           [:li] (set-attr :id (str "toc_entry_" (cname-to-id chapter)))
+                           [:li :a] (comp (content (remove-extension (:name (meta chapter))))
+                                          (set-attr :href (cname-to-id chapter))))))
+
+; This works, at least in the repl.
+;; (pprint (transform tocsnip [:#toc :li] 
+;;                    (clone-for [elem trans] 
+;;                               [:li] (set-attr :id (str "toc_entry_" 
+;;                                                        (clojure.string/replace 
+;;                                                         (:name (meta elem)) #"\s" "_"))) 
+;;                               [:li :a] (comp (set-attr :href 
+;;                                                        (clojure.string/replace 
+;;                                                         (:name (meta elem)) #"\s" "_")) 
+;;                                              (content (:name (meta elem)))))))
+
