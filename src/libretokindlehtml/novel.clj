@@ -45,10 +45,11 @@
 ; snippets
 
 ; Expects the output of mine-content, but with metadata, as its input.
-(defsnippet chapter (file "resources/templates/chaptersnip.html") [:div.chapter]
+; (I.e. the output of list-of-resources.)
+(defsnippet chapter (file "resources/templates/chaptersnip.html") [:.chapter]
   [paragraphs & cleanup]
   [:#heading] (insert-heading paragraphs)
-  [:div#chaptertext :p.standard]  (let [[_ & body] paragraphs
+  [:#chaptertext :p.standard]  (let [[_ & body] paragraphs
                                         maid (if (nil? cleanup)
                                                identity
                                                (first cleanup))]
@@ -59,12 +60,12 @@
 ; but you're actually selecting from the resource, not the template.
 
 ; Expects the ordered list of chapters, with metadata, provided by list-of-resources.
-(defsnippet toc (file "resources/templates/toc.html") [:#toc]
+(defsnippet toc (file "resources/templates/toc.html") [:#table_of_contents]
   [order-list]
   [:li] (let [cname-to-id (comp to-id :name meta)] 
                 (clone-for [chapter order-list]
                            [:li] (set-attr :id (str "toc_entry_" (cname-to-id chapter)))
-                           [:li :a] (comp (content (remove-extension (:name (meta chapter))))
+                           [:li :a] (do-> (content (remove-extension (:name (meta chapter))))
                                           (set-attr :href (cname-to-id chapter))))))
 
 ; This works, at least in the repl.
@@ -78,3 +79,18 @@
 ;;                                                         (:name (meta elem)) #"\s" "_")) 
 ;;                                              (content (:name (meta elem)))))))
 
+; expects a metadata map with title, subtitle (i.e. series title or
+; numbering) and authors (a list).
+(defsnippet title (file "resources/templates/title.html") [:body :#title_page]
+  [{title :title, subtitle :subtitle, authors :authors}]
+  [:#main_title] (content title)
+  [:#subtitle] (content subtitle)
+  [:.author] (clone-for [author authors]
+                        [:.author] (content author)))
+
+(deftemplate novel (file "resources/templates/novel.html")
+  [title toc chapters]
+  [:#main_text] (do-> 
+                 (before toc)
+                 (before title)
+                 (content chapters)))

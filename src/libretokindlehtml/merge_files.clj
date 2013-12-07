@@ -77,6 +77,13 @@
   [page]
   (mine-content (-> page (clojure.java.io/file) (enlive/html-resource))))
 
+(defn mine-all 
+  "Obtains a list of resources using list-of-resources and
+   returns the mined content of all resources in that list.
+   Preserves metadata. Takes same argument types as list-of-resources."
+  [config]
+  (map #(with-meta (mine-content %) (meta %)) (list-of-resources config)))
+
 ; Marked for deletion.
 ; Will mine all content and append to content of first given page.
 (defn merge-resources

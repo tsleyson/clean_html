@@ -27,10 +27,14 @@
    [:> [:span first-child (but (or (attr? :class) (attr? :id)))]] 
     unwrap ; unwrap pointless spans at top of paragraph.
    [:> text-node]
-    #(clojure.string/replace % #"^\S+?" "") 
+    #(clojure.string/replace % #"^[\p{Z}\s]+?" "") 
       ; remove extra whitespace at the start of a paragraph.
       ; Libre Office stupidly puts this in sometimes.
       ; For some unfathomable reason, doesn't work if you 
       ; just give it (clojure.string/trim).
    ))
 
+; I have fathomed the reason.
+; Libre Office puts in ascii character 160, the non-breaking space.
+; In Java, \s doesn't match this (although it does in some other
+; languages, e.g. Javascript). So we need the \p{Z}.
