@@ -33,7 +33,7 @@
 ; the right format the first time rather than do a second pass to clean
 ; up its mess, so here's a win for loop and recur.
 
-(defn read-config
+(defn read-config-file
   "Reads json from config file to Clojure map."
   [config-file]
   (try (with-open [r (reader config-file)]
@@ -48,3 +48,29 @@
 ; the directory name will be appended to the front of the file.
 ; Fortunately we have the directory as part of the config JSON so just
 ; slap it on the front when we build the order map.
+
+(defn validate-config
+  "Returns config-map if a valid configuration map; 
+   otherwise returns nil."
+  [config-map]
+  (if (every? identity
+              (vector
+               ; no invalid keys
+               (every? #{:directory, :order, :title, :subtitle, :authors,
+                         :template, :stylesheet, :mode}
+                       (keys config-map))
+               ; Every key is in it. Optional keys not in here.
+               (every? identity
+                       (map (partial contains? config-map) #{:directory, :order, 
+                                                             :title, :subtitle, :authors,
+                                                             :template, :stylesheet}))))
+    config-map
+    nil))
+
+(defn read-config
+  "Reads a json object using read-config-file and ensures
+   the object is a valid config map."
+  [config-path]
+  (if-let [cf (validate-config (read-config-file config-path))]
+    cf
+    (throw (ex-info "Invalid config", {:type :config-bad, :cause "Unknown"}))))

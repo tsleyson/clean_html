@@ -100,10 +100,8 @@
 (deftemplate novel (file "resources/templates/novel.html")
   [config chapters]
   [:head :title] (content (str (:title config) " " (:subtitle config)))
-  [:#main_text] (do-> 
-                 (before (toc chapters))
-                 (before (title config))
-                 (content (map #(chapter % (libretokindlehtml.libreoffice/paragraph-maid)) chapters))))
+  [:#front_matter] (content (title config) (toc chapters))
+  [:#main_text] (content (map #(chapter % (libretokindlehtml.libreoffice/paragraph-maid)) chapters)))
 
 (defn template-main
   "Assembles the text into its final form."
