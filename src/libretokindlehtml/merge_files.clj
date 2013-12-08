@@ -55,6 +55,12 @@
   ([resource f]
   (spit f (apply str (enlive/emit* resource)))))
 
+(defn write-template
+  "Writes the return value of an Enlive template to a file,
+   with decent formatting."
+  [template-out]
+  )
+
 ; In the merge code, the head file is the first file in the
 ; list of resources. It's called that because it's the only
 ; one that keeps its head tag.

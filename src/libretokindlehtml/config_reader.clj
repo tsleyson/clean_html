@@ -36,8 +36,13 @@
 (defn read-config
   "Reads json from config file to Clojure map."
   [config-file]
-  (with-open [r (reader config-file)]
-    (json/read r :key-fn keyword :value-fn order-map)))
+  (try (with-open [r (reader config-file)]
+         (json/read r :key-fn keyword :value-fn order-map))
+       (catch java.io.FileNotFoundException fnfe
+         (do
+           (.printStackTrace fnfe)
+           (println)
+           (throw fnfe)))))
 
 ; The tests brought up something--if we read the files in from a directory,
 ; the directory name will be appended to the front of the file.

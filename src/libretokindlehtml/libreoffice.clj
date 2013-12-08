@@ -17,7 +17,8 @@
 ; passing to the snippet or template that uses the maid function.
 ; Here I called it paragraph-maid because it goes to the chapter
 ; snippet, and chapter receives paragraphs and uses this to clean
-; them up.
+; them up. It doesn't have to be something you actually have a
+; snippet for, just any logical division of the text.
 
 (defn paragraph-maid
   "Runs a suite of cleanup functions on the given paragraph."
@@ -29,12 +30,14 @@
    [:> text-node]
     #(clojure.string/replace % #"^[\p{Z}\s]+?" "") 
       ; remove extra whitespace at the start of a paragraph.
+   ))
+
       ; Libre Office stupidly puts this in sometimes.
       ; For some unfathomable reason, doesn't work if you 
       ; just give it (clojure.string/trim).
-   ))
-
 ; I have fathomed the reason.
 ; Libre Office puts in ascii character 160, the non-breaking space.
+; clojure.string/trim doesn't count this as a space; it only recognizes
+; actual spaces as spaces.
 ; In Java, \s doesn't match this (although it does in some other
 ; languages, e.g. Javascript). So we need the \p{Z}.

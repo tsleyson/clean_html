@@ -19,9 +19,9 @@
   [& args]
   (if (not= 1 (count args))
     (usage)
-    (do
-      (let [res (list-of-resources (first args))]
-        (pprint res)))))
-
-; for test usage: lein run resources
-
+    (try (let [config (read-config (first args))]
+           (do
+             (template-main config)
+             (println "Successfully wrote " (:title config) ".html.")))
+         (catch java.io.FileNotFoundException fnfe
+           (.printStackTrace fnfe)))))

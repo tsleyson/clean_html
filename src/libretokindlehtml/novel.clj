@@ -5,8 +5,9 @@
    - title (title page)
    - novel (merges all of the above)"
   (:require [net.cgrand.enlive-html :refer :all]
-            [clojure.java.io :refer [file]]
-            [clojure.string :as s]))
+            [clojure.java.io :refer [file reader writer]]
+            [clojure.string :as s]
+            [libretokindlehtml.merge-files :refer [mine-all]]))
 ; Note to future self: I think the snippets you're defining are
 ; too complicated because they're doing too much at once. It would
 ; be simpler to make more of them and have several simple snippets
@@ -22,17 +23,22 @@
 
 ; utilities
 
-(defn to-id
+(defn- to-id
   "Replaces characters not allowed in HTML id attribute"
   [string]
-  (s/replace string #"[\s:.,;\"']" "_"))
+  (try (s/replace string #"[\s:.,;\"']" "_")
+       (catch java.lang.NullPointerException npe 
+         (do
+           (println (str "Arg is nil? " (if (nil? string) "yes" "no")))
+           (.printStackTrace npe)
+           (throw npe)))))
 
-(defn remove-extension
+(defn- remove-extension
   "Removes the file extension."
   [filename]
   (s/replace filename #"\.[^.]+$" ""))
 
-(defn insert-heading
+(defn- insert-heading
   "Extracts heading text and inserts into tag."
   [paragraphs]
   (let [[header & _] paragraphs,
@@ -45,7 +51,10 @@
 ; snippets
 
 ; Expects the output of mine-content, but with metadata, as its input.
-; (I.e. the output of list-of-resources.)
+; So right now the most natural way to call it is (map chapter (list-of-resources config)).
+; But I don't like that.
+; You still have to call it like that, but novel takes care of that now
+; so you can just call (novel config material).
 (defsnippet chapter (file "resources/templates/chaptersnip.html") [:.chapter]
   [paragraphs & cleanup]
   [:#heading] (insert-heading paragraphs)
@@ -89,8 +98,17 @@
                         [:.author] (content author)))
 
 (deftemplate novel (file "resources/templates/novel.html")
-  [title toc chapters]
+  [config chapters]
+  [:head :title] (content (str (:title config) " " (:subtitle config)))
   [:#main_text] (do-> 
-                 (before toc)
-                 (before title)
-                 (content chapters)))
+                 (before (toc chapters))
+                 (before (title config))
+                 (content (map #(chapter % (libretokindlehtml.libreoffice/paragraph-maid)) chapters))))
+
+(defn template-main
+  "Assembles the text into its final form."
+  [config]
+  (let [text (mine-all config)
+        html (apply str (novel config text))]
+    (with-open [w (writer (str (:directory config) (:title config) ".html"))]
+      (.write w html))))
