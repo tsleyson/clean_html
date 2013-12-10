@@ -7,6 +7,10 @@ Also have to merge the files. Have to get rid of extra html, head, body etc. tag
 # The configuration file
 A file containing a single JSON object with the following fields:
 
+- __title__: The title of your book. Optional; if set, used by template main.
+
+- __authors__: The authors of the book. A list. Also optional.
+
 - __directory__: Where your files are stored. Currently they all have to be under the same
   directory.
 
@@ -16,7 +20,7 @@ A file containing a single JSON object with the following fields:
 - __merge__: Optional. If true, all the files in "order" will be merged into one file.
   If false or absent, they won't be. [I think scratch merge, because we're using templates now. Plus, to be a real Kindle file it has to be a single file, so just merge by default.]
 
-- __template__: The path to a file of template and snippet definitions to use on your files. I don't intend this to really be user-configurable; it's more like I'll provide one, and if you really want another one you can figure out how to write Clojure or bitch until I make it for you. Should contain a function called (I dunno, I'll come up with something later, but basically a single function that can be set up with the necessary information from the config file and just kick it and pull everything together into a single file. Like, for me it would be one function that generates all the chapters, the table of contents, title page, and everything, and then sticks it all in a final template. Maybe named something like template-main. It sounds similar to main in Java and C, which it is, but it also shows that we're getting a template, which we are, since the final return value of this function should be the return value of a template.)
+- __template__: (An array that contains) The path to a file of template and snippet definitions to use on your files (as its first element, and the name of your namespace as the second; using Clojure's symbol function we can dynamically load namespaces from strings, something like (require (symbol (second (:template config)))). Actually if it's on the classpath we don't even need the path. I don't intend this to really be user-configurable; it's more like I'll provide one, and if you really want another one you can figure out how to write Clojure or bitch until I make it for you. Should contain a function called (I dunno, I'll come up with something later, but basically a single function that can be set up with the necessary information from the config file and just kick it and pull everything together into a single file. Like, for me it would be one function that generates all the chapters, the table of contents, title page, and everything, and then sticks it all in a final template. Maybe named something like template-main. It sounds similar to main in Java and C, which it is, but it also shows that we're getting a template, which we are, since the final return value of this function should be the return value of a template.)
 
 - __stylesheet__: The location of a CSS file to use as a stylesheet. If merge is
   true, the stylesheet will be applied to the entire merged file. If merge is
@@ -24,7 +28,7 @@ A file containing a single JSON object with the following fields:
   is to give me room; the best solution might be to stick the stylesheet in the
   head, or it might be to link it in separately.) [I'll try two options: keeping the stylesheet separate, and sticking the whole thing in the head of the document.]
 
-- __mode__: Path to a Clojure file with cleanup functions for your generating program. I think I'll standardize on 'maid' as the name for cleanup functions. And if you have different cleanup functions for different templates or snippets they can be that template with -maid, like chapter-maid, paragraph-maid, etc. This is because I like maids. I bet Mahoro-san was programmed in Clojure. (Or Common Lisp, at least. With Vesper's technology, please don't tell me we couldn't do better than C.) The template-main function knows which ones to use with which templates and snippets. But since cleanup functions can be iffy, it's best to scrap as much of the original HTML as you can and just substitute what's necessary into templates or snippets. (I might also try using the snippet and template names as keywords in the mode namespace's metadata map, and use it as a lookup table for the correct cleanup function to use with a given snippet/template.)
+- __mode__: Optional. Path to a Clojure file with cleanup functions for your generating program. I think I'll standardize on 'maid' as the name for cleanup functions. And if you have different cleanup functions for different templates or snippets they can be that template with -maid, like chapter-maid, paragraph-maid, etc. This is because I like maids. I bet Mahoro-san was programmed in Clojure. (Or Common Lisp, at least. With Vesper's technology, please don't tell me we couldn't do better than C.) The template-main function knows which ones to use with which templates and snippets. But since cleanup functions can be iffy, it's best to scrap as much of the original HTML as you can and just substitute what's necessary into templates or snippets. (I might also try using the snippet and template names as keywords in the mode namespace's metadata map, and use it as a lookup table for the correct cleanup function to use with a given snippet/template.) 
 
 I wrote all that, but I think now it's easier to just specify some Clojure functions to
 do the transformations. It's user-extensible if you know Clojure. For now I'm the only
@@ -81,20 +85,43 @@ The template idea looks like it was a really good idea. Unnesting all that other
 
 To-do items (roughly in order of priority, from high to low, and also in order of dependency on each other):
 
-* I think it might be good to put my templates and snippets in a separate novel namespace, because they're not specifically tied to libre office. My cleaner function and selector for the chapter heading can go in the Libre Office file. (Or I might make the chapter heading selector a parameter of the chapter snippet. Then it's easy to vary it by the book. You could even vary it by the chapter if you're weird like that.) Then defining a new cleaning function for e.g. Open Office or Microsoft Word just involves writing a new cleaning function and giving it to chapter when you make a new chapter. [See the new notes on the config file above for how to structure this.]
+1. I think it might be good to put my templates and snippets in a separate novel namespace, because they're not specifically tied to libre office. My cleaner function and selector for the chapter heading can go in the Libre Office file. (Or I might make the chapter heading selector a parameter of the chapter snippet. Then it's easy to vary it by the book. You could even vary it by the chapter if you're weird like that.) Then defining a new cleaning function for e.g. Open Office or Microsoft Word just involves writing a new cleaning function and giving it to chapter when you make a new chapter. [See the new notes on the config file above for how to structure this.]
 
-* I want a table of contents snippet. Something like the one I made using Enlive to transform the one generated by the Python script. I'd like to use the CSS and move the list to the center of the page, and put "Table of Contents" (or maybe a custom message) at the top in an h2. We'll read the chapter names from the config file (so let's rewrite the snippet to use those as the anchor values. Alternately, we can just use a number, in sequence, as the anchor value, and then use the names from the config file as the names, but link to them by number.
+2. I want a table of contents snippet. Something like the one I made using Enlive to transform the one generated by the Python script. I'd like to use the CSS and move the list to the center of the page, and put "Table of Contents" (or maybe a custom message) at the top in an h2. We'll read the chapter names from the config file (so let's rewrite the snippet to use those as the anchor values. Alternately, we can just use a number, in sequence, as the anchor value, and then use the names from the config file as the names, but link to them by number.
 
-* Title page snippet. Reads title of the book and author from the config file. Maybe also a dedication page snippet and legal info snippet, with values also to be filled in from the config file.
+3. Title page snippet. Reads title of the book and author from the config file. Maybe also a dedication page snippet and legal info snippet, with values also to be filled in from the config file.
 
-* Obviously the main template that brings the whole novel together.
+4. Obviously the main template that brings the whole novel together. Need to make sure it generates correct HTML for realistic situations, so test it on Of Night (without putting that up on the web) and Strawberry Sunflower (maybe).
 
-* Update the config file according to what will (in a moment) be written above under the section on the config file.
+5. Update the config file according to what will (in a moment) be written above under the section on the config file. Take out mode; the mode is decided in the template file according to what file you include and which functions you give. (Since I went away from being user-configurable and went over to being configurable if you know Clojure and can rewrite that whole part of the program.)
 
-* Graphical user interface front-end. Read in the directory, list of files, and other things from the config file from a Swing GUI. Swing isn't so bad, so it shouldn't be hard to make. The command line interface will accept the path to a config file.
+6. Graphical user interface front-end. Read in the directory, list of files, and other things from the config file from a Swing GUI. Swing isn't so bad, so it shouldn't be hard to make. The command line interface will accept the path to a config file.
 
-* Startup script. I want to package it as a JAR when it's done and write both a Linux bash script and a Windows Powershell or batch script to run it. (Macs, I think, can also run bash.)
+7. Startup script. I want to package it as a JAR when it's done and write both a Linux bash script and a Windows Powershell or batch script to run it. (Macs, I think, can also run bash.)
 
-* [low priority] Define a snippet for the chapter headings. Then you can redefine the chapter heading snippet. 
+8. [low priority] Define a snippet for the chapter headings. Then you can redefine the chapter heading snippet. 
 
-* [lowest priority] Change the name. It's not restricted to Libre Office. This will be rather tedious because I have to change all the namespace declarations; I might look into learning some Awk, or just write a Python script (Clojure is a very parseable programming language, so it actually ought not to be that hard to write a Python script that matches (ns libretokindle[.].+\n, rips off the libretokindle part, and sticks on something else.)) There might be a way to do it in Emacs, too. (But I don't want to make a big production out of this, learning Awk or Emacs, so let's go with Python.)
+9. [lowest priority] Change the name. It's not restricted to Libre Office. This will be rather tedious because I have to change all the namespace declarations; I might look into learning some Awk, or just write a Python script (Clojure is a very parseable programming language, so it actually ought not to be that hard to write a Python script that matches (ns libretokindle[.].+\n, rips off the libretokindle part, and sticks on something else.)) There might be a way to do it in Emacs, too. (But I don't want to make a big production out of this, learning Awk or Emacs, so let's go with Python.)
+
+###Issues
+
+####Dec. 9th 2013:
+
+* Novel template: tested on Of Night under resources folder. Has the following issues:
+  * Still weird whitespace from LibreOffice's stupidity. If it's just one nonbreaking space, it goes away, but if you have more than one it doesn't.
+  * [solved] Table of Contents links don't work at all. Check how <a> tag is being created. (solved; needed to put # before the id names in the toc entry links to show I was linking to an anchor within the document and not an external file.)
+  * [solved] Title page not inserted. (solved; it put in the tags, but since the title and author attributes weren't set, there was nothing to put in, so it's empty and nothing appears. This is correct behavior&mdash;a user assumes if no title or author is given, there won't be a title page, I think.)
+  * [solved] Need to replace em dashes with &mdash; and in general escape special characters (it did a number on Erich von Dannekin too. I might just take out that one.) (solved; added &lt;? xml version="1.0" charset="UTF-8" ?&gt; to the top and the tag &lt;meta http-equiv="content-type" content="text/html" charset="UTF-8" /&gt; to the head. Just the meta tag is good enough for the browser, but Kindlegen needs the xml tag too. This makes the text display as UTF-8, so umlauts and em-dashes are fully rendered.)
+  * [solved] If :title not set, names the output file .html, making it hidden. (solved; names file "default.html" if title not set.)
+  * Some places (e.g. right at the beginning of Chapter 8) don't have newlines. I think this is the same <shift><tab> shit I saw in Strawberry Sunflower that made me switch to Markdown.
+
+####Dec. 10th 2013:
+Note: I would work on these problems in roughly this order. These all fall under item 4 on the to-do list above.
+
+* It cuts off the first sentence of the prologue. No idea why.
+* Some places (e.g. right at the beginning of Chapter 8) don't have newlines. I think this is the same <shift><tab> shit I saw in Strawberry Sunflower that made me switch to Markdown.
+  * It totally is. These paragraphs are in a single p tag with a br tag inside in the generated HTML. I took out all the br tags inside paragraphs as part of getting rid of whitespace. It looks like it opens a new pointless span, so maybe I can turn that pointless span into a p tag if it comes after a br and unwrap it otherwise.
+* Carried over: weird whitespace.
+  * I found the actual cause of this. Libre Office is stupid about how it italicizes in HTML; it wraps anything in italics with a span and gives that span a class which is italicized by the CSS. It doesn't just end the tag when the italics are over; instead, it frequently creates another span, with another class, with the font set to normal. Any whitespace at the start of one of these tags was not being affected because I was selecting [:> text-node], the child text nodes of any p.standard tag (passed in from chapter to paragraph-maid).
+  * I changed the selector to [text-node]. It now gets rid of that whitespace, but the problem is that some of the tags with styles on them also had leading whitespace which was necessary because it was in the middle of a sentence (e.g. &lt;span class=(italicized)> Century </span>; it gets rid of that first space and we end up with "mid-20thCentury").
+  * I can think of two ways to solve this problem. The first is to check whether the span is at the beginning of a paragraph (since that's where we want to remove whitespace) and unwrap the span if it is. Then the whitespace will be removed. The second way is to parse the CSS that LibreOffice generates and figure out which classes are doing something, collapse them all into one class, and unwrap the rest. Obviously the tradeoffs are that the first way is quick, but might cause more problems or ignore some other weird corner case; the second approach will take a long time, but probably won't cause any more pain once it's finally done. I am leaning towards CSS parser, maybe as a separate Clojure library. (Just for the fun. There is another CSS parser on GitHub but it looks kind of rickety.) I also don't want to get trapped in an endless circle of pain with the first solution. Looking at how awful this HTML really is and thinking about how awful it is even having to work with just what was inside the main text, I'm really glad I went with the more elaborate but also more robust route of using templates. And CSS is pretty simple, so writing a parser shouldn't be that bad, especially since I don't even have to parse a lot of the more complex stuff.

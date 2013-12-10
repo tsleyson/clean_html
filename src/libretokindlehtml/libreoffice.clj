@@ -27,8 +27,12 @@
    [:br] nil ; get rid of all br inside p tags.
    [:> [:span first-child (but (or (attr? :class) (attr? :id)))]] 
     unwrap ; unwrap pointless spans at top of paragraph.
-   [:> text-node]
-    #(clojure.string/replace % #"^[\p{Z}\s]+?" "") 
+   [text-node]
+    (do->
+     #(clojure.string/replace % #"\p{Z}" " ")
+     #(clojure.string/replace % #"^\s+" "")
+     #(clojure.string/replace % #"--" "\u2014")
+     )
       ; remove extra whitespace at the start of a paragraph.
    ))
 
@@ -37,7 +41,41 @@
       ; just give it (clojure.string/trim).
 ; I have fathomed the reason.
 ; Libre Office puts in ascii character 160, the non-breaking space.
+; (Also known as ascii char A0 in hexadecimal.
 ; clojure.string/trim doesn't count this as a space; it only recognizes
 ; actual spaces as spaces.
 ; In Java, \s doesn't match this (although it does in some other
-; languages, e.g. Javascript). So we need the \p{Z}.
+; languages, e.g. Javascript). So we need the \p{Z}. See Mastering
+; Regular Expressions on Unicode code points for how it works.
+
+;— This is the em-dash character.
+
+; How I fixed all the problems with the text node cleaners
+; (might be important in the future)
+; a) \p{Z} is a Unicode code point for spaces, as mentioned. So the first
+;  clause was supposed to replace all weirdo spaces with normal spaces. It
+;  didn't work. This is because I had [:> text-node] and the function was
+;  working with p.standard so it didn't see anything wrapped in a span.
+;  But Libre Office by default is totally stupid with the spans; it'll
+;  make one just to have a CSS target to italicize some text, then just
+;  leave it there. So the text-nodes inside spans weren't being targeted.
+;  Now they are. That also causes problems because of the next item.
+; b) I got rid of all whitespace at the beginning of a line. Elsewhere it
+;  couldn't be assumed useless because Libre Office would leave whitespace
+;  that I wanted outside of the span tags it used as targets for italics.
+;  Sometimes, though, it leaves them inside and then the tag has leading
+;  whitespace that I do want. I think the only way to solve this is to
+;  write a CSS parser and parse the style tag in each of the files to figure
+;  out which classes are actually italicized or bolded. (I found a CSS parser
+;  on GitHub but it looks kind of chinsy. Plus I could use the practice.)
+;  Then I can unwrap all the spans and divs that aren't being used for anything
+;  and collapse all the ones that are into a single span, or else change it
+;  to an <em> or <strong> tag.
+; I used this process because Libre Office sometimes turns spaces I do want
+; into non-breaking spaces. With this I can target just the spaces at the
+; beginning, and also get
+; c) Enlive automatically escapes, so you can't just insert &mdash; like I
+;  wanted. Instead I added a meta tag and an xml declaration (Kindlegen
+;  needs both for some reason) that specify the charset as UTF-8. This
+;  takes care of em dashes and Erich von Dannekin, so I just replace
+;  all the -- that Libre Office didn't with a proper em-dash.

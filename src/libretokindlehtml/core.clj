@@ -19,10 +19,11 @@
   [& args]
   (if (not= 1 (count args))
     (usage)
-    (try (let [config (read-config (first args))]
-           (do
-             (template-main config)
-             (println (str "Successfully wrote " (:title config) ".html."))))
+    (try 
+      (println "Reading configuration from" (first args))
+      (let [config (read-config (first args))
+               fname (template-main config)]
+           (println (str "Successfully wrote " fname ".")))
          (catch java.io.FileNotFoundException fnfe
            (.printStackTrace fnfe)))))
 ; To do in here:

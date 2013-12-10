@@ -24,22 +24,6 @@
 
 ; utilities
 
-(-> (defn- to-id
-      "Replaces characters not allowed in HTML id attribute"
-      [string]
-      (try (s/replace string #"[\s,;\"'?!]" "_")
-           (catch java.lang.NullPointerException npe 
-             (throw npe))))
-    (with-test 
-      (testing "Replacing space, exclamation point, double quote, semicolon" 
-        (is (= (to-id "!!Chapter 3\" ;dood") "__Chapter_3___dood")))
-      (testing "Replacing single quote, comma, question mark"
-        (is (= (to-id "Section'hey,where'smycar?") "Section_hey_where_smycar_")))
-      (testing "Replacing nothing--this string is a valid id."
-        (is (= (to-id "ValidID") "ValidID")))
-      (testing "Throw an exception on nil"
-        (is (thrown? java.lang.NullPointerException (to-id nil))))))
-
 (-> (defn- remove-extension
       "Removes the file extension."
       [filename]
@@ -51,6 +35,22 @@
         (is (= (remove-extension "blurgh.barf.html.bak") "blurgh.barf.html")))
       (testing "No extension"
         (is (= (remove-extension "blurgh") "blurgh")))))
+(-> (defn- to-id
+      "Replaces characters not allowed in HTML id attribute
+       and removes file extension."
+      [string]
+      (try (remove-extension (s/replace string #"[\s,;\"'?!]" "_"))
+           (catch java.lang.NullPointerException npe 
+             (throw npe))))
+    (with-test 
+      (testing "Replacing space, exclamation point, double quote, semicolon" 
+        (is (= (to-id "!!Chapter 3\" ;dood") "__Chapter_3___dood")))
+      (testing "Replacing single quote, comma, question mark"
+        (is (= (to-id "Section'hey,where'smycar?") "Section_hey_where_smycar_")))
+      (testing "Replacing nothing--this string is a valid id."
+        (is (= (to-id "ValidID") "ValidID")))
+      (testing "Throw an exception on nil"
+        (is (thrown? java.lang.NullPointerException (to-id nil))))))
 
 (defn- insert-heading
   "Extracts heading text and inserts into tag."
@@ -89,7 +89,7 @@
                 (clone-for [chapter order-list]
                            [:li] (set-attr :id (str "toc_entry_" (cname-to-id chapter)))
                            [:li :a] (do-> (content (remove-extension (:name (meta chapter))))
-                                          (set-attr :href (cname-to-id chapter))))))
+                                          (set-attr :href (str "#" (cname-to-id chapter)))))))
 
 ; This works, at least in the repl.
 ;; (pprint (transform tocsnip [:#toc :li] 
@@ -121,6 +121,12 @@
   "Assembles the text into its final form."
   [config]
   (let [text (mine-all config)
-        html (apply str (novel config text))]
-    (with-open [w (writer (str (:directory config) (:title config) ".html"))]
-      (.write w html))))
+        html (apply str (novel config text))
+        fname (str (:directory config) 
+                               (if-let [title (:title config)] 
+                                 (str title (:subtitle config))
+                                 "default") ".html")]
+    (do 
+      (with-open [w (writer fname)]
+          (.write w html))
+      fname)))
