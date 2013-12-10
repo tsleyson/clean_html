@@ -22,6 +22,8 @@
     (try (let [config (read-config (first args))]
            (do
              (template-main config)
-             (println "Successfully wrote " (:title config) ".html.")))
+             (println (str "Successfully wrote " (:title config) ".html."))))
          (catch java.io.FileNotFoundException fnfe
            (.printStackTrace fnfe)))))
+; To do in here:
+; Add some nice error messages.

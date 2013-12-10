@@ -7,6 +7,7 @@
   (:require [net.cgrand.enlive-html :refer :all]
             [clojure.java.io :refer [file reader writer]]
             [clojure.string :as s]
+            [clojure.test :refer [with-test is testing]]
             [libretokindlehtml.merge-files :refer [mine-all]]))
 ; Note to future self: I think the snippets you're defining are
 ; too complicated because they're doing too much at once. It would
@@ -23,20 +24,33 @@
 
 ; utilities
 
-(defn- to-id
-  "Replaces characters not allowed in HTML id attribute"
-  [string]
-  (try (s/replace string #"[\s:.,;\"']" "_")
-       (catch java.lang.NullPointerException npe 
-         (do
-           (println (str "Arg is nil? " (if (nil? string) "yes" "no")))
-           (.printStackTrace npe)
-           (throw npe)))))
+(-> (defn- to-id
+      "Replaces characters not allowed in HTML id attribute"
+      [string]
+      (try (s/replace string #"[\s,;\"'?!]" "_")
+           (catch java.lang.NullPointerException npe 
+             (throw npe))))
+    (with-test 
+      (testing "Replacing space, exclamation point, double quote, semicolon" 
+        (is (= (to-id "!!Chapter 3\" ;dood") "__Chapter_3___dood")))
+      (testing "Replacing single quote, comma, question mark"
+        (is (= (to-id "Section'hey,where'smycar?") "Section_hey_where_smycar_")))
+      (testing "Replacing nothing--this string is a valid id."
+        (is (= (to-id "ValidID") "ValidID")))
+      (testing "Throw an exception on nil"
+        (is (thrown? java.lang.NullPointerException (to-id nil))))))
 
-(defn- remove-extension
-  "Removes the file extension."
-  [filename]
-  (s/replace filename #"\.[^.]+$" ""))
+(-> (defn- remove-extension
+      "Removes the file extension."
+      [filename]
+      (s/replace filename #"\.[^.]+$" ""))
+    (with-test
+      (testing "Normal usage"
+        (is (= (remove-extension "blurgh.html") "blurgh")))
+      (testing "Lots of dots in filename"
+        (is (= (remove-extension "blurgh.barf.html.bak") "blurgh.barf.html")))
+      (testing "No extension"
+        (is (= (remove-extension "blurgh") "blurgh")))))
 
 (defn- insert-heading
   "Extracts heading text and inserts into tag."

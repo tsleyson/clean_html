@@ -89,26 +89,3 @@
    Preserves metadata. Takes same argument types as list-of-resources."
   [config]
   (map #(with-meta (mine-content %) (meta %)) (list-of-resources config)))
-
-; Marked for deletion.
-; Will mine all content and append to content of first given page.
-(defn merge-resources
-  "Merges all resources in a given list into the first resource."
-  [resource-list]
-  (let [[head & subords] resource-list]
-    (enlive/transform head [:body] (apply enlive/append (map mine-content subords)))))
-
-; Marked for deletion.
-(defn merge-resources-with
-  "Like merge-resources, but takes a function to apply to each element 
-   before folding it into the head."
-  ; e.g. a function that wraps every element in a div, inserts
-  ; an mb pagebreak before, modifies the style attribute of the
-  ; first thing in every element.
-  [resource-list merge-fn]
-  (let [[head & subords] resource-list]
-    (->> subords
-         (map mine-content)
-         (map merge-fn)
-         (apply enlive/append)
-         (enlive/transform head [:body]))))
