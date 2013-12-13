@@ -63,23 +63,26 @@
     ; Sets anchor whose id is the chapter's name, read from the
     ; metadata. Used as target by table of contents.
 
+(defn make-paragraphs
+  "Returns a function of one variable that generates paragraphs from given sequence 
+   of Enlive data, with cleanup as its cleaner."
+  [raws maid]
+  (clone-for [para raws]
+             (content (maid (para :content)))))
+
 ; snippets
 
 ; For when your chapter doesn't have a heading, e.g. Of Night's prologue.
-(defsnippet no-heading (file "resources/templates/chaptersnip.html") [:#chaptertext :p.standard]
-  [raws & cleanup]
-  (let [maid (if (nil? cleanup)
-               identity
-               (first cleanup))]
-    (clone-for [para raws]
-               [:p] (content (maid (para :content))))))
+(defsnippet no-heading (file "resources/templates/chaptersnip.html") [:.chapter]
+  [raws maid]
+  [:#chaptertext :p.standard] (make-paragraphs raws maid))
 
 ; Expects the output of mine-content, but with metadata, as its input.
 ; So right now the most natural way to call it is (map chapter (list-of-resources config)).
 ; But I don't like that.
 ; You still have to call it like that, but novel takes care of that now
 ; so you can just call (novel config material). Novel uses mine-all.
-; Has problems if first line isn't heading.
+; Has problems if first line isn't heading. Use no-heading for that.
 (defsnippet chapter (file "resources/templates/chaptersnip.html") [:.chapter]
   [paragraphs & cleanup]
   [:#heading] (insert-heading paragraphs)
@@ -87,16 +90,14 @@
                                       maid (if (nil? cleanup)
                                              identity
                                              (first cleanup))]
-                                 (clone-for [para body]
-                                            [:p] (content (maid (para :content))))))
-
+                                 (make-paragraphs body maid)))
 ; Note that I had to select :p under the clone-for because I used to have :p.standard
 ; but you're actually selecting from the resource, not the template.
 
 ; Expects the ordered list of chapters, with metadata, provided by list-of-resources.
 (defsnippet toc (file "resources/templates/toc.html") [:#table_of_contents]
   [order-list]
-  [:li] (let [cname-to-id (comp to-id :name meta)] 
+  [:li] (let [cname-to-id (comp to-id :name meta)]
                 (clone-for [chapter order-list]
                            [:li] (set-attr :id (str "toc_entry_" (cname-to-id chapter)))
                            [:li :a] (do-> (content (remove-extension (:name (meta chapter))))
@@ -135,8 +136,8 @@
   (let [text (mine-all config)
         html (apply str (cons "<? xml version=\"1.0\" encoding=\"UTF-8\" ?>"
                               (novel config text)))
-        fname (str (:directory config) 
-                               (if-let [title (:title config)] 
+        fname (str (:directory config)
+                               (if-let [title (:title config)]
                                  (str title (:subtitle config))
                                  "default") ".html")]
     (do 

@@ -31,6 +31,6 @@
                fname (template-main config)]
            (println (str "Successfully wrote " fname ".")))
          (catch java.io.FileNotFoundException fnfe
-           (.printStackTrace fnfe)))))
+           (println (str "Couldn't open file " (first args) "; not found."))))))
 ; To do in here:
 ; Add some nice error messages.
