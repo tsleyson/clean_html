@@ -20,19 +20,24 @@
 ; them up. It doesn't have to be something you actually have a
 ; snippet for, just any logical division of the text.
 
+(def wrap-standard (wrap :p {:class "standard"}))
+
 (defn paragraph-maid
   "Runs a suite of cleanup functions on the given paragraph."
   []
   (transformation 
-   [:br] nil ; get rid of all br inside p tags.
-   [:> [:span first-child (but (or (attr? :class) (attr? :id)))]] 
-    unwrap ; unwrap pointless spans at top of paragraph.
+   {[:br] [:span]} #(-> % (second) (wrap-standard))
+    ; Meant to fix that <shift><ret> crap where it uses a br
+    ; instead of a new paragraph.
+   [:> [:span first-child (but (or (attr? :class) (attr? :id)))]]
+    unwrap 
+    ; unwrap pointless spans at top of paragraph.
    [text-node]
-    (do->
-     #(clojure.string/replace % #"\p{Z}" " ")
-     #(clojure.string/replace % #"^\s+" "")
-     #(clojure.string/replace % #"--" "\u2014")
-     )
+   (do->
+    #(clojure.string/replace % #"\p{Z}" " ")
+    #(clojure.string/replace % #"^\s+" "")
+    #(clojure.string/replace % #"--" "\u2014")
+    )
       ; remove extra whitespace at the start of a paragraph.
    ))
 

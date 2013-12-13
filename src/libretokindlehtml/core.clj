@@ -9,6 +9,12 @@
             [clojure.pprint :refer [pprint]]
             [clojure.java.io :refer [file reader writer]]))
 
+(defmacro redir
+  "Redirects output to named file."
+  [filename & body]
+  `(with-open [w# (writer ~filename)]
+     (binding [*out* w#] ~@body)))
+
 (defn usage
   []
   (println "Give me the directory where your config.json file is stored.")) 
