@@ -37,3 +37,6 @@
 
 ; If list-of-resources and mine-content both work, mine-all shouldn't
 ; have any problems, so there is no test for it.
+
+(deftest test-private-helpers
+  (run-tests 'libretokindlehtml.merge-files))

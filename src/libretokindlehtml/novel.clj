@@ -64,7 +64,7 @@
     ; metadata. Used as target by table of contents.
 
 (defn make-paragraphs
-  "Returns a function of one variable that generates paragraphs from given sequence 
+  "Returns a function that generates paragraphs from given sequence 
    of Enlive data, with cleanup as its cleaner."
   [raws maid]
   (clone-for [para raws]

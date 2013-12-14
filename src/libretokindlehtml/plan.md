@@ -93,9 +93,9 @@ To-do items (roughly in order of priority, from high to low, and also in order o
 
 4. Obviously the main template that brings the whole novel together. Need to make sure it generates correct HTML for realistic situations, so test it on Of Night (without putting that up on the web) and Strawberry Sunflower (maybe).
 
-5. Update the config file according to what will (in a moment) be written above under the section on the config file. Take out mode; the mode is decided in the template file according to what file you include and which functions you give. (Since I went away from being user-configurable and went over to being configurable if you know Clojure and can rewrite that whole part of the program.)
+5. Update the config file according to what will (in a moment) be written above under the section on the config file. Take out mode; the mode is decided in the template file according to what file you include and which functions you give. (Since I went away from being user-configurable and went over to being configurable if you know Clojure and can rewrite that whole part of the program.) As part of this, we need to make the main program read the namespace of the template-main function from the config map so we can use lots of different ones; even if you have to write Clojure code to get new modes, it's important that all your new code can be shoved off into its own space without touching the rest of the code. That will make things more flexible. It also makes sense, given this, to have the tests for the helper functions in the same file with the code.
 
-6. Graphical user interface front-end. Read in the directory, list of files, and other things from the config file from a Swing GUI. Swing isn't so bad, so it shouldn't be hard to make. The command line interface will accept the path to a config file.
+6. Graphical user interface front-end. Read in the directory, list of files, and other things from the config file from a Swing GUI. Swing isn't so bad, so it shouldn't be hard to make. (There's also a Clojure wrapper for Swing called Quil that might be useful.) The command line interface will accept the path to a config file.
 
 7. Startup script. I want to package it as a JAR when it's done and write both a Linux bash script and a Windows Powershell or batch script to run it. (Macs, I think, can also run bash.)
 
@@ -169,3 +169,8 @@ needed_styles is the output of the last bit of code (filter ...) from above.
       * Another possibility is to apply it above the cleaner, in chapter and no-heading. This kind of makes more sense because I'm not actually cleaning up the paragraph, I'm just moving around the style information. I could write a utility function and add in the style information right before it goes into the cleaning function.
       * Yet another possibility is to add it in list-of-resources or mine-content (or mine-all). This makes the most sense since the style info isn't really part of your template. On the other hand, I feel like this ties those (supposedly general) functions to a specific use case. What if you want to ditch all the style information? What if you don't want to ditch the head of your document? Since novel and libreoffice are both sort of replaceable.
     * On another note, I think I know how to get rid of no-heading. Inside insert-heading, test whether we matched anything with headtext. If we did, it's the heading. Proceed as before. If not, we have to somehow alert the next clause not to cut off the first line. This is relevant because right now I'm thinking about making changes to chapter to add in styles, and anything I change in chapter has to also be changed in no-heading, the usual disadvantage of code duplication. So I'm trying to not duplicate it.
+
+###December 14th, 2013:
+
+* Still working on getting styles integrated. 
+  * There's a whole fuckaround in merge_files having to do with things being opened as Enlive resources. I tried to write a function that does all that (html-resource (file ..)) bullshit for you but it somehow can't find files and shit now.
