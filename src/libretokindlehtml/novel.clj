@@ -63,6 +63,15 @@
     ; Sets anchor whose id is the chapter's name, read from the
     ; metadata. Used as target by table of contents.
 
+; Later I want to be able to get rid of this.
+(defn add-styles
+  [raws]
+  (let [{style-list :styles} (meta raws)]
+    (reduce #(let [[selec style-str] %2]
+               (transform %1 selec (set-attr :style style-str)))
+            raws
+            style-list)))
+
 (defn make-paragraphs
   "Returns a function that generates paragraphs from given sequence 
    of Enlive data, with cleanup as its cleaner."
@@ -86,13 +95,13 @@
 (defsnippet chapter (file "resources/templates/chaptersnip.html") [:.chapter]
   [paragraphs & cleanup]
   [:#heading] (insert-heading paragraphs)
-  [:#chaptertext :p.standard]  (let [ [_ & body] paragraphs
+  [:#chaptertext :p.standard]  (let [ [_ & raws] paragraphs
+                                      body (add-styles 
+                                            (with-meta raws (meta paragraphs)))
                                       maid (if (nil? cleanup)
                                              identity
                                              (first cleanup))]
                                  (make-paragraphs body maid)))
-; Note that I had to select :p under the clone-for because I used to have :p.standard
-; but you're actually selecting from the resource, not the template.
 
 ; Expects the ordered list of chapters, with metadata, provided by list-of-resources.
 (defsnippet toc (file "resources/templates/toc.html") [:#table_of_contents]
@@ -103,16 +112,6 @@
                            [:li :a] (do-> (content (remove-extension (:name (meta chapter))))
                                           (set-attr :href (str "#" (cname-to-id chapter)))))))
 
-; This works, at least in the repl.
-;; (pprint (transform tocsnip [:#toc :li] 
-;;                    (clone-for [elem trans] 
-;;                               [:li] (set-attr :id (str "toc_entry_" 
-;;                                                        (clojure.string/replace 
-;;                                                         (:name (meta elem)) #"\s" "_"))) 
-;;                               [:li :a] (comp (set-attr :href 
-;;                                                        (clojure.string/replace 
-;;                                                         (:name (meta elem)) #"\s" "_")) 
-;;                                              (content (:name (meta elem)))))))
 
 ; expects a metadata map with title, subtitle (i.e. series title or
 ; numbering) and authors (a list).
@@ -139,7 +138,8 @@
         fname (str (:directory config)
                                (if-let [title (:title config)]
                                  (str title (:subtitle config))
-                                 "default") ".html")]
+                                 "default")
+                               ".html")]
     (do 
       (with-open [w (writer fname)]
           (.write w html))

@@ -27,6 +27,7 @@
    specifies that tag's style."
   [[class style-str]]
   [[(keyword (clojure.string/trim class))] style-str])
+
 (-> (defn style-string
       "Gets the content of the style tag as a string.
        Output is suitable for extract-styles."
@@ -90,7 +91,12 @@
                    (as-resource)
                    (with-meta 
                      {:position (get order %), 
-                      :name %})))
+                      :name %
+                      :styles (extract-styles 
+                               (style-string (as-resource (str direc %)))
+                               #"font-(weight:bold|style:italic)")})))
+     ; That regex couples the whole implementation to exactly what I'm
+     ; doing right now. So find a way to get rid of it.
      (sort-by #((meta %) :position)))))
     ; opens the files, using the full path, but uses just the file name
     ; as the name metadatum and to get the position. Then sorts the
@@ -101,6 +107,7 @@
   (list-of-resources (read-config path-to-config)))
 
 ; Still needs to be fleshed out (low priority)
+; I have a code snippet from GitHub that might work.
 (defn write-template
   "Writes the return value of an Enlive template to a file,
    with decent formatting."
