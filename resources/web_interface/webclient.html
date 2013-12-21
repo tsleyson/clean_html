@@ -1,0 +1,38 @@
+<html>
+  <body>
+    <h1>WebSocket Demo</h1>
+
+    <section id="info"></section>
+    <script src="/home/trisdan/Documents/Programs/jquery/jsapi"></script>
+    <script>google.load("jquery", "1.3")</script>
+    <script src="/home/trisdan/Documents/Programs/jquery/jquery-1.10.2.js">
+    </script>
+    <script src="/home/trisdan/Documents/Programs/jquery/jquery.websocket-0.0.1.js">
+    </script>
+    <script type="text/javascript">
+      /*
+      var ws = $.websocket("ws://127.0.0.1:8080/websocket", {
+          events: { 
+              upcased: function(e) { 
+                  $("#content").html(e.message); 
+              }}});
+      //i.e. when #message changes, send this stuff across
+      // the socket.
+      $('#message').change(function() {
+          ws.send('message', 
+                  {type: "downcase", message: $("#message").val()});
+      });
+      */
+      var ws = $.websocket("ws://127.0.0.1:8080/web", {
+          open: function(reply) { $("#info").html(reply.msg); },
+          events: { 
+          default: 
+              function(reply) {
+                  $("#content").html(reply);
+              }
+          }
+      };
+                           
+    </script>
+  </body>
+</html>
