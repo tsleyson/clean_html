@@ -1,9 +1,0 @@
-div.chapter { page-break-before: always; }
-div#table_of_contents { page-break-before: always; }
-div#title_page { page-break-before: always; }
-h1#main_title { position: center; }
-h2#subtitle { position: center;}
-h2.author { position: center; }
-h2.heading { position: center; font-weight: bold;}
-p.standard { font-size: 12pt; indent=0px; }
-
