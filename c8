@@ -1,0 +1,1097 @@
+({:tag :h3,
+  :attrs {:class "P2"},
+  :content
+  [{:tag :a,
+    :attrs {:id "a__08"},
+    :content [{:tag :span, :attrs nil, :content []}]}
+   "08"]}
+ {:tag :p,
+  :attrs {:class "Standard"},
+  :content
+  [{:tag :span, :attrs nil, :content [" I wanted to ruin him."]}]}
+ {:tag :p,
+  :attrs {:class "Standard"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" I wanted to make sure he never worked in this town again."]}]}
+ {:tag :p,
+  :attrs {:class "Standard"},
+  :content [{:tag :span, :attrs nil, :content [" I failed."]}]}
+ {:tag :p,
+  :attrs {:class "Standard"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" After Sophia rescued me from Austen's basement that doubled as a demon child daycare, took a bullet for me, summarily regenerated, and then disarmed Austen, hand and all, she calmly dressed herself, told me when I could turn around, and asked fetchingly, \"Did you look? You did, didn't you?\" even though she'd already been in her strawberry-print bra and panties, in full view of my lecherous eyes, before she made me turn around."]}]}
+ {:tag :p,
+  :attrs {:class "Standard"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" All this while the local pastor screamed and cradled his bloody stump of a left hand ten feet away."]}]}
+ {:tag :p,
+  :attrs {:class "Standard"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" By the way, while I'd been turned around, her hair had gone back to being mousy brown and her eyes had become a lot less gold-colored and a lot more the color of stuff that grows on bread when you forget about it in the cupboard for too long."]}]}
+ {:tag :p,
+  :attrs {:class "Standard"},
+  :content
+  [{:tag :span, :attrs nil, :content [" We then left the church."]}]}
+ {:tag :p,
+  :attrs {:class "Standard"},
+  :content
+  [{:tag :span, :attrs nil, :content [" I felt like singing."]}]}
+ {:tag :p,
+  :attrs {:class "Standard"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" I felt like jumping in the air and clicking my heels together."]}]}
+ {:tag :p,
+  :attrs {:class "Standard"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" I was alive, and whole, and not dead, and not torn apart and distributed to the stomachs of fanged, grinning monkey creatures with scorpion stingers."]}]}
+ {:tag :p,
+  :attrs {:class "Standard"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" But as happy as I was to be alive, this was the second time that Austen had tried to do bodily harm to me (third if you counted the attempt to shoot me in the lobby as a separate incident). He would surely try again."]}]}
+ {:tag :p,
+  :attrs {:class "Standard"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" \""
+     {:tag :span,
+      :attrs {:class "T2"},
+      :content
+      ["I can sense when you're in danger,\" Sophia told me when she opened this topic for discussion. \"It's one reason I marked you. But it takes time for me to reach you. I had to fly to get here in time, in only partial darkness, and I still barely made it.\""]}]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  ({:tag :span,
+    :attrs nil,
+    :content [" You did cut it pretty—wait, you can fly?"]}
+   {:tag :p,
+    :attrs {:class "standard"},
+    :content
+    [{:tag :span,
+      :attrs nil,
+      :content
+      [" \"Did you think my wings were just to look cool?\""]}]})}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" I was about to make a clever response, but my stomach suddenly seized up again and I stumbled."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" \"Careful. Are you still a little unsteady on your feet?\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" \"I'm fine. Just...something to drink would be nice.\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" We went into the nearest convenience store and bought overpriced convenience store drinks, then sat down on a nearby bench to drink them."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" \"I'm going to publish,\" I said. \"I'll write up Amber's and Mrs. Sullivan's stories tonight and make sure it's posted by tomorrow.\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" With every fiber of my being, I wanted to ruin him. I wanted to ruin the life of the man who had three times tried to take mine (twice if you counted what just happened as a single incident). "]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" \"That may only make him angry, and lead him to try to get revenge,\" said Sophia. \"And even if he is taken into police custody, it will be at least a few days before it happens. What will you do until then?\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" I shrugged. \"Now that I know he's after me, maybe I'll be able to spot the next trap and avoid it next time.\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content [{:tag :span, :attrs nil, :content [" \"I know!\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" She said, as if she'd just had the best idea in the world."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" \"Riding the bus is too dangerous. From now on, I'll pick you up and drop you off.\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" \"I don't think it's a good idea for you to strip down to your underwear and fly into my neighborhood...the people there are pretty conservative. Even the gay couple three houses down voted for Proposition 8.\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content [{:tag :span, :attrs nil, :content [" \"I have a car.\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content [" There was a pregnant pause."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content [{:tag :span, :attrs nil, :content [" \"You do?\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" She took a sip of her iced tea. \"How do you think I've been getting to and from school?\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content [{:tag :span, :attrs nil, :content [" \"Flying?\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content [" \"Everyone would see me in my underwear.\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" \"If you have a car, why did you walk with me the other night like you were also going on foot?\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" \"I just wanted to talk you. I doubled back and got it after I escaped from those gangsters.\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" \"So, let me make sure I'm hearing this properly. In order to protect me, you are going to drive your car to my house, pick me up, drive both of us to school, drive me back to my house, drop me off, and drive yourself home?\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" \"You could abstract it a bit more, but yes, that's more or less what I was proposing.\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content [" No looking for a bus stop in the nightlife area."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" No being wedged between a sweaty fat man and an old woman who smells like cigarettes."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content [" A bodyguard everywhere I went."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" I think she might have just had the best idea in the world."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" The last time either of my parents drove me anywhere was in the eighth grade, when I went to school late because of a doctor appointment. After that, I had been made to walk, take a bicycle, or ride the bus to get absolutely everywhere."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" It may have had something to do with my comment that my mother drove \"like a racecar driver with Parkinson's\"."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" I even apologized, but she wouldn't budge, and she snapped at my father if he tried to drive me anywhere."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" As a present for my sixteenth birthday, she let me borrow the car long enough to take the driving exam three times. I failed the first two times. The third time I ran a yellow light and bribed the examiner to ignore it. I had a car at one point, an old Ford Taurus whose oil needed to be refilled every thirty miles, but it eventually died and I decided it was easier to take the bus. Now that I didn't have a job and spent five hundred dollars a semester on textbooks, I couldn't afford to get another car, so I was stuck with the bus."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" That may help explain why I was so thrilled with this plan to keep me safe from Austen."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span, :attrs nil, :content [" Succubus chauffeuring."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" I eagerly agreed to her plan to keep me safe, and after finishing our drinks, we rode the bus back to the college, where she brought me to her car to take me home."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" Her tastes seemed to lean towards the plain, so I was expecting something generic, but she actually had a pretty nice navy blue Audi with big, comfortable leather upholstered seats, a GPS unit on the dashboard, and a fancy stereo system. When she turned the key, opera music blared from the speakers, but she quickly turned it off and said in an embarrassed tone that it was part of an assignment for music appreciation."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" By the way, unlike my mother, Sophia's driving was quite smooth and easy. She steered around potholes gracefully and halted at traffic lights in a stately manner, like a cruise ship coming into port. We arrived at my house without incident."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" She hadn't turned on that GPS at all, yet here we were."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" By this point I knew better than to ask how she knew where my house was."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" \"Shall I walk you up to the door?\" she asked once she had parked along the curb."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" \"I'll be fine. You don't have to treat me like I'm your date to the prom.\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" \"But I'm protecting you. How should I treat you?\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" \"Be more like the Secret Service. Come up with a secret codename for me, and report all my actions using it, repeating each sentence three times.\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" \"You mean I should call you 'Trojan' and say things like 'Trojan has brought in the horse, I repeat, Trojan has brought in the horse'?\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content [" \"At least call me 'Spartan', damn it.\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" She reached out towards me all of a sudden, and I pulled back, thinking she was going to grab me and steal my second kiss, but fortunately, since I was in a car and there wasn't anywhere to pull back to, she just petted me on the head."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content [{:tag :span, :attrs nil, :content [" \"Good boy.\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content [" \"Don't treat me like a dog either.\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" \"Dogs are honest about their feelings, but you're acting weird to try and hide your embarrassment because you're grateful to me for helping you, so I was treating you like a cat.\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" \"That's not any better. And I wasn't doing anything like that. Get your hand off my head.\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content [" But not quite yet, that feels nice."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" Once her hand was off my head, I said, \"Of course I'm grateful for your help. I'm not into dying painfully. It's not my thing. Even dying painlessly is just meh. But it's weird.\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content [{:tag :span, :attrs nil, :content [" \"What is?\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content [" \"Why are you protecting me?\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content [{:tag :span, :attrs nil, :content [" I asked."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" I was trying to learn from my experience with Amber."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" \"Why, you ask...That's sort of a hard question to answer. I guess the best response is, because I want to.\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content [" \"That's not really an answer.\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content [" \"Then, how about saying it's a secret.\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content [" \"That's even more of a non-answer.\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span, :attrs nil, :content [" \"Does it really matter?\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" \"It matters if your reason is to protect your food supply, like you told Austen.\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" She shook her head. \"The reason we have the scent-marking ability is to warn other succubi to stay away from our prey. That's also why I can sense when you're in danger—in case I need to defend you from other succubi. That's the reason Austen would have expected. I also hoped he might give up if he thought you were doomed anyway. But that's not why I marked you.\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content [{:tag :span, :attrs nil, :content [" \"Why, then?\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" \"Because you interest me. I don't know what, but something about you fascinated me from the moment I saw you. As I told you, I lead a very boring life. When something as interesting as you turns up, I can't just ignore it.\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content [" Now that was an answer I trusted."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" Self-interest was always easier to believe in than altruism."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" And with that, I bade good night to that Audi-driving computer nerd succubus and returned to my house."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" My sister Sue was in the kitchen, drinking milk from the carton in her pajamas."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" It felt like it had been days since I'd seen her, but even at the best of times the two of us don't really talk. We just don't seem to mix well, and mostly ignore each other."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" Tonight, though, she greeted me and asked me a question. \"Who was that in the car? I thought you rode the bus to school.\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content [" \"Oh, that was the computer nerd s—student.\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" That was close. I almost used the "
+     {:tag :span, :attrs {:class "T1"}, :content ["s"]}
+     "-word."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" \"You're hanging out with computer nerds now? Jeez, and I thought you couldn't stoop any lower.\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" Take back that slander against all the people who make sure the servers work so you can update your Facebook page every three minutes. And against the people who invented Facebook in the first place. And the entire Internet, for that matter, and the computer you access it from. "]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" \"I'm not really hanging out with her...we just happened to be going the same way, and it was late.\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" \"Oh, I see. So it's a "
+     {:tag :span, :attrs {:class "T1"}, :content ["girl "]}
+     "computer nerd.\" Sue had the most annoying smirk. She smirked that smirk when she was thinking about relationships, mostly, and mostly she thought about relationships, so she spent a lot of time smirking that smirk. Smirking that smirk with a milk mustache in her pajamas. Seeing that made me think how absolutely different she was from Lucy, even though they were sisters separated by a mere two years. \"I'm surprised, I always thought you were gay.\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" Normally, I would respond to something like that, but talking to Sue had made me remember why I usually didn't talk to her, so I didn't rise to her bait and just told her it was disgusting to drink milk straight out of the carton before going to my room to work on the article."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" I had made a big deal out of it when I was talking to Sophia, as if writing this article would be a death struggle against sleepiness to get it all done in one night, but actually, it only took about a thousand words to relate both Amber's and Mrs. Sullivan's stories in all the detail I had, and I could type about seventy words a minute, so it only took me about half an hour to finish."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" In junior high school, I had spent a year writing a truly awful novel that was mostly stolen from Thomas Pynchon's "
+     {:tag :span,
+      :attrs {:class "T1"},
+      :content ["The Crying of Lot 49"]}
+     ", with elements of "
+     {:tag :span, :attrs {:class "T1"}, :content ["Pale Fire"]}
+     ", "
+     {:tag :span, :attrs {:class "T1"}, :content ["Catch-22"]}
+     ","
+     {:tag :span, :attrs {:class "T1"}, :content [" "]}
+     "and "
+     {:tag :span,
+      :attrs {:class "T1"},
+      :content ["Conan the Barbarian"]}
+     ". I had written about fifty thousand words before I ran out of steam, went back for the first time to read what I had written so far, and realized that it was the worst thing ever written, even if you counted the works of Hiro Mashima as literature. It was a good experience. Well, it was a terrible experience, one which forced me to admit that I was more worthless than the most worthless writer I had ever complained about, but I did learn to type seventy words a minute, so I got something out of it besides the dissolution of all my dreams."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" Thanks to that, I was done with the article I hoped would ruin Austen in about thirty minutes, and I spent the next hour or so working on my analysis of the yaoi subtext in "
+     {:tag :span,
+      :attrs {:class "T1"},
+      :content ["The Importance of Being Earnest "]}
+     "before going to sleep."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" The next morning, I decided to make breakfast before calling Lucy, so that I could devote my full concentration to explaining why Algernon wanted to Bunbury himself all in Jack, and the hints that Jack was a sasoi-uke, but unexpectedly, the phone rang before I was finished and it turned out to be Lucy calling me for once."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content [" \"I saw your article this morning,\" she said."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span, :attrs nil, :content [" \"What did you think?\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content [{:tag :span, :attrs nil, :content [" \"Garbage.\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span, :attrs nil, :content [" No hesitation at all."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" \"Which parts, Madam Lucy, if I may be so rewarded as to be permitted to humbly ask?\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" \"I'm so glad you did. For one thing, you were far too detailed in describing the sex acts that Amber girl was forced to perform. That part read more like a porn novel than a news story.\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content [" \"I just wrote down what she told me.\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" \"Also, you switched the names of Mrs. Sullivan and Amber's mother.\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" \"Actually, I did that on purpose. Didn't you see the asterisk next to it?\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content [" \"But this was the worst part, here at the end--\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content [" \"Did you print it and make notes on it?\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" \"Of course. There were far more things wrong with this article than I could tell you over the phone, so I'm sending you this copy by first-class mail. The biggest problem was here at the end, when you go on a mini-tirade against Austen. 'We must expunge this viper from our nest'? 'What he did to these children can never be undone'? Those are hoary old cliches and completely destroy any pretension of journalistic objectivity you may have had. I never expected either of those things from you—you've reported on criminals in the past, but never in the form of pseudo-moralistic rants. What were you trying to do?\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" \"I was trying to tell people the truth,\" I said, knowing that it was a lie."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" \"Really? Because it seems—correct me if I'm wrong—it "
+     {:tag :span, :attrs {:class "T1"}, :content ["seems "]}
+     "like you got angry at Austen, probably over that Amber girl, and set out to destroy his image in town. It "
+     {:tag :span, :attrs {:class "T1"}, :content ["seems "]}
+     "like you abandoned those journalistic ethics you used to brag about to sensationalize this story and do harm to Austen's reputation. Am I wrong?\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content [{:tag :span, :attrs nil, :content [" She wasn't."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span, :attrs nil, :content [" I wanted to ruin him."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content [" Because he had tried to kill me."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" I had nearly been killed while researching stories in the past, but it had always been because I had gone into some dangerous place, done some dangerous thing, actively risked myself. No one had ever tried to attack me on my way home. No one had ever tried to feed me to demonic creatures."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content [{:tag :span, :attrs nil, :content [" I was afraid."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span, :attrs nil, :content [" I couldn't protect myself."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" I had to trust in that computer nerd succubus to protect me."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" That's why I wanted to ruin Austen, to destroy his disguise, to take away his ability to operate as part of the human world."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content [" A human can solve a human problem."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content [" A succubus can solve a succubus problem."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" But who can solve a problem that can change shape, into a human problem to avoid resolution by succubuses, into a succubus problem to avoid resolution by humans?"]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" I wanted to ruin him, because I was afraid. Because I wanted to take away his ability to shape shift into a human problem."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content [" Of course, I couldn't tell Lucy any of that."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" In fact, I did consider telling her about JZ's gang, but no matter how she acted, Lucy actually loved me quite a bit, and she could be hot-headed. I didn't want her showing up at the airport tomorrow ready to jujitsu JZ. That would be bad for her and for me."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" As I was pondering how to answer and the silence lengthened, a navy blue Audi suddenly appeared in our driveway. \"Oh, I've got to go. My ride's here.\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content [" \"Your ride? Someone's driving you to school?\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content [{:tag :span, :attrs nil, :content [" \"Yeah.\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content [{:tag :span, :attrs nil, :content [" \"Who?\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content [{:tag :span, :attrs nil, :content [" \"A classmate.\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content [{:tag :span, :attrs nil, :content [" \"A friend?\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span, :attrs nil, :content [" She said it, not me."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" \"Don't be ridiculous,\" I said. \"I'm just using her for her car. We sit in silence the whole time and stare out the windows, just like on the bus.\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content [" \"Oh, it's a female classmate?\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" Maybe Lucy and Sue weren't that different after all."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" Although I was sure that Lucy was sitting in New York with perfect posture, sipping a cup of fine tea while wearing her Something or Other Academy of the Arts skirt and blazer, rather than drinking milk from the carton in her pajamas."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" \"Well, I'll let you go for now, but this isn't over,\" said Lucy. \"If I see any more garbage like this, you will suffer my extreme displeasure.\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content [{:tag :span, :attrs nil, :content [" \"Yeah, yeah.\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content [" \"I won't talk to you on the phone for a week.\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span, :attrs nil, :content [" \"Are you a devil?!\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" \"By the way, try to treat your female classmate who's driving you to school but isn't a friend well. If she's driving you to school, she must not hate you, so don't you think it would be nice if you could get to know her better?\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content [" \"I'd rather have you drive me to school.\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" \"If you were aiming for creepiness, you missed the mark. Let's try a little harder next time.\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content [" \"I'd like to try you a little harder next time.\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" \"That just sounded like a sex-starved, brain-damaged truck driver. It lacked that skin-crawling element that characterizes your usual remarks. Anyway, you'd better not make your not friend wait any longer. I'm hanging up.\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" After Lucy hung up, I gathered my things and went outside. Sophia had gotten out of the car and was standing next to it in the driveway. For some reason, it seemed she had put a little more effort into her appearance this morning; her hair actually looked brushed and she had worn a nice jean jacket and sunglasses with her usual jeans and blouse combo."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" \"You're unusually well groomed today,\" I commented."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content [" \"I thought your family might be here.\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" \"So you don't mind if everyone at school thinks you're a slob who doesn't know how to use a hairbrush, but you mind if my family thinks so?\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" \"Well, I might be knowing them for a while. First impressions are important in a case like that.\""]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content [" So she was planning to know my family for a while."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" There was a terrible sinking feeling in the pit of my stomach."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" Also, she was making a complete mockery of all that stuff they say about making lifelong friends in college by implying that she wasn't going to know anyone at the college for as long as a while. But I guess it would be pretty hard to show up at a reunion and tell people that you've currently faked your own death and enrolled in another college to get another degree as a different person, while sucking the life force from whatever men you can find in the local bars who fit your definition of evil enough."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" Fortunately, my family was all gone by the time I needed to leave, so she wasn't going to be meeting them anytime soon."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" For the next few days, that computer nerd succubus came to pick me up wearing a different simple yet stylish outfit in her navy blue Audi that silently whispered money rather than screaming it."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span, :attrs nil, :content [" I wanted to kill her."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" All this time she was pretending to be a loser, and yet she was the closest thing to a bourgeoisie I had ever known. No wonder those French revolutionaries tried to kill her."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" Meanwhile, I was biding my time, waiting for someone to pick up my posting and crucify Austen in the press."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" I respected Lucy's opinion more than anyone's, especially when it came to writing, but she didn't always understand how news writing worked. Her expertise was all in literary writing. All the defects she had mentioned were things that I genuinely agreed would have been defects in a literary-style work, or even in a news article aimed at educated, upper-middle class readers of papers like the New York "
+     {:tag :span, :attrs {:class "T1"}, :content ["Times."]}]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span, :attrs {:class "T1"}, :content ["        "]}
+   "But that wasn't my audience. My audience was the inhabitants of a cluster of small towns in the Sierra Nevada foothills. Most of them didn't have a college degree; most of them were religious to some extent; most of them had strong ideas about crime, punishment, and morality; most of them were uncomfortable with talking about sex."]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" That's why I had tried to first make them uncomfortable by talking about sex, and then tried to appeal to their religious ideas about morality."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" I hoped they would turn against even their beloved pastor, if his wrongdoings were presented in the correct light."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content [{:tag :span, :attrs nil, :content [" I was wrong."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" The Santa Robles "
+     {:tag :span, :attrs {:class "T1"}, :content ["Times-Chronicle "]}
+     "picked up my story three days after I had posted it. I'd been keeping an eye on all the local papers and watching the news every night so I would know immediately."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" Unlike the bigger papers, the locals almost never tried to buy a story; they would just have somebody paraphrase everything and publish it as an original work. Nonetheless, the paraphraser this time had kept most of the original tone of my blog posting as he decried the shocking immorality of beloved pastor Joseph Austen."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content [" It was also on the nightly news."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" Now was the time to find out if my betrayal had borne fruit."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span, :attrs nil, :content [" They talked to Austen."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content [{:tag :span, :attrs nil, :content [" He denied it."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content [" They talked to Amber Linney."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" She denied it, saying that Pastor Austen had always been like a father to her."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content [" They talked to Jane Linney."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" She denied it, saying that Pastor Austen had always been like a father to Amber."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content [" They talked to Mrs. Sullivan."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content [{:tag :span, :attrs nil, :content [" She denied it."]}]}
+ {:tag :p,
+  :attrs {:class "P1"},
+  :content
+  [{:tag :span,
+    :attrs nil,
+    :content
+    [" The newscaster finished by saying that police believed the story had been the work of an online prankster, and it seemed likely the controversy would blow over in a few days."]}]})

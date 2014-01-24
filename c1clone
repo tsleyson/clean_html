@@ -1,0 +1,359 @@
+({:tag :div,
+  :attrs {:class "chapter"},
+  :content
+  ["\n      "
+   {:tag :h2,
+    :attrs {:id "heading"},
+    :content [{:tag :a, :attrs {:id "Chapter1"}, :content ["01"]}]}
+   "\n      "
+   {:tag :div,
+    :attrs {:id "chaptertext"},
+    :content
+    ["\n        "
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content ("I love my little sister.")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content ("I'm not ashamed to say it.")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("Throughout our lives, we had no one to depend on but each other, no one else to turn to when our parents were too busy with their own lives.")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("I wish that were true. It has a nice Dickensian sound to it.")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("The truth is, I don't remember when or why it started, but by the time I was ten years old, my four-years-younger little sister was the most important person to me in the world.")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("That's why when she finished middle school and then announced that she wanted to go to Something or Other Prestigious Academy of the Arts for high school, and my parents told her she was too young to go to New York and there were schools of the arts here in California that she could attend, I agreed with them.")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("But my sister has a stubborn side, and she went off and found a job teaching martial arts to little kids over the summer and saved up enough money for a plane ticket. She also called our uncle who conveniently lives in New York and asked if she could stay with him, and he said yes.")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("Our parents weren't happy. They told me to talk some sense into her.")}
+     {:tag :p, :attrs {:class "standard"}, :content ("I tried.")}
+     {:tag :p, :attrs {:class "standard"}, :content ("I begged.")}
+     {:tag :p, :attrs {:class "standard"}, :content ("I groveled.")}
+     {:tag :p, :attrs {:class "standard"}, :content ("I sniveled.")}
+     {:tag :p, :attrs {:class "standard"}, :content ("I even cried.")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content ("I'm not ashamed to say it.")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("In the end, in order to win my approval and make me stop crying, she made a deal with me. If I didn't oppose her decision, she would make sure that every evening, around six, she would be near the phone and ready to talk. I haggled with her, trying to get morning, brunch, noon, and evening, with an option on late night, but in the end we settled on morning and evening, and with that she managed to suppress the most vehement opposition figure and win her way.")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content ("It was morning.")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("I was regaling her with my latest insightful analysis of a great work of literature.")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("\"Olivia is an oniichanko,\" I said as I spread jam on bread. \"She goes into deep mourning after the death of her oniichan, and refuses to receive anyone, including Count Orsino. Orsino obviously didn't watch enough "
+       {:tag :span, :attrs {:class "T1"}, :content ["Sister Princess"]}
+       {:tag :span,
+        :attrs {:class "T2"},
+        :content
+        [", because he doesn't understand just how precious the oniichan-imouto relationship is. And Malvolio thinks he can swoop in and replace Olivia's oniichan, but he's lacking the vital ingredient of blood. No, the only one who can replace Olivia's oniichan is another woman, Viola, also an oniichanko, but now in disguise as a man and in love with Orsino herself.\""]})}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ({:tag :span,
+        :attrs {:class "T2"},
+        :content ["\"So your contention is that the entire plot of "]}
+       {:tag :span, :attrs {:class "T1"}, :content ["Twelfth Night "]}
+       {:tag :span,
+        :attrs {:class "T2"},
+        :content
+        ["is driven by woniichan moe,\" came Lucy's voice from the other end of the phone."]})}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content ("There's only one person I can talk like this with.")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("If I had lost this for nine months of the year, I think I'd be comatose from a diphenhydramine overdose by now. ")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("And with Lucy's high school graduation coming this spring, I'll soon have her back year-round.")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content ("\"Yes, with a hint of yuri. Look at the evidence!\"")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("\"You sound like Erich von Dänniken. 'Look at the evidence! Primitive man could never have created and deployed such advanced rock-based technology on his own! Clearly, all this was the work of ancient aliens!'\" Lucy mocked in a rather terrible German accent.")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content ("\"So you're not convinced.\"")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("\"I'm convinced that you're convinced. But you know, James, nothing is going to convince me that Shakespeare purposely wrote his plays taking account of moe. Mostly 'cause it wasn't invented for another four hundred years.\"")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ({:tag :span,
+        :attrs {:class "T2"},
+        :content
+        ["\"What Shakespeare did or didn't take account of is meaningless,\" I said. \"His plays outlived him "]}
+       {:tag :span,
+        :attrs {:class "T2"},
+        :content
+        ["and adapted themselves to the era in which they were read. Look at the backlash against Cordelia's "]}
+       {:tag :span, :attrs {:class "T2"}, :content ["death in the 18"]}
+       {:tag :span, :attrs {:class "T3"}, :content ["th"]}
+       {:tag :span,
+        :attrs {:class "T2"},
+        :content
+        ["Century. Look at the bloodthirsty acceptance of Cordelia's death in the mid-20"]}
+       {:tag :span, :attrs {:class "T3"}, :content ["th"]}
+       {:tag :span, :attrs {:class "T2"}, :content ["Century.\""]})}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("\"That's fine, but that's a reaction, not an interpretation,\" said my sister. \"People are free to react however they want, but I think it's a mistake to go too far afield in our interpretations. Otherwise—\"")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content ("\"Wait, say that again.\"")}
+     {:tag :p, :attrs {:class "standard"}, :content ("\"Say what?\"")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content ("\"What you just said.\"")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("\"Um, people are free to react however they want, but I think it's a mistake to go too far afield in our interpretations. Otherwise—\"")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("I shuddered. \"Hearing a woman talk smart is too nice. I love you, Sis.\"")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("\"Shut it with all that creepy talk! Go find some friends, or a girlfriend, or a bosom buddy, or a friend with benefits, or a sex friend, or a call girl of whom to be a regular client, and stop creeping me out.\"")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content ("\"I don't have the money for a call girl.\"")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content ("\"A streetwalker, then.\"")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("\"That's cold, condemning your own brother to the pain of sexually transmitted disease.\"")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("\"Medical treatments are amazing nowadays, and syphilis couldn't possibly bore any more holes in your brain, so you're probably safe.\"")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("\"Well, I guess I'll work on my notes and call you back tonight.\"")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("\"Don't ever call me back!\" The phone hung up, leaving me alone with my bread.")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("Despite what she said, my sister looked forward to my calls. I knew she sat there next to the phone every morning and evening, eagerly awaiting my newest theories on literature. She was just too much of a tsundere to admit it, so she pretended to dislike it and made fun of me all the time.")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ({:tag :span,
+        :attrs {:class "T2"},
+        :content
+        ["I finished my bread, thinking of what I could add to my theory that "]}
+       {:tag :span, :attrs {:class "T1"}, :content ["Twelfth Night "]}
+       {:tag :span,
+        :attrs {:class "T2"},
+        :content
+        ["was essentially a story of woniichan moe, and prepared my things to go to college. A heavily annotated literature anthology, an MP3 player (not an iPod, the cheap kind), a sandwich, and a digital camera went in to my backpack. An economics textbook, math textbook, and cell phone (not a smartphone, the cheap kind) stayed behind. My mom—or possibly my other sister, Sue, acting as a proxy for my mom—kept putting the phone in my backpack, and I kept taking it out. They were all gone already: my mother and father to work, Sue to high school, and Mia to elementary school. Lucy's school was only a fifteen minute drive from our uncle's house, where she lived, so she could leave later. "]})}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("I went out into the quiet suburb where I lived and began the walk to the bus stop. It was a forty-five minute bus ride to the next town, where I had been attending college for the past two semesters. I was still waiting on all that learning that was supposed to happen, though. In the meantime, I kept myself busy by creeping out Lucy and by running a small news blog that I maintained in my spare time. As the editor in chief and only reporter, I couldn't update it very often, but I tried to cover anything important that happened in this town. ")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("Incidentally, I used middle-aged women from around town as my primary sources. They were always good for wild rumor and speculation, and if I investigated and it turned out to be untrue or exaggerated, I still had a story debunking the rumors. I bring this up because one of them was approaching me, a Mrs. Rankin, neighborhood gossip and one of my top sources.")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("\"James! Good morning to you,\" said Mrs. Rankin as she approached me, coming the opposite way up the street, I assumed from the beauty salon. She was always up at the crack of dawn getting beauty treatments.")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("\"Good morning, Mrs. Rankin,\" I replied. \"Anything going on?\"")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("\"Actually, yes. I'm glad I ran into you. Now, this is just a rumor, but some of the women in the PTA are saying that one of its members, a Mrs. Sullivan, withdrew her son from school under strange circumstances.\"")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content ("\"What kind of strange circumstances?\" I asked.")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ({:tag :span,
+        :attrs {:class "T2"},
+        :content
+        ["\"They say he had a very strange medical condition,\" said Mrs. Rankin. \"And this, after three other women also withdrew their children from school with strange medical conditions. Now, mind you, this is just a rumor, but they say Mrs. Sullivan's child was "]}
+       {:tag :span, :attrs {:class "T1"}, :content ["pregnant"]}
+       {:tag :span, :attrs {:class "T2"}, :content [".\""]})}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content ("\"Pregnant,\" I repeated. ")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content ("\"Yes, a ten-year-old boy, pregnant.\"")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("This was certainly a rumor in need of some debunking, due to being a biological impossibility. I thanked Mrs. Rankin for her information and said I would surely investigate before continuing to school.")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("Schools contain all sorts of professors. Old professors, young professors, male professors, female professors. Traditional professors, radical professors. Invariably, some of the professors are more popular among students than others.")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("And in a college like this, where most of the students had 2.75 GPAs and rather conservative upbringings, it's not all that surprising that a teacher who says things like")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("\"I'd like to start today's class with a discussion of 'The Flea'. I hope you all read it, and were able to see that the flea represents taxes, the annoyance of which affects all of us equally.\"")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("would become rather popular. Never mind that eighty percent of the class had never paid any taxes and the remaining twenty percent had just had them automatically deducted from a paycheck and then had gotten them back later. Taxes were evil, said Professor Latrom, and every time he said it, the room filled with a general feeling that he was a paragon of justice whose mouth spoke only truth, and a small group of students was practically frothing at the mouth, so eager were they to agree with him. ")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("As I said, I didn't think that taxes were an issue which anyone in the class particularly cared about. They were just at that age where they were starting to become aware of the wider world and would latch on to just about anything in order to have a cause. It wasn't the issue; it was the way Latrom made you feel about it. He could just as well have been talking about the environment, or whether it was better to eat toast with the butter side up or the butter side down. But when he made statements like")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("\"They're stealing from you, the youth, the next generation, and I think it's wrong. It's wrong for the old and infirm to take from the young and strong to keep themselves fat and happy for a few more years. They're plundering our future, the future of this nation!\",")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ({:tag :span,
+        :attrs {:class "T2"},
+        :content
+        ["which he had said last week when we looked at Christopher Marlowe's \"The Passionate "]}
+       {:tag :span,
+        :attrs {:class "T2"},
+        :content
+        ["Shepherd to his Love\", it tended to shut down the mammalian brain and turn on the reptilian brain. By "]}
+       {:tag :span,
+        :attrs {:class "T2"},
+        :content
+        ["the way, if you were to ask me how he segued from shepherd love to taxes, I couldn't tell you, because I had been partially asleep until I was rudely awakened by the statement above and forced to endure "]}
+       {:tag :span,
+        :attrs {:class "T2"},
+        :content ["another rant about our future."]})}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ({:tag :span,
+        :attrs {:class "T2"},
+        :content
+        ["Latrom was in fine form again today. He started off by examining the line \"And pampered swells with one blood made of two\", connecting it to government bureaucrats who grew fat on their tax-supplied salaries and quoting a rather long passage from "]}
+       {:tag :span, :attrs {:class "T1"}, :content ["Atlas Shrugged "]}
+       {:tag :span,
+        :attrs {:class "T2"},
+        :content
+        ["straight from memory. I glanced around and saw most of the class sitting up with rapt attention, and before long someone raised his hand and launched into a mini-rant of his own before Latrom cut him off in the middle to continue his own rant, moving on to the line \"And this, alas, is more than we would do.\" and explaining how it referred to the narrator as a private sector worker who tried to get ahead through hard work and intelligence instead of mooching from taxpayers."]})}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("I think I've made it clear how popular Latrom was, how a Stalin-like cult of personality had grown around him among the members of the class. So it should come as no surprise that when someone stood up without being called on and said \"There's no basis in the text for any of that.\" and then proceeded to quote a line his little sister had halfway uttered that morning about not going too far afield with our interpretations, that someone was hardly cheered and feted. In fact, when Latrom responded by launching into another rant and that someone simply wrote off the contents of that rant as something else that had no basis in the text, I think it's safe to say that someone was lucky to escape from the class alive. Especially after Latrom launched into yet another rant and that someone waved his hand and said \"Whatever\" in a dismissive tone. I think it's safe to say that someone barely avoided being bitten by groupies foaming at the mouth as he left.")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("I think it's safe to say that someone wasn't very good at reading the mood. But maybe he'd just had it.")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("In order to prevent a riot, that someone left the classroom amid the screams and ravings of Professor Latrom and several other members of the class and went to the library to lay low for a while. And if that someone became angry and spent several hours looking up various interpretations of \"The Flea\", none of them having anything to do with taxes, and sent citations of all those papers to Professor Latrom along with some rather inflammatory comments about that luminary's teaching skill, who among us can blame him? I certainly can't.")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("It was while gathering references that she approached. I had seen her in class a few times. Glasses. Mousy brown hair, usually in a braid or held back with a headband, and always sticking up everywhere like she hadn't brushed it. Sort of a delicate jawline, like one of those porcelain-faced dolls.  She usually wore jeans with a blouse tucked in or a long skirt, modest clothing. All in all, she looked like an attractive girl who was trying to look unattractive, and had gone about it by copying the pre-transformation look of the girl from a high school movie who's ugly until some stud muffin takes it on himself to date her, at which time she brushes her hair and puts on some nice clothes, magically transforming into a babe. "
+       "")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("We had never spoken before, so I wasn't expecting her to approach me, and when she did I didn't respond at first because I thought she was just passing by. But when she didn't pass by, and instead started to look embarrassed, I decided that maybe she was trying to talk to me for some reason. I waited for her to say something, but she just stood there looking embarrassed, so I decided that she was probably autistic and said \"Can I help you?\" in a tone which I had not intended to be so condescending.")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("\"Um, I just wanted to let you know that I agree with your interpretation of 'The Flea',\" she said. \"I mean, I agree with you, there's no basis in the text to say it has anything to do with taxes.\"")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("This was a surprise. I eyed her with suspicion, wondering what her angle was. \"Well, thank you for saying so,\" I said.")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("\"I thought it was brave of you to stand up to Latrom like that,\" she added. \"Most of us are tired of his haranguing, but there are those few students who hang on to his every word...and he can be pretty intimidating.\"")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("I didn't find Latrom particularly intimidating, but felt it would be rude to say so. I also felt it would be rude to point out that it wasn't just a few students who sat hanging on Latrom's every word, so I didn't. I just nodded, hoping I looked thoughtful and gracious, feeling mistrustful, hoping I didn't look mistrustful, feeling that I probably did.")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("\"Oh, by the way, my name is Sophia. Sophia de Nuit.\" She extended her hand.")}
+     {:tag :p, :attrs {:class "standard"}, :content ("\"Da knee?\"")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("\"De Nuit,\" she repeated, and I could hear the hint of a French accent. I took her extended hand and tried to smile.")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("\"I'm James Moran.\" I almost added that I liked piña coladas and long walks on the beach, just in case she was planning to ask me on a date to better manipulate me. ")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("\"Nice to meet you, James.\" She smiled, a dazzling expression, even with her wild hair. \"Well, I just wanted to tell you that. I'll see you later. then?\"")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content ("\"Yeah.\" I nodded and watched her go. ")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content ("What was her angle?")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("What could she possibly stand to gain by buttering me up?")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content ("It wasn't like I had money or power.")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("It wasn't like I had the prospect of ever having money or power.")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("I decided she could only mean to humiliate me somehow. It was a pain, but I would have to deal with it at some point. Not now, though. I had investigating to do.")}
+     "\n      "]}
+   "\n    "]})

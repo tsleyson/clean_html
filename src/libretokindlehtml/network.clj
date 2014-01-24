@@ -42,7 +42,7 @@
   "Responds to messages from the client."
   [connection msg]
   (let [message (-> msg json/read-json (get-in [:data :config]))]
-    (.send connection (mock-response message))))
+    (println (mock-response message))))
 
 (defn network-main
   "Starts up a server process on port 8080 to accept 
@@ -55,6 +55,6 @@
             (proxy [WebSocketHandler] []
               (onOpen [c] (on-open c))
               (onClose [c] (println c))
-              (onMessage [c j] (println c j))))
+              (onMessage [c j] (on-message c j))))
       (.add (StaticFileHandler. "resources/web_interface"))
       (.start))))

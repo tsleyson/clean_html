@@ -1,0 +1,29 @@
+// This is an example config file. It shows how to:
+// - Pick which files to involve.
+// - Point out where they are.
+// - Say whether to merge them or not.
+// - Define an ordering on your files to be merged.
+// - Specify a transformation on the html file.
+// If you don't give the files in here the program will ask
+// where they are. That way it's possible to write a config
+// for Microsoft Word and give it out to people who don't
+// know how to write config files. They can enter the
+// file directory and apply the same transformations over and
+// over again.
+
+// I want to make it possible to specify the order without having to type
+// out every file. Maybe add a regex or something to extract a part
+// of the chapter name to order by. It wouldn't help for e.g.
+// Strawberry Sunflower, but for a lot of cases it would.
+// It might also be nice to make it possible to give a table of
+// contents with the ordering set in HTML attributes. But we're getting
+// ahead of ourselves; for now just stick with this.
+{"directory": "/home/trisdan/Documents/Programs/libretokindlehtml/resources/ofnight",
+ "order": ["Prologue.html", "Chapter 1.html", "Chapter 2.html",
+ 	   "Chapter 3.html", "Chapter 4.html", "Chapter 5.html",
+	   "Chapter 6.html",
+	   "Chapter 7.html", "Chapter 8.html", "Chapter 9.html",
+	   "Chapter 10.html", "Chapter 11.html", "Chapter 12.html"],
+ "merge": true
+}
+

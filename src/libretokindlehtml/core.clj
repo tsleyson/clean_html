@@ -28,9 +28,11 @@
     (try 
       (println "Reading configuration from" (first args))
       (let [config (read-config (first args))
-               fname (template-main config)]
+            fname (template-main config)]
            (println (str "Successfully wrote " fname ".")))
          (catch java.io.FileNotFoundException fnfe
-           (println (str "Couldn't open file " (first args) "; not found."))))))
+           (do
+             (println (str "Couldn't open file " (first args) "; not found."))
+             (.printStackTrace fnfe))))))
 ; To do in here:
 ; Add some nice error messages.

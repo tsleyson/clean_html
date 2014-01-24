@@ -1,0 +1,849 @@
+<!--?xml version="1.0" encoding="ISO-8859-1"?-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+	<title>ClojureDocs - clojure.core/atom</title>
+	<meta name="description" content="Documentation and examples for Clojure.">
+	<meta name="google-site-verification" content="XjzqkjEPtcgtLjhnqAvtnVSeveEccs-O_unFGGlbk4g">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" charset="utf-8">
+	<link rel="search" type="application/opensearchdescription+xml" title="ClojureDocs" href="http://clojuredocs.org/opensearch.xml">
+	<link href="ClojureDocs%20-%20clojure.core_atom_files/reset.css" media="screen" rel="stylesheet" type="text/css">
+<link href="ClojureDocs%20-%20clojure.core_atom_files/text.css" media="screen" rel="stylesheet" type="text/css">
+<link href="ClojureDocs%20-%20clojure.core_atom_files/grid.css" media="screen" rel="stylesheet" type="text/css">
+<link href="ClojureDocs%20-%20clojure.core_atom_files/common.css" media="screen" rel="stylesheet" type="text/css">
+<link href="ClojureDocs%20-%20clojure.core_atom_files/main.css" media="screen" rel="stylesheet" type="text/css">
+<link href="ClojureDocs%20-%20clojure.core_atom_files/shCore.css" media="screen" rel="stylesheet" type="text/css">
+<link href="ClojureDocs%20-%20clojure.core_atom_files/shThemeDefault.css" media="screen" rel="stylesheet" type="text/css">
+	<script src="ClojureDocs%20-%20clojure.core_atom_files/ga.js" async="" type="text/javascript"></script><script src="ClojureDocs%20-%20clojure.core_atom_files/shCore.js" type="text/javascript"></script>
+<script src="ClojureDocs%20-%20clojure.core_atom_files/shBrushClojure.js" type="text/javascript"></script>
+<script src="ClojureDocs%20-%20clojure.core_atom_files/jquery-1.js" type="text/javascript"></script>
+<script src="ClojureDocs%20-%20clojure.core_atom_files/jquery-ui-1.js" type="text/javascript"></script>
+<script src="ClojureDocs%20-%20clojure.core_atom_files/jquery_003.js" type="text/javascript"></script>
+<script src="ClojureDocs%20-%20clojure.core_atom_files/jquery_002.js" type="text/javascript"></script>
+<script src="ClojureDocs%20-%20clojure.core_atom_files/jquery.js" type="text/javascript"></script>
+<script src="ClojureDocs%20-%20clojure.core_atom_files/showdown.js" type="text/javascript"></script>
+<script src="ClojureDocs%20-%20clojure.core_atom_files/cd.js" type="text/javascript"></script>
+
+	<script type="text/javascript" charset="utf-8">
+	// <![CDATA[
+	
+	CD.ROOT_URL = ""
+	
+	function setUpInternalNav() {
+		$(".scroll").click(function(event){
+			//prevent the default action for the click event
+			event.preventDefault();
+
+			//get the full url - like mysitecom/index.htm#home
+			var full_url = this.href;
+
+			//split the url by # and get the anchor target name - home in mysitecom/index.htm#home
+			var parts = full_url.split("#");
+			var trgt = parts[1];
+			
+			//get the top offset of the target anchor
+			var target_offset = $("a[name="+trgt+"]").offset();
+			var target_top = target_offset.top - 10;
+
+			//goto that anchor by setting the body scroll top to anchor top
+			$('html, body').animate({scrollTop:target_top}, 500);
+		});
+	}
+	
+	$(document).ready(function() {
+		setUpInternalNav()
+		var mainText = "Search";
+		$("#main_search").makeFocusBlur(mainText, {setColorOnInit: true})
+
+		var acUrl = "/ac_search";
+		
+		//acUrl = "/ac_search/clojure_core";
+		
+		
+		$('#main_search').keydown(function(e) {
+			if(e.ctrlKey && e.which == 13) {
+				$(".search form").append("<input type='hidden' name='feeling_lucky' value='true' />")
+			}
+		})
+			
+		$(document).keydown(function(e) {
+			if(e.ctrlKey && (e.which == 83)) {
+				$('#main_search').focus()
+			}
+			
+			e.stopPropagation();
+		})
+	})
+	// ]]>	
+	</script>
+
+	<script type="text/javascript">
+	/*** UserVoice ***/
+	var uservoiceOptions = {
+		/* required */
+		key: 'clojuredocs',
+		host: 'clojuredocs.uservoice.com', 
+		forum: '64757',
+		showTab: true,  
+		/* optional */
+		alignment: 'right',
+		background_color:'#ccc', 
+		text_color: 'white',
+		hover_color: '#888',
+		lang: 'en'
+	};
+
+	function _loadUserVoice() {
+		var s = document.createElement('script');
+		s.setAttribute('type', 'text/javascript');
+		s.setAttribute('src', ("https:" == document.location.protocol ? "https://" : "http://") + "cdn.uservoice.com/javascripts/widgets/tab.js");
+		document.getElementsByTagName('head')[0].appendChild(s);
+	}
+	_loadSuper = window.onload;
+	window.onload = (typeof window.onload != 'function') ? _loadUserVoice : function() { _loadSuper(); _loadUserVoice();};
+	</script>
+	
+	<script type="text/javascript">
+	  /*** Google Analytics ***/
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-17348828-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+
+<script src="ClojureDocs%20-%20clojure.core_atom_files/tab.js" type="text/javascript"></script><style media="screen" type="text/css">    #uservoice-dialog {      z-index: 100003;      display: block;      text-align: left;      margin: -2em auto 0 auto;      position: fixed;     }        #uservoice-overlay {      position: fixed;      z-index:100002;      width: 100%;      height: 100%;      left: 0;      top: 0;      background-color: #000;      opacity: 0.7;    }        #uservoice-overlay p {      padding: 5px;      color: #ddd;      font: bold 14px arial, sans-serif;      margin: 0;      letter-spacing: -1px;    }        #uservoice-dialog #uservoice-dialog-close {      position: absolute;      height: 48px;      width: 48px;      top: -11px;      right: -12px;      color: #06c;      cursor: pointer;      background-position: 0 0;      background-repeat: no-repeat;      background-color: transparent;    }        html.dialog-open object,    html.dialog-open embed {      visibility: hidden;    }    a#uservoice-dialog-close { background-image: url(http://cdn.uservoice.com/images/icons/close.png); }</style><style media="screen" type="text/css">    body a#uservoice-feedback-tab,    body a#uservoice-feedback-tab:link {      background-position: 2px 50% !important;      position: fixed !important;      top: 45% !important;      display: block !important;      width: 25px !important;      height: 98px !important;      margin: -45px 0 0 0 !important;      padding: 0 !important;      z-index: 100001 !important;      background-position: 2px 50% !important;      background-repeat: no-repeat !important;      text-indent: -9000px;    }        body a#uservoice-feedback-tab:hover {      cursor: pointer;    }        a#uservoice-feedback-tab {       right: 0;       background-repeat: no-repeat;       background-color: #ccc;       background-image: url(http://cdn.uservoice.com/images/widgets/en/feedback_tab_white.png);       border: outset 1px #ccc;       border-right: none;     }        a#uservoice-feedback-tab:hover {       background-color: #888;       border: outset 1px #888;       border-right: none;     }</style></head>
+
+<body><div id="uservoice-feedback"><a id="uservoice-feedback-tab" "="" onclick="UserVoice.Popin.show(); return false;" onmouseover="UserVoice.Popin.preload();" href="http://clojuredocs.uservoice.com/forums/64757?lang=en">Open Feedback Dialog</a></div>
+	<script type="text/javascript" charset="utf-8">
+	$(document).ready(function() {
+		$("#main_search").autocomplete({
+			source: function(req, add) {
+				$.getJSON("/search_autocomplete", req, function(data) {
+					var out = []
+					$.each(data, function(i, v) {
+						var lbl = "<div class=\"ac_search_result\">"
+						lbl += "<span class='name'>" + v.name + "</span>"
+						lbl += "<span class='ns'>" + v.ns + "</span>"
+						lbl += "<br />"
+						lbl += "<span class='shortdoc'>" + v.shortdoc + "</span>"
+						lbl += "</div>"
+						out.push({label: lbl, value: v.name, href: v.href})
+					})
+					
+					add(out)
+				})
+			},
+			focus: function(event, ui) {
+				return false
+			},
+			select: function(event, ui) {
+				window.location.href = ui.item.href
+				return false
+			},
+			dataType: "json"
+		})
+	})
+</script>
+
+<div class="header">
+	<div class="container_16">
+	<div class="header_content">
+		<div class="user_area">
+				<div class="grid_16">
+            <span class="main_nav">
+            <a href="http://api.clojuredocs.org/">api</a>
+            &nbsp;
+            <a href="http://clojuredocs.wordpress.com/">blog</a>
+            &nbsp;
+            <a href="http://github.com/zkim/clojuredocs">github</a>
+            </span>
+            &nbsp;
+            &nbsp;
+				  <span class="user_area_content">
+				    
+				      <a href="http://clojuredocs.org/login" id="login">login / sign up</a>
+				      
+				  </span>
+				</div>
+			<div class="clear"></div>
+		</div>
+		<div class="grid_1">
+		  <img alt="Cd_logo" class="cd_logo" src="ClojureDocs%20-%20clojure.core_atom_files/cd_logo.png" height="33" width="52">
+		</div>
+		<div class="grid_7">
+			<h1><a href="http://clojuredocs.org/">ClojureDocs</a><span class="version">(beta)</span></h1>
+		</div>
+		<div class="grid_8">
+			<div class="search">
+				<form action="/search" method="get">
+					<input class="submit_image" src="ClojureDocs%20-%20clojure.core_atom_files/magnifying_glass_alt_24x24.png" height="20px" type="image" width="20px">
+					<input aria-haspopup="true" aria-autocomplete="list" role="textbox" autocomplete="off" style="color: rgb(0, 0, 0);" id="main_search" class="text_field ui-autocomplete-input" name="q" type="text">
+					
+						<input name="lib" value="clojure_core" type="hidden">
+					
+				</form>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	</div>
+	<div class="clear"></div>
+</div>
+<div class="header_filler"></div>
+<div class="clear"></div>
+
+	
+	
+	
+
+
+<script type="text/javascript" charset="utf-8">
+
+
+$(document).ready(function() {
+	CD.VarPage.init({
+		varId: 5370,
+		library: "Clojure Core",
+		version: "1.3.0",
+		editExampleFormHTML: '<div class="edit_example"><form action="/clojure_core/clojure.core/atom" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="W5FCJMHUHoicFfYpCVsE976sifq4dms3UCwEP5L0ziI=" /></div>Example Content <span class="instructions">(code only, do not wrap in &lt;pre&gt; tags. See <a href="/examples_style_guide">style guide</a> for more information.)</span><div class="examples_license">	Examples submitted to clojuredocs will be licensed under the <a href="http://creativecommons.org/publicdomain/zero/1.0/">Creative Commons CC 0</a>.</div><img alt="Ajax-loader" class="ajax_loader" height="20" src="/images/ajax-loader.gif?1317195880" width="20" /><textarea class="textarea" cols="40" id="example_body" name="example[body]" rows="20"></textarea><div style="text-align: right">	<a class="cancel" href="" style="float: left">Cancel</a>	<!-- <input class="preview_example" type="button" value="Preview" /> -->	<input id="example_submit" name="commit" type="submit" value="Update Example" />	<div class="clear"></div></div><input type="hidden" name="update_example" value="true" /><input type="hidden" name="example_id" value="-1" /><fieldset class="live_preview">	<legend>Live Preview</legend>	<div class="preview">	</div></fieldset></form>',
+		editCommentFormHTML: '<div class="edit_comment"><form action="/clojure_core/clojure.core/atom" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="W5FCJMHUHoicFfYpCVsE976sifq4dms3UCwEP5L0ziI=" /></div>Comment <span class="instructions">(markdown allowed, code in &lt;pre /&gt;)</span><br /><textarea class="textarea" cols="40" id="comment_body" name="comment[body]" rows="20"></textarea><div style="text-align: right">	<a class="cancel" href="" style="float: left">Cancel</a>	<!-- <input class="preview_comment" type="button" value="Preview" /> -->	<input id="comment_submit" name="commit" type="submit" value="Update Comment" />	<div class="clear"></div></div><input type="hidden" name="update_comment" value="true" /><input type="hidden" name="comment_id" value="-1" /><fieldset class="live_preview">	<legend>Live Preview</legend>	<div class="preview"></div></fieldset></form>',
+	})
+})
+</script>
+<div class="container_16">
+<div class="grid_3">
+	
+<div class="lib_nav">
+	<h2><a href="http://clojuredocs.org/clojure_core">Clojure Core</a></h2>
+	
+	<ul class="level_0">
+		<li>
+			<a href="http://clojuredocs.org/quickref/Clojure%20Core">Quick Ref</a>
+			<ul>
+				<li><a href="http://clojuredocs.org/quickref/shortdesc/Clojure%20Core">Short Descs</a></li>
+				<li><a href="http://clojuredocs.org/quickref/varsonly/Clojure%20Core">Vars Only</a></li>
+			</ul>
+		</li>
+		<li><a href="http://clojuredocs.org/clojure_core">Alphabetical</a></li>
+	</ul>
+	
+</div>
+	
+<div class="namespaces">
+	<h3>Namespaces</h3>
+	
+		<ul>
+			
+
+				
+						<li>
+							clojure
+							
+		<ul>
+			
+
+				
+				<li>
+					<span class="current_ns">
+					<a href="http://clojuredocs.org/clojure_core/clojure.core">core</a>
+					</span>
+					
+		<ul>
+			
+
+				
+				<li>
+					<span>
+					<a href="http://clojuredocs.org/clojure_core/clojure.core.protocols">protocols</a>
+					</span>
+					
+						</li>
+					
+				
+		</ul>
+	
+						</li>
+					
+				
+
+				
+				<li>
+					<span>
+					<a href="http://clojuredocs.org/clojure_core/clojure.data">data</a>
+					</span>
+					
+						</li>
+					
+				
+
+				
+				<li>
+					<span>
+					<a href="http://clojuredocs.org/clojure_core/clojure.inspector">inspector</a>
+					</span>
+					
+						</li>
+					
+				
+
+				
+						<li>
+							java
+							
+		<ul>
+			
+
+				
+				<li>
+					<span>
+					<a href="http://clojuredocs.org/clojure_core/clojure.java.browse">browse</a>
+					</span>
+					
+						</li>
+					
+				
+
+				
+				<li>
+					<span>
+					<a href="http://clojuredocs.org/clojure_core/clojure.java.browse-ui">browse-ui</a>
+					</span>
+					
+						</li>
+					
+				
+
+				
+				<li>
+					<span>
+					<a href="http://clojuredocs.org/clojure_core/clojure.java.io">io</a>
+					</span>
+					
+						</li>
+					
+				
+
+				
+				<li>
+					<span>
+					<a href="http://clojuredocs.org/clojure_core/clojure.java.javadoc">javadoc</a>
+					</span>
+					
+						</li>
+					
+				
+
+				
+				<li>
+					<span>
+					<a href="http://clojuredocs.org/clojure_core/clojure.java.shell">shell</a>
+					</span>
+					
+						</li>
+					
+				
+		</ul>
+	
+						</li>
+					
+				
+
+				
+				<li>
+					<span>
+					<a href="http://clojuredocs.org/clojure_core/clojure.main">main</a>
+					</span>
+					
+						</li>
+					
+				
+
+				
+				<li>
+					<span>
+					<a href="http://clojuredocs.org/clojure_core/clojure.pprint">pprint</a>
+					</span>
+					
+						</li>
+					
+				
+
+				
+				<li>
+					<span>
+					<a href="http://clojuredocs.org/clojure_core/clojure.reflect">reflect</a>
+					</span>
+					
+						</li>
+					
+				
+
+				
+				<li>
+					<span>
+					<a href="http://clojuredocs.org/clojure_core/clojure.repl">repl</a>
+					</span>
+					
+						</li>
+					
+				
+
+				
+				<li>
+					<span>
+					<a href="http://clojuredocs.org/clojure_core/clojure.set">set</a>
+					</span>
+					
+						</li>
+					
+				
+
+				
+				<li>
+					<span>
+					<a href="http://clojuredocs.org/clojure_core/clojure.stacktrace">stacktrace</a>
+					</span>
+					
+						</li>
+					
+				
+
+				
+				<li>
+					<span>
+					<a href="http://clojuredocs.org/clojure_core/clojure.string">string</a>
+					</span>
+					
+						</li>
+					
+				
+
+				
+				<li>
+					<span>
+					<a href="http://clojuredocs.org/clojure_core/clojure.template">template</a>
+					</span>
+					
+						</li>
+					
+				
+
+				
+				<li>
+					<span>
+					<a href="http://clojuredocs.org/clojure_core/clojure.test">test</a>
+					</span>
+					
+		<ul>
+			
+
+				
+				<li>
+					<span>
+					<a href="http://clojuredocs.org/clojure_core/clojure.test.junit">junit</a>
+					</span>
+					
+						</li>
+					
+				
+
+				
+				<li>
+					<span>
+					<a href="http://clojuredocs.org/clojure_core/clojure.test.tap">tap</a>
+					</span>
+					
+						</li>
+					
+				
+		</ul>
+	
+						</li>
+					
+				
+
+				
+				<li>
+					<span>
+					<a href="http://clojuredocs.org/clojure_core/clojure.walk">walk</a>
+					</span>
+					
+						</li>
+					
+				
+
+				
+				<li>
+					<span>
+					<a href="http://clojuredocs.org/clojure_core/clojure.xml">xml</a>
+					</span>
+					
+						</li>
+					
+				
+
+				
+				<li>
+					<span>
+					<a href="http://clojuredocs.org/clojure_core/clojure.zip">zip</a>
+					</span>
+					
+						</li>
+					
+				
+		</ul>
+	
+						</li>
+					
+				
+		</ul>
+	
+</div>
+
+
+	&nbsp;
+</div>
+<div class="grid_11">
+	
+	<a name="top"></a>
+	<div class="function_links">
+		<a href="#doc" class="scroll">doc</a>
+		<a href="#source" class="scroll">source</a>
+		<a href="#examples" class="scroll">examples</a>
+		<a href="#comments" class="scroll">comments</a>
+	</div>
+	
+	<script type="text/javascript" charset="utf-8">
+		$(document).ready(function() {
+			$(".versions_nav").click(function() {
+				$(".versions_nav ul").toggle()
+			})
+		})
+	</script>
+	
+
+	<div class="versions_nav">
+		<span>
+			1.3.0 
+			
+			<img alt="Arrow_down_16x16" src="ClojureDocs%20-%20clojure.core_atom_files/arrow_down_16x16.png" height="16" width="16">
+		</span>
+		<ul>
+			<!--  -->
+		
+			
+			<li>
+				
+					<a href="http://clojuredocs.org/clojure_core/1.2.0/clojure.core/atom" class="">1.2.0</a>
+				
+			</li>
+		
+			
+			<li>
+				
+					<a href="http://clojuredocs.org/clojure_core/1.3.0/clojure.core/atom" class="selected stable">1.3.0 permalink</a>
+				
+			</li>
+		
+		</ul>
+		<!-- <a href="/v/5370">short link to this var</a> -->
+	</div>
+	<div class="clear"></div>
+	<div class="function_header">
+	<h1>
+		atom
+	</h1>
+	<h2>
+		<span class="ns">
+			<a href="http://clojuredocs.org/clojure_core/1.3.0/clojure.core">clojure.core</a>
+		</span>
+	</h2>
+	
+	<div class="clear"></div>
+	</div>
+	
+	
+	<div class="usage">
+		<ul>
+			
+			<li>(atom x)</li>
+			
+			<li>(atom x &amp; options)</li>
+			
+		</ul>
+	</div>
+	
+
+	
+	
+	<div class="doc">
+		<a class="internal_nav scroll" href="#doc" name="doc"></a>
+		<div class="content">Creates and returns an Atom with an initial value of x and zero or<br>more options (in any order):<br><br>:meta metadata-map<br><br>:validator validate-fn<br><br>If metadata-map is supplied, it will be come the metadata on the<br>atom. validate-fn must be nil or a side-effect-free fn of one<br>argument, which will be passed the intended new state on any state<br>change. If the new state is unacceptable, the validate-fn should<br>return false or throw an exception.</div>
+		<div class="copyright_license">
+			© Rich Hickey.  All rights reserved.
+			
+			<a href="http://www.eclipse.org/legal/epl-v10.html">Eclipse Public License 1.0</a>
+		</div>
+	</div>
+	
+	
+	<div class="examples">
+		<h3>
+			<a class="internal_nav scroll" href="#examples" name="examples">
+				<span id="examples_count">1</span> <span id="examples_desc">Example</span>
+			</a>
+			<a class="top scroll" href="#top">top</a>
+		</h3>
+		
+		<ul id="var_examples">
+		
+			<li>
+				<div class="example" id="example_330">
+	
+	<div class="controls">
+		<a class="permalink" name="example_330" href="#example_330">link</a>
+		|
+		<a href="http://clojuredocs.org/examples/view_changes/330" class="view_changes">changes</a>
+		
+	</div>
+	
+	<div class="clear"></div>
+	<div class="content">
+	<div class="syntaxhighlighter  " id="highlighter_603515"><div class="bar                        show"><div class="toolbar"><a class="item viewSource" style="width: 16px; height: 16px;" title="view source" href="#viewSource">view source</a><a class="item printSource" style="width: 16px; height: 16px;" title="print" href="#printSource">print</a><a class="item about" style="width: 16px; height: 16px;" title="?" href="#about">?</a></div></div><div class="lines"><div class="line alt1"><table><tbody><tr><td class="number"><code>01</code></td><td class="content"><code class="plain">user=&gt; </code><code class="keyword">(</code><code class="preprocessor">def</code> <code class="plain">my-atom </code><code class="keyword">(</code><code class="functions">atom</code> <code class="value">0</code><code class="keyword">)</code><code class="keyword">)</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>02</code></td><td class="content"><code class="color1">#'user/my-atom</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>03</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>04</code></td><td class="content"><code class="plain">user=&gt; </code><code class="keyword">@</code><code class="plain">my-atom</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>05</code></td><td class="content"><code class="value">0</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>06</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>07</code></td><td class="content"><code class="plain">user=&gt; </code><code class="keyword">(</code><code class="functions">swap!</code> <code class="plain">my-atom </code><code class="functions">inc</code><code class="keyword">)</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>08</code></td><td class="content"><code class="value">1</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>09</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>10</code></td><td class="content"><code class="plain">user=&gt; </code><code class="keyword">@</code><code class="plain">my-atom</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>11</code></td><td class="content"><code class="value">1</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>12</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>13</code></td><td class="content"><code class="plain">user=&gt; </code><code class="keyword">(</code><code class="functions">swap!</code> <code class="plain">my-atom </code><code class="keyword">(</code><code class="preprocessor">fn</code> <code class="keyword">[</code><code class="plain">n</code><code class="keyword">]</code> <code class="keyword">(</code><code class="functions">*</code> <code class="keyword">(</code><code class="functions">+</code> <code class="plain">n n</code><code class="keyword">)</code> <code class="value">2</code><code class="keyword">)</code><code class="keyword">)</code><code class="keyword">)</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>14</code></td><td class="content"><code class="plain">4</code></td></tr></tbody></table></div></div></div>
+	</div>
+	<div class="hidden plain_content">user=&gt; (def my-atom (atom 0))
+#'user/my-atom
+
+user=&gt; @my-atom
+0
+
+user=&gt; (swap! my-atom inc)
+1
+
+user=&gt; @my-atom
+1
+
+user=&gt; (swap! my-atom (fn [n] (* (+ n n) 2)))
+4</div>
+	<div class="clear"></div>
+</div>
+
+			</li>
+		
+		</ul>
+		
+		
+		
+		
+			Log in to add / edit an example.
+			
+	</div>
+	
+	<div class="see_alsos">
+		<h3>See Also <a class="top scroll" href="#top">top</a></h3>
+
+		<ul>
+			
+			<li class="see_also_item" id="see_also_item_10">
+				
+<div>
+	<div class="controls">
+		<span class="vote_count ">2</span>
+
+			
+		
+	</div>
+	
+	<a href="http://clojuredocs.org/clojure_core/clojure.core/reset%21"><span class="ns">clojure.core/</span><span class="name">reset!</span></a>
+				
+	<p class="shortdoc">Sets the value of atom to newval without regard for the
+  current val</p>
+	<div class="clear"></div>
+</div>
+
+			</li>
+			
+			<li class="see_also_item" id="see_also_item_11">
+				
+<div>
+	<div class="controls">
+		<span class="vote_count ">2</span>
+
+			
+		
+	</div>
+	
+	<a href="http://clojuredocs.org/clojure_core/clojure.core/swap%21"><span class="ns">clojure.core/</span><span class="name">swap!</span></a>
+				
+	<p class="shortdoc">Atomically swaps the value of atom to be:
+  (apply f current-value-of</p>
+	<div class="clear"></div>
+</div>
+
+			</li>
+			
+			<li class="see_also_item" id="see_also_item_984">
+				
+<div>
+	<div class="controls">
+		<span class="vote_count ">1</span>
+
+			
+		
+	</div>
+	
+	<a href="http://clojuredocs.org/clojure_core/clojure.core/compare-and-set%21"><span class="ns">clojure.core/</span><span class="name">compare-and-set!</span></a>
+				
+	<p class="shortdoc">Atomically sets the value of atom to newval if and only if the
+  curr</p>
+	<div class="clear"></div>
+</div>
+
+			</li>
+			
+			<li class="see_also_item" id="see_also_item_1110">
+				
+<div>
+	<div class="controls">
+		<span class="vote_count ">0</span>
+
+			
+		
+	</div>
+	
+	<a href="http://clojuredocs.org/clojure_core/clojure.core/add-watch"><span class="ns">clojure.core/</span><span class="name">add-watch</span></a>
+				
+	<p class="shortdoc">Alpha - subject to change.
+  Adds a watch function to an agent/atom/v</p>
+	<div class="clear"></div>
+</div>
+
+			</li>
+			
+			<li class="see_also_item" id="see_also_item_1111">
+				
+<div>
+	<div class="controls">
+		<span class="vote_count ">0</span>
+
+			
+		
+	</div>
+	
+	<a href="http://clojuredocs.org/clojure_core/clojure.core/remove-watch"><span class="ns">clojure.core/</span><span class="name">remove-watch</span></a>
+				
+	<p class="shortdoc">Alpha - subject to change.
+  Removes a watch (set by add-watch) from </p>
+	<div class="clear"></div>
+</div>
+
+			</li>
+			
+			<li class="see_also_item" id="see_also_item_1251">
+				
+<div>
+	<div class="controls">
+		<span class="vote_count ">0</span>
+
+			
+		
+	</div>
+	
+	<a href="http://clojuredocs.org/clojure_core/clojure.core/set-validator%21"><span class="ns">clojure.core/</span><span class="name">set-validator!</span></a>
+				
+	<p class="shortdoc">Sets the validator-fn for a var/ref/agent/atom. validator-fn must be </p>
+	<div class="clear"></div>
+</div>
+
+			</li>
+			
+		</ul>
+		
+		Log in to add a see also.
+		
+		<div class="clear"></div>
+	</div>
+	
+	<div class="source">
+		<h3 style="margin: 0px; padding: 0px;">
+			<img alt="Plus_12x12" id="expand_source" src="ClojureDocs%20-%20clojure.core_atom_files/plus_12x12.png" height="12" width="12">
+			<img alt="Minus_12x12" id="collapse_source" src="ClojureDocs%20-%20clojure.core_atom_files/minus_12x12.png" height="12" width="12">
+			<a class="internal_nav scroll" href="#source" name="source">Source</a>
+			
+			<span class="file">
+				
+				clojure/core.clj:2081
+				
+			</span>
+			
+			<a class="top scroll" href="#top">top</a>
+
+		</h3>
+		<div class="source_content">
+			<div class="syntaxhighlighter  " id="highlighter_312941"><div class="bar"><div class="toolbar"><a class="item viewSource" style="width: 16px; height: 16px;" title="view source" href="#viewSource">view source</a><a class="item printSource" style="width: 16px; height: 16px;" title="print" href="#printSource">print</a><a class="item about" style="width: 16px; height: 16px;" title="?" href="#about">?</a></div></div><div class="lines"><div class="line alt1"><table><tbody><tr><td class="number"><code>01</code></td><td class="content"><code class="keyword">(</code><code class="functions">defn</code> <code class="functions">atom</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>02</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;</code><code class="string">"Creates and returns an Atom with an initial value of x and zero or</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>03</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;</code><code class="string">more options (in any order):</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>04</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>05</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;</code><code class="string">:meta metadata-map</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>06</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>07</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;</code><code class="string">:validator validate-fn</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>08</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>09</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;</code><code class="string">If metadata-map is supplied, it will be come the metadata on the</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>10</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;</code><code class="string">atom. validate-fn must be nil or a side-effect-free fn of one</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>11</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;</code><code class="string">argument, which will be passed the intended new state on any state</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>12</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;</code><code class="string">change. If the new state is unacceptable, the validate-fn should</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>13</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;</code><code class="string">return false or throw an exception."</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>14</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;</code><code class="keyword">{</code><code class="constants">:added</code> <code class="string">"1.0"</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>15</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;&nbsp;</code><code class="constants">:static</code> <code class="value">true</code><code class="keyword">}</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>16</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;</code><code class="keyword">(</code><code class="keyword">[</code><code class="plain">x</code><code class="keyword">]</code> <code class="keyword">(</code><code class="preprocessor">new</code> <code class="plain">clojure.lang.Atom x</code><code class="keyword">)</code><code class="keyword">)</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>17</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;</code><code class="keyword">(</code><code class="keyword">[</code><code class="plain">x </code><code class="keyword">&amp;</code> <code class="plain">options</code><code class="keyword">]</code> <code class="keyword">(</code><code class="plain">setup-reference </code><code class="keyword">(</code><code class="functions">atom</code> <code class="plain">x</code><code class="keyword">)</code> <code class="plain">options</code><code class="keyword">)</code><code class="keyword">)</code><code class="keyword">)</code></td></tr></tbody></table></div></div></div>
+			<div class="copyright_license">
+				© Rich Hickey.  All rights reserved.
+
+				<a href="http://www.eclipse.org/legal/epl-v10.html">Eclipse Public License 1.0</a>
+			</div>
+
+			<div class="references">
+				Vars in <span class="ns">clojure.core/</span>atom:
+				
+			</div>
+
+			<div class="used_in">
+				Used in 0 other vars
+				
+				
+				
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="comments">
+		<h3><a class="internal_nav scroll" href="#comments" name="comments">Comments</a> <a class="top scroll" href="#top">top</a></h3>
+		
+			<h4>
+				No comments for <em>atom</em>.
+				
+					Log in to add a comment.
+				
+			</h4>
+		
+		
+		
+		
+		<div class="hidden" id="preview_window">
+		</div>
+	</div>
+</div>
+<div class="grid_3">
+	
+	&nbsp;
+</div>
+</div>
+
+
+
+	
+	
+	<div class="clear"></div>
+	<div class="footer">
+		ClojureDocs uses some elements of HTML5 / CSS3, and is best viewed in an up-to-date <a href="http://getfirefox.com/">gecko</a> / <a href="http://www.google.com/chrome">webkit</a> -based browser.
+		<br>
+		<br>
+		© 2010 Zachary Kim <a href="http://zacharykim.com/">http://zacharykim.com</a>
+		<br>
+		<br>
+	</div>
+
+
+
+<ul style="z-index: 1; top: 0px; left: 0px; display: none;" aria-activedescendant="ui-active-menuitem" role="listbox" class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all"></ul></body></html>

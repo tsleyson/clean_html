@@ -4,7 +4,7 @@
 
     <section id="info"></section>
     <script src="/home/trisdan/Documents/Programs/jquery/jsapi"></script>
-    <script>google.load("jquery", "1.3")</script>
+    <script>google.load("jquery", "1.10")</script>
     <script src="/home/trisdan/Documents/Programs/jquery/jquery-1.10.2.js">
     </script>
     <script src="/home/trisdan/Documents/Programs/jquery/jquery.websocket-0.0.1.js">
@@ -23,6 +23,7 @@
                   {type: "downcase", message: $("#message").val()});
       });
       */
+      alert("Starting client");
       var ws = $.websocket("ws://127.0.0.1:8080/web", {
           open: function(reply) { $("#info").html(reply.msg); },
           events: { 
@@ -32,7 +33,9 @@
               }
           }
       };
-                           
+      
+      ws.send('fake-data',
+              {type: "mock", config: {directory: "fake/directory/to/book", order: ["1", "2", "3"]}});
     </script>
   </body>
 </html>

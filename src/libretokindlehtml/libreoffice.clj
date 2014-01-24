@@ -29,10 +29,10 @@
    {[:br] [:span]} #(-> % (second) (wrap-standard))
     ; Meant to fix that <shift><ret> crap where it uses a br
     ; instead of a new paragraph.
-   [:> [:span first-child (but (or (attr? :class) (attr? :id)))]]
-    unwrap 
-    ; unwrap pointless spans at top of paragraph.
-   [text-node]
+   [:span (but (attr? :style))]
+    unwrap
+    ; unwrap pointless spans.
+    [text-node]
    (do->
     #(clojure.string/replace % #"\p{Z}" " ")
     #(clojure.string/replace % #"^\s+" "")

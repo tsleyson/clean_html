@@ -1,5 +1,16 @@
 div.chapter { page-break-before: always; }
-
-span.chapheading { position: center; font-size: 14pt; font-weight: bold;}
-
-p.standard { font-size: 12pt; }
+div#table_of_contents { 
+    page-break-before: always; 
+    text-align: left; 
+}
+div#title_page { page-break-before: always; }
+#front_matter { text-align: center; }
+h1#main_title { text-align: center; }
+h2#subtitle { text-align: center;}
+h2.author { text-align: center; }
+h2.heading { text-align: center; 
+             font-weight: bold;}
+p.standard { 
+    font-size: 12pt; 
+    indent: 1em; }
+#toc { list-style: none; }

@@ -84,7 +84,7 @@
 ; For when your chapter doesn't have a heading, e.g. Of Night's prologue.
 (defsnippet no-heading (file "resources/templates/chaptersnip.html") [:.chapter]
   [raws maid]
-  [:#chaptertext :p.standard] (make-paragraphs raws maid))
+  [:.chaptertext :p.standard] (make-paragraphs raws maid))
 
 ; Expects the output of mine-content, but with metadata, as its input.
 ; So right now the most natural way to call it is (map chapter (list-of-resources config)).
@@ -94,8 +94,8 @@
 ; Has problems if first line isn't heading. Use no-heading for that.
 (defsnippet chapter (file "resources/templates/chaptersnip.html") [:.chapter]
   [paragraphs & cleanup]
-  [:#heading] (insert-heading paragraphs)
-  [:#chaptertext :p.standard]  (let [ [_ & raws] paragraphs
+  [:.heading] (insert-heading paragraphs)
+  [:.chaptertext :p.standard]  (let [ [_ & raws] paragraphs
                                       body (add-styles 
                                             (with-meta raws (meta paragraphs)))
                                       maid (if (nil? cleanup)
@@ -137,7 +137,7 @@
                               (novel config text)))
         fname (str (:directory config)
                                (if-let [title (:title config)]
-                                 (str title (:subtitle config))
+                                 (str title " " (:subtitle config))
                                  "default")
                                ".html")]
     (do 

@@ -1,9 +1,9 @@
 {
     "directory": "test-resources/testhtml/",
-    "order": ["Check My Soul.html", "Coloring Palettes Kisaragi-iro.html",
-	      "Coolish Walk.html", "Golden Day.html", "Horaism.html",
-	      "Kin no Nami, Sen no Nami.html", "Koi no Shirushi.html",
-	      "Mebae Drive.html", "Paradigm.html", "Ready.html",
+    "order": ["Check My Soul.html", "Coolish Walk.html", "Golden Day.html",
+	      "Mebae Drive.html",
 	      "Tadaima.html"]
-    "merge": true
+    "title": "My Terrible Translations",
+    "subtitle": "(They're really bad.)",
+    "authors": ["Just me", "and someone else"]
 }

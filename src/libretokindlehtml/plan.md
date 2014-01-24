@@ -5,7 +5,7 @@ into functions.
 Also have to merge the files. Have to get rid of extra html, head, body etc. tags and the duplicated stylesheets.
 
 # The configuration file
-A file containing a single JSON object with the following fields:
+        A file containing a single JSON object with the following fields:
 
 - __title__: The title of your book. Optional; if set, used by template main.
 
@@ -174,3 +174,52 @@ needed_styles is the output of the last bit of code (filter ...) from above.
 
 * Still working on getting styles integrated. 
   * There's a whole fuckaround in merge_files having to do with things being opened as Enlive resources. I tried to write a function that does all that (html-resource (file ..)) bullshit for you but it somehow can't find files and shit now.
+  * It inexplicably started working. All I can figure is that the code was somehow outdated and I did something that reloaded it without realizing it. At least, the style functions now pass the tests I gave them; I still have to make them actually work with list-of-resources.
+  * The style functions work with list-of-resources. (I'm writing tests for it right now). Just keep this in mind: the way of parsing the stylesheets that you have going is an absolute mess. It doesn't work on anything except the simplest case, where you have one selector only. It includes comments and other crap in the style list. It's basically garbage. But it should work for just what I want right now. But if you try to use this crap for anything even marginally more complex, it will break hard. The only way to stop this is to go all out and write a parser for CSS (or use that one that the VimClojure guy wrote). Two main issues: you don't parse the selector list so if there's a bunch of them, like h1, h2, h3, blah blah, it doesn't make them all into keywords in a selector; it makes a single keyword with spaces in it. Also, it shoves everything in a vector without regard for whether the original CSS wanted a hierarchy [:ul :li], an intersection [[:ul :li]] or a union #{:ul :li}. There's a CSS grammar online if you decide to write a parser; it's probably easily susceptible to predictive parsing, but Antlr might also be of some use.
+  
+###December 15th, 2013:
+* Within paragraph-maid, filter the list of styles in the paragraph metadata to get just the ones with bold or italic in the names. (Or possibly in make-paragraphs? Use another helper inside make-paragraphs?) Yes, inside make-paragraphs. Use the above code to either:
+  1. Attach the style string to each tag that needs it.
+  2. Change the classes of all the tags to get the names the same. I don't trust Libre Office to be consistent across documents (i.e. I know that Chapter 1 of Of Night uses T1 as the class for italics, but I don't know that Chapter 2 doesn't use T2 or P3 or Chicken for the same thing). If I knew I could trust all the italics to be the same class, I could just italicize it in my main stylesheet. I kind of like that better. (Also, dealing with that crap from Libre Office is a pain; I want to throw out as much of it as possible, just like with the templates.) So change all the classes to be the same class and then make it italicized in the novel_style stylesheet.
+
+* Since I already know that calling extract-styles with a regular expression does what I want, and I just want to get this damn thing working for now, I'm just going to have list-of-resources call it with a regular expression. Then I'll have no-heading and chapter collapse the classes and see if it works. From there we can think about making things less intertwined. Since I resisted the temptation up to now it shouldn't be that bad. (This style thing needs major fixing anyway. I'm just going to do the quick and easy way and then go back and try to write a CSS parser to fix it.)
+
+* I am currently trapped in a bind that has no apparent exit.
+  * Enlive doesn't seem to have any way to work with text nodes well. This is the same as CSS. So there seems to be basically no way to apply the initial whitespace deletion only to the beginning of a paragraph; it's all or none. I thought unwrapping the pointless spans would fix the problem but it doesn't because the contents of the pointless spans are still considered separate text nodes by Enlive. Either I lose all the whitespace that was at the beginning of those pointless spans, or I get pointless whitespace at the beginning of my paragraphs wherever Libre Office felt like putting it in.
+  * So I am backtracking a bit in my design. (Also to deal with the style issue.)
+  * First of all, I don't want to write custom cleaner functions. I want to make it user-scriptable with Enlive selectors and functions. So that part is back on.
+  * Second, I think it would be good to distinguish between structural cleaning and textual cleaning. Structural cleaning is stuff like getting rid of pointless spans and fixing <br> tags that come from shift return. Textual cleaning is cleaning up the shit that Libre Office does to the text itself, like putting in pointless whitespace. Structural cleaning also covers ensuring that the styles remain intact.
+  * Structural cleaning can mostly be done with Enlive like I have been.
+  * Textual cleaning will involve getting the content out with Enlive and then possibly lexing or parsing it to whip it into shape. Three major things need to be done at this stage:
+    1. Make sure there's no pointless whitespace (defined as any whitespace other than the spaces between words).
+    2. Make sure the styles are all applied as they should be.
+    3. Get rid of spans and divs that don't do anything (have no style rules applying to them, have style rules that make the weight or style normal, etc.)
+  * I think I vastly underestimated the horror of that HTML (even though I knew it would be horrible, I didn't realize just how cut down it would need to be to be manageable). You might consider writing a whole separate module to just whip the paragraphs into shape.
+
+####Practicalities
+* Do all textual cleaning first, then structural. Probably this can be accomplished with two transformation functions, one that does the structural cleaning and another one that does the textual cleaning. A third function
+
+###December 17th, 2013
+
+You know what would be super-awesome? Make the damn thing scriptable. In Rhino.
+
+Instead of having to translate weird config file syntax into cleaning functions and transformations, expose all the Enlive functions through some kind of Rhino interface (maybe by compiling them to Java classes) and then make it possible for a user to just write a file of Rhino code, a braindead script like writing everything at the top level in Python, including the transformations the user wants in the order the user wants them. Expose the file list, too. And Javascript has first-class functions so users could also write their own cleaner functions just like you can do with Enlive in Clojure.
+
+I'd have to look into a way to package all the data up and send it off to the Clojure program.
+
+It sounds pretty difficult now that I look into it, so this might be the best way to do it: still parse and all that, but instead of making up some special format that you have to write a parser for, make it Javascript. Something like, define a Java or Javascript class that has the same interface as Enlive. But it delegates everything to Clojure by transforming it to JSON and sending it off to the Clojure process.
+
+
+###December 18th, 2013:
+
+Right now I'm using Webbit to stick on a web interface. Just because it's fun, I want to learn something about the web, and it's most likely nicer than using the command line.
+
+I think it would be cool to send the files over the client as a zip file and have Clojure unzip them and work on them. Then Clojure can send the finished file back to the client. JQuery can upload (and presumably download) files, although I can't find out how right now because my internet is being stupid, so this should be feasible. (It uses Ajax, so maybe I can figure it out on my own.) If I get it working I might try doing it across two of my computers.
+
+I can have Javascript open another tab and load the downloaded file in there, and even let users apply different stylesheets to see which one they like the best. Then I can allow downloading of the file along with a stylesheet as a zip file.
+
+### December 19th, 2013:
+
+Issue: The program sticks the main text inside the front_matter div, so all the styles that apply to the front matter also apply to the main text. Most notably, since my front matter is centered, so was my main text. I just overrode it by directly styling the main text to be left-justified; I also went and moved the front matter's closing tag. But it needs to be fixed for this program to be useful. (That's sort of a joke; this was more of a one-time program. Most people don't need their files merged because they just write it as one file to begin with, and they're also not bothered by the crap HTML that Microsoft Word and Libre Office spit out.)
+
+Note: I've been trying to figure out why my subtitle has a page break before it. Now I know: it's all Calibre's fault. It dumped my stylesheet and made its own, which inexplicably put a page break before my subtitle (because it lumped everything into its own classes instead of using mine). 

@@ -1,4 +1,4 @@
-# Ember
+# No name yet
 
 A Clojure program to clean up the HTML output from Libre Office and make
 it suitable for publishing on the Amazon Kindle Store. I intend to read
