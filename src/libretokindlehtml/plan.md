@@ -223,3 +223,15 @@ I can have Javascript open another tab and load the downloaded file in there, an
 Issue: The program sticks the main text inside the front_matter div, so all the styles that apply to the front matter also apply to the main text. Most notably, since my front matter is centered, so was my main text. I just overrode it by directly styling the main text to be left-justified; I also went and moved the front matter's closing tag. But it needs to be fixed for this program to be useful. (That's sort of a joke; this was more of a one-time program. Most people don't need their files merged because they just write it as one file to begin with, and they're also not bothered by the crap HTML that Microsoft Word and Libre Office spit out.)
 
 Note: I've been trying to figure out why my subtitle has a page break before it. Now I know: it's all Calibre's fault. It dumped my stylesheet and made its own, which inexplicably put a page break before my subtitle (because it lumped everything into its own classes instead of using mine). 
+
+### January 25th, 2014:
+
+Got Of Night published, but now I'm trying to make it work for Strawberry Sunflower, which has its own set of problems (like inexplicable pointless newlines—wait, I know where they came from: Libre Office added them to make the HTML look nicer). I used the "Save as HTML" option from the menu, and as we discovered last time, that and the command line converter do not ruin the text in exactly the same way.
+
+We have whitespace in the list of resources. That crashes make-paragraphs, which expects its arguments to be callable. The files have no style attribute, so style-string returns nil and crashes extract-styles. Everything is too much tied to Of Night.
+
+I think after all I do like the idea of writing your own file of Clojure code to clean and convert everything. Too much of what's in that file is specific to Of Night. Besides, let's be realistic: only I will ever use this. (And not even me, for much longer; after Of Night 2, I'm switching to Markdown. Emacs is sort of ugly for plain text but anything is better than this. Or I might write in Open Office, save as plain text, and use Enlive to populate the template.)
+
+## January 27th, 2014:
+
+I wrote a Python script that drags down a table of HTML entities with their Unicode equivalents and stores it in a CSV. Clojure can parse CSVs with a library on GitHub, so do that and do post-processing where you search for all the characters and replace them with the entity ref version (e.g. — gets replaced with &mdash;). I did this in Emacs with Of Night, so now I'll do it automatically.

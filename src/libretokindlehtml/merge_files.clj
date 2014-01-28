@@ -19,7 +19,10 @@
 (defn as-resource
   "Takes a path and returns an opened Enlive HTML resource."
   [path]
-  (enlive/html-resource (file path)))
+  (let [res (enlive/html-resource (file path))]
+    (if (nil? res)
+      (throw (NullPointerException. "as-resource says: the resource is null."))
+      res)))
 
 (defn to-selector-style-pair
   "Takes a pair of strings; returns an Enlive
@@ -43,8 +46,12 @@
             (first))))
     (with-test
       (testing "Basic usage"
-        (is (= (style-string (as-resource "resources/ofnight/Chapter 1.html")) 
-               test-data)))))
+        (is (= (style-string (as-resource "resources/ofnight/Chapter 1.html"))
+               test-data)))
+      (testing "Not an Enlive resource"
+        (is (thrown-with-msg? clojure.lang.ExceptionInfo #"Enlive resource" (style-string "something weird"))))
+      (testing "Page has no :style tag"
+        (is (nil? (style-string (as-resource "resources/web_interface/webclient.html")))))))
 
 (-> (defn extract-styles
       "Returns the style information from an HTML resource as
@@ -53,29 +60,44 @@
        look-for is a regular expression to look for in the style
        string. If given, any elements whose style string doesn't
        match something in look-for are discarded."
-      ; s/split throws a null pointer error when vintage-style
-      ; isn't a string (say if we forget to open the resource).
+      ;; s/split throws a null pointer error when vintage-style
+      ;; is nil. Why would it be nil? That's what we've got to
+      ;; find out.
+      ;; It's nil because the file has no style tag. See unit tests.
       ([vintage-style]
-         (->> (s/split vintage-style #"[}{]")
-             (partition 2)
-             (map to-selector-style-pair)))
+         (if (nil? vintage-style)
+           ""
+           (->> (s/split vintage-style #"[}{]")
+                (partition 2)
+                (map to-selector-style-pair))))
       ([vintage-style look-for]
          (letfn [(match-look-for
                    [[_ styles]]
                    (when (and styles
                               (re-find look-for styles))
                      true))]
-           (->> (s/split vintage-style #"[}{]")
-               (partition 2)
-               (filter match-look-for)
-               (map to-selector-style-pair)))))
+           (if (nil? vintage-style)
+             ""
+             (->> (s/split vintage-style #"[}{]")
+                  (partition 2)
+                  (filter match-look-for)
+                  (map to-selector-style-pair))))))
     (with-test
       (testing "Just bold and italics"
         (is (= (extract-styles (style-string (as-resource "resources/ofnight/Chapter 1.html"))
                                #"font-(weight:bold|style:italic)")
                '([[:.P2] 
-                 " font-size:14pt; font-weight:bold; margin-bottom:0.212cm; margin-top:0.423cm; font-family:Times New Roman; writing-mode:page; text-align:center ! important; "]
-                [[:.T1] " font-style:italic; "]))))))
+                  " font-size:14pt; font-weight:bold; margin-bottom:0.212cm; margin-top:0.423cm; font-family:Times New Roman; writing-mode:page; text-align:center ! important; "]
+                   [[:.T1] " font-style:italic; "]))))
+      (testing "Input is not an Enlive resource"
+        (is (thrown-with-msg? clojure.lang.ExceptionInfo
+                              #"Enlive resource"
+                              (extract-styles
+                               (style-string "not a resource")))))
+      (testing "Input page had no style tag. Return empty string to void styles."
+        (is (= ""  (extract-styles
+                    (style-string
+                     (as-resource "resources/web_interface/webclient.html"))))))))
 
 (defmulti list-of-resources
   "Returns a list of html resources from the files in the config map's :order field.

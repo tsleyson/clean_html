@@ -32,7 +32,6 @@
            (println (str "Successfully wrote " fname ".")))
          (catch java.io.FileNotFoundException fnfe
            (do
-             (println (str "Couldn't open file " (first args) "; not found."))
              (.printStackTrace fnfe))))))
-; To do in here:
-; Add some nice error messages.
+;; Any fnfe in the program ends up here, so don't try to guess where
+; it came from; let it speak for itself by printing the stack trace.

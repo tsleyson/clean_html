@@ -19,7 +19,7 @@
                     :subtitle "The subtitle",
                     :authors ["a1", "a2"],
                     :stylesheet "path/to/stylesheet"}) 
-      (def ofnightcf (read-config-file "resources/ofnight/config.json"))
+      (def ofnightcf (read-config-file "resources/ofnight/ofnightconfig.json"))
       (def transcf (read-config-file "test-resources/testhtml/config.json"))
       (test)))
 
@@ -53,7 +53,7 @@
 
 (deftest test-read-config
   (testing "Of Night's config file (valid)"
-    (is (= ofnightcf (read-config "resources/ofnight/config.json"))))
+    (is (= ofnightcf (read-config "resources/ofnight/ofnightconfig.json"))))
   (testing "Translation's config file (valid)"
     (is (= transcf (read-config "test-resources/testhtml/config.json"))))
   (testing "Bad config file (should fail)"

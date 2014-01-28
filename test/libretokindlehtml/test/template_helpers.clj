@@ -15,6 +15,7 @@
 ;    (run-tests 'the.namespace.of.the.private.fns). This is so
 ;    lein test will call them.
 
+
 (deftest test-template-helpers
   (run-tests 'libretokindlehtml.novel 
              'libretokindlehtml.libreoffice))    

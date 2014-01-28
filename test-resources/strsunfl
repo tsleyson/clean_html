@@ -1,0 +1,2513 @@
+["\n"
+ {:tag :p,
+  :attrs {:style "margin-bottom: 0cm", :align "CENTER"},
+  :content
+  [{:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "4"},
+      :content
+      [{:tag :b,
+        :attrs nil,
+        :content ["When\nwill I make a friend? By Nora"]}]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs {:style "margin-bottom: 0cm", :align "LEFT"},
+  :content
+  [{:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      [{:tag :b, :attrs nil, :content ["\t"]}
+       {:tag :span,
+        :attrs {:style "font-weight: normal"},
+        :content ["How\nare you? I'm Nora. "]}]}]}
+   "\n"]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style "margin-bottom: 0cm; font-weight: normal", :align "LEFT"},
+  :content
+  [{:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tThis\nis a story about how I made my first friend at my new school. By the\ntime I met her, it wasn't really my new school anymore because I had\nalready been there for two months. But until I finally made a friend,\nit didn't feel like my school at all."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style "margin-bottom: 0cm; font-weight: normal", :align "LEFT"},
+  :content
+  [{:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tMy\nschool is called St. Galgani's Academy for the Gifted. It's a\nboarding school. That means you don't go home after school; I have my\nown room in the girl's dormitory where I go sleep every night. I eat\nbreakfast, lunch, and dinner in the dining hall with the other\nelementary school kids."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style "margin-bottom: 0cm; font-weight: normal", :align "LEFT"},
+  :content
+  [{:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tSt.\nGalgani's is a school for kids with special talents, so there are a\nlot of amazing people here. Oh, I'm not one of them. Some people from\nthe academy came to my old school one day and tested everyone to see\nif any of us had special gifts. They told me I didn't have any gift,\nbut I would someday, and asked me to come to the academy. I was\nscared when I thought about going away to live by myself at school\nwithout my parents, but my big sister told me to think of it like an\nadventure and just throw myself in. My big sister tells me to do lots\nof things that aren't good ideas, but she was right for once, so I\ncame to this academy."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style "margin-bottom: 0cm; font-weight: normal", :align "LEFT"},
+  :content
+  [{:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tEverything\nwas scary at first like I thought. The academy was almost as big as\nthe neighborhood I used to live in with my parents. It had its own\nswimming pool, a big garden, a forest, and a horse corral. My old\nschool would have fit in just the building where my bedroom was. I\nwas nervous, but also excited to make friends and do lots of\ninteresting things that I could tell my big sister and the other kids\nback home about."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style "margin-bottom: 0cm; font-weight: normal", :align "LEFT"},
+  :content
+  [{:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tOn\nthe first day of school my teacher, Miss Hanover, had me come up to\nthe front and introduce myself to the class. The night before I had\ncome up with a speech I wanted to say, about making friends and\nhaving fun together for the next year, but when I looked at all those\npeople sitting in front of me, it all left me. "]}]}
+   "\n"]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style "margin-bottom: 0cm; font-weight: normal", :align "LEFT"},
+  :content
+  [{:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\t\"Go\non, introduce yourself,\" said Miss Hanover."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style "margin-bottom: 0cm; font-weight: normal", :align "LEFT"},
+  :content
+  [{:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\t\"I,\nI don't know what...to say,\" I whispered."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style "margin-bottom: 0cm; font-weight: normal", :align "LEFT"},
+  :content
+  [{:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tMiss\nHanover's tail flicked. Oh, I forgot to mention that Miss Hanover is\na fox lady. She has a fox's ears and tail. Lots of people at my\nschool are part animal. There are cat people and dog people too, and\nprobably other kinds of animal that I haven't met yet. "]}]}
+   "\n"]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style "margin-bottom: 0cm; font-weight: normal", :align "LEFT"},
+  :content
+  [{:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tAt\nthe time I thought she was mad at me, but I later found out that her\ntail flicks when she's feeling sorry for someone. Even though she has\nthe Gift of Trickery, she can't ever play tricks that are too cruel\nbecause her tail will flick and give her away. "]}]}
+   "\n"]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style "margin-bottom: 0cm; font-weight: normal", :align "LEFT"},
+  :content
+  [{:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\t\"Why\ndon't you tell them your name?\" Miss Hanover suggested."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style "margin-bottom: 0cm; font-weight: normal", :align "LEFT"},
+  :content
+  [{:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\t\"Um,\nhi, my name is Nora,\" I said, looking over the rows and rows of\ndesks. I counted them later; there were only twenty of them, four\ncolumns and five rows to a column, but on that day it seemed like\nthey reached all the way up to the moon. "]}]}
+   "\n"]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style "margin-bottom: 0cm; font-weight: normal", :align "LEFT"},
+  :content
+  [{:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tOne\nof the girls in front looked at me, and I looked back, and then\nsuddenly got nervous and looked down, letting my bangs fall down over\nmy face to hide it."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style "margin-bottom: 0cm; font-weight: normal", :align "LEFT"},
+  :content
+  [{:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\t\"Um,\nuh, I like reading, and, um...my name is Nora, and...\" I tried\nto remember my speech. I had written it all down and recited it in my\nhead three times, but it was all gone now."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style "margin-bottom: 0cm; font-weight: normal", :align "LEFT"},
+  :content
+  [{:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\t\"What's\nyour favorite book?\" asked a boy in the second row."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style "margin-bottom: 0cm; font-weight: normal", :align "LEFT"},
+  :content
+  [{:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content ["\t\"Um...I\nlike ham...ham and...\""]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs {:style "margin-bottom: 0cm", :align "LEFT"},
+  :content
+  [{:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      [{:tag :span,
+        :attrs {:style "font-weight: normal"},
+        :content
+        ["\tI\nwas trying to say \"Hamlet\", but I started stuttering and\ncouldn't get out the last part, and everyone thought I was saying I\nliked ham and laughed. That made me even more nervous, and I could\nfeel my face getting hot. Besides, "]}
+       {:tag :i,
+        :attrs nil,
+        :content
+        [{:tag :span,
+          :attrs {:style "font-weight: normal"},
+          :content ["Hamlet\n"]}]}
+       {:tag :span,
+        :attrs {:style "font-style: normal"},
+        :content
+        [{:tag :span,
+          :attrs {:style "font-weight: normal"},
+          :content ["wasn't\nmy favorite book to begin with."]}]}]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs {:style "margin-bottom: 0cm", :align "LEFT"},
+  :content
+  [{:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      [{:tag :span,
+        :attrs {:style "font-weight: normal"},
+        :content ["\t\"I\nmean, my favorite book is "]}
+       {:tag :i,
+        :attrs nil,
+        :content
+        [{:tag :span,
+          :attrs {:style "font-weight: normal"},
+          :content ["Lyrical\nBallads "]}]}
+       {:tag :span,
+        :attrs {:style "font-style: normal"},
+        :content
+        [{:tag :span,
+          :attrs {:style "font-weight: normal"},
+          :content
+          ["by\nWilliam Wordsworth!\" I corrected, but no one heard because they\nwere all laughing."]}]}]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tI wanted to run away,\nbut Miss Hanover put her hand on my shoulder and whispered, \"It's\nokay, just wait a minute and tell them again.\" So I did. When\neveryone had stopped laughing, I said it again."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs {:style "margin-bottom: 0cm", :align "LEFT"},
+  :content
+  [{:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      [{:tag :span,
+        :attrs {:style "font-style: normal"},
+        :content
+        [{:tag :span,
+          :attrs {:style "font-weight: normal"},
+          :content ["\t\"Myfavoritebookis"]}]}
+       {:tag :i,
+        :attrs nil,
+        :content
+        [{:tag :span,
+          :attrs {:style "font-weight: normal"},
+          :content ["LyricalBallads"]}]}
+       {:tag :span,
+        :attrs {:style "font-style: normal"},
+        :content
+        [{:tag :span,
+          :attrs {:style "font-weight: normal"},
+          :content ["byWilliamWordsworth.\""]}]}]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\t\"I don't\nunderstand. Talk slower,\"  said the boy who had asked the\nquestion."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs {:style "margin-bottom: 0cm", :align "LEFT"},
+  :content
+  [{:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      [{:tag :span,
+        :attrs {:style "font-style: normal"},
+        :content
+        [{:tag :span,
+          :attrs {:style "font-weight: normal"},
+          :content ["\t\"My\nfavorite book is "]}]}
+       {:tag :i,
+        :attrs nil,
+        :content
+        [{:tag :span,
+          :attrs {:style "font-weight: normal"},
+          :content ["Lyrical\nBallads "]}]}
+       {:tag :span,
+        :attrs {:style "font-style: normal"},
+        :content
+        [{:tag :span,
+          :attrs {:style "font-weight: normal"},
+          :content
+          ["by\nWilliam Wordsworth,\" I said, more slowly."]}]}]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content ["\t\"What, I've never\nheard of that.\" "]}]}
+   "\n"]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\t\"Well, I have,\"\nsaid Miss Hanover. \"It's a very beautiful book, and Nora is a\nvery good reader to be able to understand it. Why don't you ask her\nabout it later? For now, though, let's start class. Nora, you can sit\nin that desk there, okay?\""]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\t\"Okay,\" I\nsaid, my face still burning. I was glad to be done, and I went to my\ndesk towards the back of the classroom and sat down and buried my\nface in my arms so I wouldn't have to look at anyone."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content ["\n" {:tag :br, :attrs nil, :content []} "\n"]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tI didn't make things\nany better during our first group assignment. It was a week after\nclass began, and when everyone paired up, I was the only one left\nwithout a partner, so Miss Hanover assigned me to work with Greta and\nSweta to answer some questions about a book we had read. "]}]}
+   "\n"]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tGreta and Sweta\nstarted talking about a show they had watched on TV last night and\nignoring the assignment and me as soon as we all moved our chairs\ninto a circle and sat down. I looked over the questions, waiting for\nthem to be done so we could start answering."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tAfter five minutes\nthey still weren't done, so I said, \"Um...uh...\"."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content ["\tThey ignored me."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\t\"Ex, ex, excuse\nme...Um, about the assignment...\""]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tFinally they looked\nup, glaring at me like they were annoyed. \"What was your name\nagain? I forget,\" said Greta."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content ["\t\"N-Nora,\" I\nsaid."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\t\"I'm talking to\nSweta, so we'll do the assignment later. What are you, some kind of\nteacher's pet?\""]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tI looked down and hid\nbehind my bangs, and Greta and Sweta kept talking and went back to\nignoring me. I did the assignment on my own, handed it in to Miss\nHanover, and got to go to lunch early; when I got back everyone was\ncalling me a teacher's pet."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content ["\n" {:tag :br, :attrs nil, :content []} "\n"]}
+ "\n"
+ {:tag :p,
+  :attrs {:style "margin-bottom: 0cm", :align "LEFT"},
+  :content
+  [{:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      [{:tag :span,
+        :attrs {:style "font-style: normal"},
+        :content
+        [{:tag :span,
+          :attrs {:style "font-weight: normal"},
+          :content
+          ["\tI\nhad never been a star at sports, but I wasn't that bad. I used to\nhave fun swimming and playing softball and soccer with my friends at\nmy old school. So when we had soccer for PE, I thought maybe I could\ndo something good for my team and show everyone that I wasn't "]}]}
+       {:tag :span,
+        :attrs {:style "font-style: normal"},
+        :content
+        [{:tag :span,
+          :attrs {:style "font-weight: normal"},
+          :content
+          ["just\na teacher's pet weirdo who stutters."]}]}]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tWe were playing out on\nthe third field, a smaller field where the elementary schoolers\nusually ended up for PE. St. Galgani's also has a middle school and a\nhigh school, and the high schoolers usually get the bigger first and\nsecond fields. Our teams had been picked by Ms. Rutherford, the\ngirls' PE teacher. I was on Cora's team, and we were playing against\nLeah's team."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tThings weren't too bad\nat first. I stayed near the back, closer to my team's goal, and\nhelped move the ball away from our goal and get it back to my\nteammates a few times. We were ahead by one goal. Leah's team had the\nball and was moving it back towards our goal, but they were still at\ncenter field. Most of our team was clustered around Leah and Gracie,\nwho were passing the ball back and forth and moving it down towards\nus."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tThen I saw that\nMikaela, the strongest player on Leah's team, wasn't standing by the\ncluster where the rest of the team was; she was off to the side by\nherself. I realized what was going on: Leah was planning to pass the\nball to Mikaela, who was too far away for any of my team to reach in\ntime. Mikaela would have a clear shot at the goal."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tI was the only one who\nhad noticed. It seemed like my chance had come."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tI ran towards Mikaela,\nwho was still watching the main action and hadn't seen me. I saw Leah\nreceive the ball from Gracie and then pass it towards us."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tI was on Mikaela just\nas she received the ball. I went to kick it away from her. "]}]}
+   "\n"]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tSuddenly, my feet slid\nout from under me, and I flailed my legs around, trying to keep my\nbalance. It didn't work, but my foot did hit the ball as I fell\nbackwards."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tThe ball bounced off\nmy foot and flew up into the air, slamming straight into Mikaela's\nnose. Mikaela reacted too late and was hit. I saw her grab onto her\nnose."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tI found out later that\nsomeone had left a kiwi skin on the field. It was brown and green, so\nit blended in with the grass and I couldn't see it. If you've never\neaten one, they're delicious, but at that time I wished there was no\nsuch thing as a kiwi."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tMs. Rutherford stopped\nthe game and everyone came over to see what was going on. My own\nteammates almost stepped on me as they ran over to find out what was\ngoing on."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\t\"Are you all\nright, Mikaela?\" asked Ms. Rutherford."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\t\"I think my nose\nis bleeding,\" Mikaela said."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\t\"I'll take her to\nthe infirmary, Ms. Rutherford,\" said Gracie, and the two of them\nleft the field."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tGracie came back a few\nminutes later and we kept playing, but everyone on Leah's team was\nmad at me because I took out their best player. As for my own team,\nthey were mad at me because when we started playing again, Ms.\nRutherford gave Leah's team a penalty kick against us since I had\nbroken the rules and hit Mikaela with the ball."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content ["\n" {:tag :br, :attrs nil, :content []} "\n"]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tWhen I wrote my sister\na letter asking how to make friends, she wrote back and said\n\"Everyone loves cookies. Try giving cookies to people, and\nthey'll want to be your friends.\""]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs {:style "margin-bottom: 0cm", :align "LEFT"},
+  :content
+  [{:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      [{:tag :span,
+        :attrs {:style "font-style: normal"},
+        :content
+        [{:tag :span,
+          :attrs {:style "font-weight: normal"},
+          :content
+          ["\tI\nwoke up before class one day and took my allowance over to the\nshopping center at the high school, where there were lots of\nrestaurants and bakeries, and bought a bag of little "]}]}
+       {:tag :span,
+        :attrs {:style "font-style: normal"},
+        :content
+        [{:tag :span,
+          :attrs {:style "font-weight: normal"},
+          :content
+          ["shortbread\ncookies in the shape of hearts and stars and crosses. They were warm,\ncrispy on the outside and soft on the inside, one of the best things\nI had ever tasted."]}]}]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tI put the cookies in a\nbasket and came into the classroom before anyone else got there. I\npinned a card to the basket that said \"Please take one and\nenjoy\". Then I waited for everyone else to come."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tMiss Hanover was the\nfirst to arrive. \"Nora, did you bring these?\" she asked."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\t\"Yes, I wanted to\ndo something nice for everyone.\""]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content ["\t\"How sweet.\nYou're a nice girl, Nora.\""]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tMiss Hanover was\nalways nice to me, even though I had almost screamed the first time I\nsaw her fox ears and had asked all sorts of questions about them. It\nmade me feel good to be complimented by her, but that was the sort of\nthing that made everyone call me a teacher's pet, so I tried not to\nfeel too good about it."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tBefore very long,\nother people started to come in. Some of them ignored the cookies,\nbut two boys—I thought their names were Robert and Philip—stopped\nand asked Miss Hanover if they could really have some."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\t\"Yes, go ahead.\nThey're for everyone,\" said Miss Hanover."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\t\"Did you bring\nthem, Miss Hanover?\" Philip asked."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\t\"No, I'm not the\none who brought them,\" said Miss Hanover, and she caught my eye\nand smiled. I knew she was telling me I should come forward as the\nbringer of cookies, but suddenly I felt so embarrassed that I\ncouldn't even speak."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content ["\t\"I wonder who\nbrought them?\" said Robert."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\t\"Uh, I-I-I-I...\"\nI managed to say, my voice barely higher than a whisper. The girl\nsitting in front of me looked back, and I looked down and hid behind\nmy bangs."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\t\"Maybe they're\npoisoned!\" Philip suggested. \"Maybe some crazy guy is\ntrying to kill us like rats, by leaving poisoned cookies around.\""]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tI buried my burning\nred face in my arms. I definitely couldn't come forward after that.\nWith the way things usually went, if I came forward, everyone would\nsay I had tried to poison them as revenge for being called a\nteacher's pet."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content ["\n \n"]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tAfter the cookie\nincident, I gave up for a while on trying to make friends and tried\nto keep my head down. I started to think that I was trying too hard\nto stand out. It was okay if the rest of the class thought I was\nweird, as long as I had one friend to talk to. And maybe if I had one\nfriend, other people would also become my friends."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tI decided to be\nscientific about searching for a friend. I wanted someone nice and\nsmart, who had something in common with me. An animal person might be\ngood too; Miss Hanover was a fox lady, and she was the only person\nwho'd been nice to me since I came here. "]}]}
+   "\n"]}
+ "\n"
+ {:tag :p,
+  :attrs {:style "margin-bottom: 0cm", :align "LEFT"},
+  :content
+  [{:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      [{:tag :span,
+        :attrs {:style "font-style: normal"},
+        :content
+        [{:tag :span,
+          :attrs {:style "font-weight: normal"},
+          :content
+          ["\tI\ndecided on Cora. She wore glasses, so she was probably smart, and our\nnames rhymed, so that gave us something in common. And she was a cat\ngirl, and I liked cats; we had one at home named Pudding. Her hair,\nwhich she usually wore in pigtails, was orange and white, just like\nher ears and tail, and she seemed really nice when she was with other\n"]}]}
+       {:tag :span,
+        :attrs {:style "font-style: normal"},
+        :content
+        [{:tag :span,
+          :attrs {:style "font-weight: normal"},
+          :content
+          ["people;\nshe was always laughing and having fun."]}]}]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tI never actually\nthought about it scientifically. If I had ever written down my\nreasons for choosing Cora and read them, I might have been able to\nsee how silly they were. "]}]}
+   "\n"]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tOne day, after class,\nI summoned up all my courage and went up to Cora to ask her to be my\nfriend."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content ["\tWhen she saw me\napproaching, she ignored me."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tI almost left right\nthere, but all my courage was still with me, so I said \"H-hello...\"."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\t\"What?\" Cora\nasked. \"Do you need something?\""]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\t\"Um, I-I-I wanted\nto ask you to be my f-f-f-friend...\""]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tFor a second I thought\nCora was going to say yes. She looked at me thoughtfully, took off\nher glasses, breathed on them, wiped them on her shirt, put them back\non, and looked at me squarely."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\t\"No,\" she\nsaid. \"You're a teacher's pet and you read too much. I hate\nreading. It makes my head hurt.\""]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font, :attrs {:size "3"}, :content ["\t\"B-but--\""]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\t\"You probably\nthought I liked reading because I wear glasses, right? Don't be\nstupid. Wearing glasses has nothing to do with reading. I'm just\nblind.\" Cora hitched up her backpack across one shoulder and\nsmoothed down her skirt. \"See you.\""]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tEven though no one was\nthere after she left, I still sat down at my desk and buried my head\nin my arms."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content ["\n" {:tag :br, :attrs nil, :content []} "\n"]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tI tried to stay home\nfrom school the day after that, but it's hard to have your mother\ncall in sick for you when you live at the school and your mother\ndoesn't. Miss Hanover came to my room to get me when I didn't come to\nbreakfast."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\t\"Nora, are you in\nhere?\" she asked as she knocked at my door. "]}]}
+   "\n"]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tI didn't really want\nto see anyone, but I was afraid to make Miss Hanover mad since she\nwas the only person who talked to me, so I got out of my top bunk,\nclimbed down the ladder, and answered the door."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\t\"I was a little\nbit worried since you weren't at breakfast,\" said Miss Hanover,\nher fox ears pointed straight up at the sky and her tail swirling as\nshe smiled down at me. She was holding a white porcelain vase for\nsome reason. \"Are you sick?\""]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\t\"Yes.\" I hid\nbehind my bangs, waiting for her to say something else."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\t\"Nora, could you\npossibly do me a favor?\" she said at last. \"If you'll do\nthis for me, you can stay in bed the rest of the day.\""]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tMiss Hanover was too\nnice to ask a sick person to do a favor for her in return for being\nallowed to stay in bed, so she must know I wasn't really sick. Still,\nI kept looking down and waiting for her to leave."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\t\"The classroom is\njust so gloomy. I think some flowers would look nice in it. Don't you\nthink so?\""]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font, :attrs {:size "3"}, :content ["\t\"Yes.\""]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\t\"Do you know\nwhere the garden is? Have you ever been there?\""]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tI nodded, still\nlooking down. I had seen it on the tour and I walked by it sometimes,\nbut I had never gone inside. "]}]}
+   "\n"]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\t\"If you can\nchoose some nice flowers for me, and put them in this vase and bring\nthem to the classroom, then I'll let you have today off. What do you\nsay?\""]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\t\"Yes, Miss\nHanover,\" I agreed. Since she was nice enough to offer me a deal\nlike that even when she knew I wasn't sick, I might as well take it.\nPlus, a walk in the garden might make me feel better. "]}]}
+   "\n"]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tI went back into my\nroom and got dressed in some old jeans and a T-shirt so I wouldn't\nget any of my nice clothes dirty in the garden, then took the vase\nand left the dormitory headed for the garden."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tThe weather outside\nwas beautiful, and the warm sun felt nice. The garden was pretty far\nfrom the dormitory, on the edge of the forest, and I walked\nextra-slow to enjoy the sunshine, so it took me a while to get there.\nIt was surrounded by a high white fence, one of those ornate wrought\niron fences that are as much art as fence, with the metal twisted\ninto leaves and vines and flowers. It was fenced in to keep the deer\nand rabbits out, not the people; the gate was usually unlocked and\nanyone who wanted to could go inside. "]}]}
+   "\n"]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tI opened the gate and\nwent in, closing it behind me, and right away I was face-to-face with\na sea of purple, red, yellow, and green. Flowers and plants of all\nkinds were in front of me: tulips and daisies and begonias and\norchids. I walked along the winding stone path underneath a lime\ntree, and saw a white marble statue of a young boy enclosed in twigs\nand bramble, and thought of Samuel Taylor Coleridge's poem \"This\nLime Tree Bower My Prison\". "]}]}
+   "\n"]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tNow that I was here, I\nhad no intention of quickly choosing some flowers and trotting back\nto the classroom with them. I had to explore this place, at least a\nlittle. As pretty as the flowers here were, I felt as if there must\nbe much prettier flowers somewhere further inside, and I wanted to\nfind them. "]}]}
+   "\n"]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tI'm not sure how much\ntime I spent wandering the stone paths of that huge, dreamlike\ngarden, looking at flowers, eating the fruit that grew on the trees,\nadmiring the creeping vines and ivy and climbing roses that grew up\nthe trellises, and resting inside the gazebos, staring through their\nlatticework walls, the light coming down on me in criss-cross\npatterns. I spent at least an hour, though it felt much longer."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tI came into a clear\nand more orderly area where someone had set up raised planter boxes\nand was growing potatoes and rutabagas. It seemed to be a dead end;\nat the other end was a high hedge that ran all the way down to a\nstone wall on both sides. But from the way the garden fence had\nlooked from the outside, it seemed there should be more to it. It\nseemed there should be something past that hedge."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tI came up to the hedge\nand tried to look through to the other side, but it was so thick that\nI couldn't see anything at all. I walked along the hedge from stone\nwall to stone wall, trying to find some spot where I could see\nthrough, but there wasn't one."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tAs I was making a\nsecond pass along the hedge, I noticed a squirrel creeping along the\nbushes ahead of me. The squirrel brushed up against a misplaced clump\nof light purple martagon lilies growing in the shade of the hedge."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content ["\tSuddenly the hedge\nparted."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tI dashed to where the\nsquirrel was, but the hole in the hedge had disappeared by the time I\ngot there, making me wonder if it was just a mirage, some trick of\nthe light. I watched the squirrel go off on its business. The hole\nhad appeared exactly when the squirrel had touched those lilies."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content ["\tI touched the lilies. "]}]}
+   "\n"]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content ["\tThe hedge parted\nagain."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tIt was a small hole,\njust large enough for me to go through crawling on my hands and\nknees. It was a good thing I'd changed into my jeans. I got down and\npulled myself into the tunnel."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tFor a brief moment I\nwas in the dark, surrounded by hedge on all sides. I pulled myself\nthrough, and emerged back into the sunlight on the other side."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tI stood up and looked\naround. This area of the garden didn't look so different from the\nother side, so I wasn't sure why they'd gone to all the trouble of\nhiding it, except..."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tNearby was a plant\nthat looked like a sunflower. Except there was something weird about\nit, something that made me look twice. I went up to the sunflower to\nget a better look. It truly was a beautiful sunflower, tall and\nbright yellow with a crisp green stalk. Except that it didn't have\nseeds in the middle like a normal sunflower. It had some kind of huge\nred fruit in the middle, something that looked a lot like a\nstrawberry.\t"]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tI picked one,\nwondering if I should eat it. I'd never seen a plant like this\nbefore. I sniffed the fruit. It smelled like a strawberry. I tasted\nit. It was a strawberry."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tA sunflower with\nstrawberries growing in the middle. "]}]}
+   "\n"]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tI knew then that I had\nto find the prettiest flowers from this corner of the garden. This\nwas definitely where the prettiest flowers would be. Why else would\nthey hide it behind that hedge?"]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tThere were no paths\nback here except what had been worn in the grass by people walking\nthrough. I followed those worn trails around looking for signs of\nflowers. Now that I thought of it, those martagon lilies outside had\nbeen pretty. Maybe there were more of them in here somewhere. "]}]}
+   "\n"]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tI made my way towards\na patch of tomatoes, their vines wound around wooden stakes in the\nground. Next to them was a small grove of trees with wooden tubes,\npointed down at the tomato patch like the cannons of a pirate ship,\ngrowing from the branches. Martagon lilies like the shade, so there\nmight be some in the shadow of those trees."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tAs I was approaching\nthe tomato patch, something hard hit me in the chest, bouncing off\nand leaving behind a stinging pain. I knelt to see what it was. It\nwas a walnut."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font, :attrs {:size "3"}, :content ["\tWHOOSH!"]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tSeveral more walnuts\nflew past my head, barely missing my face."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tI looked up, and saw\nthat the trees were shooting walnuts out of those tubes; nuts encased\nin a hard brown shell about the size of a golf ball were being\nshowered on me from above."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tPOP!"
+       {:tag :br, :attrs nil, :content []}
+       "\tThe tomatoes\nsuddenly began to burst, spraying red juice and flesh and seeds all\nover me. The explosion of the tomatoes on the first plant seemed to\nset off a chain reaction; the explosions rippled through the patch,\nmoving outward from me. The next instant I was completely soaked with\ntomato juice from head to toe, and walnuts were still raining down on\nmy head."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tI turned around and\nran away from that tomato patch as fast as I could, walnuts flying\nafter me like bullets as I went. I didn't stop running until I was\nwell out of range of all those dangerous plants, and then I collapsed\non the grass, out of breath."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tI hope you won't think\nI'm too much of a crybaby if I admit that I cried. After two months\nwith no friends or family, after what Cora said to me yesterday,\nafter being attacked by tomato bombs and walnut artillery, I think\nyou'd cry too, or at least you'd want to."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tI sat there in the\nmiddle of the rut worn in the grass and cried for a minute, until a\ngirl I didn't know appeared on the garden path ahead of me. Then I\ngot embarrassed and stopped. At least, I tried."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\t\"My, I'm so\nsorry! I grew those plants to protect this place from intruders, but\nI didn't think about how how it would feel to be attacked by them!\""]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tI stood up and wiped\nmy eyes, and then thought to check and make sure Miss Hanover's vase\nwas still okay. It wasn't. The walnuts had hit it and chipped off a\npiece of the brim, and I'd dropped it when I collapsed to the ground,\ngetting dirt and grass all over it."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tThe girl I didn't\nknow—she looked older than me, possibly a middle school or high\nschool student--tossed her long blonde braid back over her shoulder\nand took a handkerchief from the pocket of her overalls. \"Here,\nuse it to wipe off some of the tomato juice,\" she said, giving\nit to me."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tI took the\nhandkerchief and wiped my eyes and face with it. I felt bad, because\nwhat was on my face wasn't just tomato juice, but also tears and snot\nfrom crying, so I said, hiding behind my bangs, \"I, I, I'll get\nit w-washed...for you.\""]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\t\"No worries,\"\nsaid the girl. She reached into the leather satchel slung over her\nshoulder and took out a Thermos. \"Here, drink some of this. It's\ntea with peppy mint.\""]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\t\"Peppermint?\""
+       {:tag :br, :attrs nil, :content []}
+       "\t\""
+       {:tag :i, :attrs nil, :content ["Peppy"]}
+       "\nmint. I grow it here. It'll fill you with cheer and vigor and give\nyou enough energy to do anything! Here, try it.\""]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tI took the tea from\nher and sipped. It was good. It tasted just like the mint tea that my\nmother used to make back home. Each sip seemed to warm up both my\nbody and my heart. "]}]}
+   "\n"]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content ["\t\"Are you better?\"\nthe girl asked. "]}]}
+   "\n"]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content ["\t\"A little,\"\nI said."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\t\"Good.\" Her\neyes went to the vase in my hand. \"Were you here looking for\nsome flowers?\""]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\t\"Yes. My teacher\nasked me to get some for the classroom.\""]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\t\"I know this\nwhole garden,\" the girl said. \"Maybe I can help you find\nsome that you like.\""]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\t\"Um, that would\nbe really good. Um, there were some martagon lilies that I touched to\ncome inside here...\""]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\t\"Oh, those? Yeah,\nthe hedge can smell lilies on you. It opens if it smells that, but\nyou have to be pretty close to it, or else it can't smell. There's\nanother clump of them this way.\""]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tThe strange girl led\nme off down another trail, away from the exploding tomato patch. As\nwe walked I saw other amazing plants that I had never heard of. I\nasked the girl about them as we walked by."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\t\"Those are\nbeehive bellflowers,\" she said as we walked by a planter box\nfull of huge cup-shaped violet flowers buzzing with bees. \"There's\nenough space for the bees to build hives inside the flower itself.\nThen the flower has a built-in pollinator. The bees make honey inside\nthe flowers, so it's also possible for a beekeeper to move them to\nanother flower and then take a whole flower to get the honey from.\""]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tWhen I asked her about\nsome strange climbing vines sprouted along the whole length with pale\npink and purple flowers, she said, \"Those are flower crown\nvines. Rather than pick a bunch of flowers and chain them together,\nyou just pick the vine, trim it to size, and tie it on your head.\""]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tWe passed a patch of\ngigantic blood red flowers with yellow spots, each the size of one of\nmy shirts. \"Aren't those rafflesia?\" I asked. \"The\nflowers that smell like rotting meat?\""]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\t\"Those ones don't\nsmell like rotting meat. They're rose rafflesia. They smell like\nroses.\" And they did; the scent was so strong, I could smell it\neven from ten feet away. \"And you can only see the flowers on\nnormal rafflesia for about three days in a year, but you can see\nthese ones year-round,\" she added."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tWe reached a large\nclearing where some less unusual trees and plants had been allowed to\ngrow. Thriving in the shade of an elm tree were some martagon lilies,\nlike the ones that had parted the hedge."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tThe girl bent down and\npicked some, and stuck them in the vase under my arm with a smile.\n\"Here you go. Oh, take some of these carnations too. They'll\nlook beautiful in your classroom.\""]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\t\"Thank you,\"\nI said, accepting the flowers. For a moment we looked at each other,\nand then I got embarrassed and hid behind my bangs."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\t\"Well, I guess\nyou'd better get back to your classroom,\" said the girl. \"Your\nteacher and all your friends must be waiting for you.\""]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\t\"Oh. Um, er,\nactually, I...I...I don't have any friends in my class.\""]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content ["\t\"Oh. What about\nin another class?\""]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tI shook my head, too\nembarrassed to look at her."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content ["\t\"In another\nschool?\""]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tI shook my head again.\n\"I had some friends at my old school, but none at this academy.\""]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\t\"That's not\nright. With so many people at this school, none of them should be\nleft without a single friend.\" The girl reached into her leather\nsatchel again and brought out some peaches. \"Tell you what. If\nyou like, I'll be your friend.\""]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tI looked her straight\nin her blue eyes, my mouth open in shock. \"R-really? You'd—you'd\nbe my friend, just like that?\""]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\t\"Sure. You seem\nlike a nice person. No one with such good taste in flowers could be\nbad.\" The girl smiled and handed me a peach."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tI took the peach and\nbit into it. It was the sweetest peach I could ever remember eating."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tAnd just like that, I\nmade my first friend at St. Galgani's."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\t\"My name is Lily.\nI go to the middle school here. What's your name?\""]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\t\"Um, I'm Nora.\nI'm from the elementary school. Um, did you grow all the plants on\nthis side of the big hedge?\""]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\t\"Sure did.\"\nLily beamed with pride. \"I love gardening. Being with plants is\nso peaceful, you can forget all your troubles here.\""]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tI agreed. Up until the\ntomatoes and walnut trees had attacked me, I'd been having a great\ntime in the garden. And after that, I'd had a great time walking\naround with Lily in here."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\t\"My trouble is\nschool, so I like to come here to forget about it.\""]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tSomething seemed wrong\nwith that, but I didn't want to lose my first friend by saying so."]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tBy the way, when I\nwent to apologize to Miss Hanover for breaking her vase, she wasn't\nmad at all. \"Someone who used to be in my class always said the\ngarden was a place to forget all your troubles,\" she said. \"So\nI sent you there so you'd forget about whatever was bothering you.\""]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tI told her I had met\nLily and we were friends now. \"Is that so? I'm happy for you,\nNora.\""]}]}]}
+ "\n"
+ {:tag :p,
+  :attrs
+  {:style
+   "margin-bottom: 0cm; font-style: normal; font-weight: normal",
+   :align "LEFT"},
+  :content
+  ["\n"
+   {:tag :font,
+    :attrs {:face "Book Antiqua, serif"},
+    :content
+    [{:tag :font,
+      :attrs {:size "3"},
+      :content
+      ["\tMiss Hanover probably\nsent me there hoping I would meet Lily and the two of us would become\nfriends. That's the sort of foxy teacher she is."]}]}]}
+ "\n"]

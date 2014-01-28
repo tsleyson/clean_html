@@ -19,7 +19,7 @@
     (testing "Mining from a java.io.File"
       (is (= (-> output (file) (mine-content) (pprint) (with-out-str)
                  (clojure.string/replace #"\r\n" "\n"))
-             correct))) 
+             correct)))
     (testing "Mining from an Enlive html resource"
       (is (= (-> output (file) (enlive/html-resource) (mine-content) (pprint) (with-out-str)))))))
 

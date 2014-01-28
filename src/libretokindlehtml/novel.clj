@@ -16,33 +16,44 @@
 ; had another snippet that defines the chapter heading, and just
 ; used it inside the chapter snippet. Something to think about.
 
+;; WARNING!!!
+;; I modified the code to build Strawberry Sunflower, because I'm a
+;; lazy ass. Make sure to put it back for Of Night.
+
 ; selector definitions
 
  ; Selects the text under the first h3 node. Made this a var
  ; so it can be redefined for other types of heading.
-(def select-chapter-head  [[:h3 first-of-type] :> text-node])
+;;(def select-chapter-head  [[:h3 first-of-type] :> text-node])
+
+;; The Strawberry Sunflower heading selector.
+(def select-chapter-head [[:p first-of-type] text-node])
 
 ; utilities
 
 (-> (defn- remove-extension
       "Removes the file extension."
       [filename]
-      (s/replace filename #"\.[^.]+$" ""))
+      (if (nil? filename)
+        (throw (ex-info "remove-extension says: filename is nil" {:type "Invalid argument"}))
+        (s/replace filename #"\.[^.]+$" "")))
     (with-test
       (testing "Normal usage"
         (is (= (remove-extension "blurgh.html") "blurgh")))
       (testing "Lots of dots in filename"
         (is (= (remove-extension "blurgh.barf.html.bak") "blurgh.barf.html")))
       (testing "No extension"
-        (is (= (remove-extension "blurgh") "blurgh")))))
+        (is (= (remove-extension "blurgh") "blurgh")))
+      (testing "Null input"
+        (is (thrown-with-msg? clojure.lang.ExceptionInfo #"filename is nil" (remove-extension nil))))))
 
 (-> (defn- to-id
       "Replaces characters not allowed in HTML id attribute
        and removes file extension."
       [string]
-      (try (remove-extension (s/replace string #"[\s,;\"'?!]" "_"))
-           (catch java.lang.NullPointerException npe 
-             (throw npe))))
+      (if (nil? string)
+        (throw (ex-info "to-id says: string is nil" {:type "Invalid argument"}))
+        (remove-extension (s/replace string #"[\s,;\"'?!]" "_"))))
     (with-test 
       (testing "Replacing space, exclamation point, double quote, semicolon" 
         (is (= (to-id "!!Chapter 3\" ;dood") "__Chapter_3___dood")))
@@ -51,7 +62,7 @@
       (testing "Replacing nothing--this string is a valid id."
         (is (= (to-id "ValidID") "ValidID")))
       (testing "Throw an exception on nil"
-        (is (thrown? java.lang.NullPointerException (to-id nil))))))
+        (is (thrown-with-msg? clojure.lang.ExceptionInfo #"string is nil" (to-id nil))))))
 
 (defn- insert-heading
   "Extracts heading text and inserts into tag."
@@ -59,7 +70,7 @@
   (let [[header & _] paragraphs,
         headtext (first (select header select-chapter-head))
         {name :name} (meta paragraphs)]
-    (html-content (str "<a id=\"" (to-id name) "\">" headtext "</a>"))))
+    (html-content (str "<a id=\"" (to-id name) "\">" headtext  "</a>"))))
     ; Sets anchor whose id is the chapter's name, read from the
     ; metadata. Used as target by table of contents.
 
@@ -75,9 +86,12 @@
 (defn make-paragraphs
   "Returns a function that generates paragraphs from given sequence 
    of Enlive data, with cleanup as its cleaner."
+  ;; If para doesn't have function nature (e.g. it's a string),
+  ;; we get ClassCastException.
   [raws maid]
-  (clone-for [para raws]
-             (content (maid (para :content)))))
+  (let [cleanraws (filter map? raws)]
+    (clone-for [para cleanraws]
+               (content (maid (para :content))))))
 
 ; snippets
 
@@ -122,12 +136,19 @@
   [:.author] (clone-for [author authors]
                         [:.author] (content author)))
 
+;; The template novel for Of Night
+;; (deftemplate novel (file "resources/templates/novel.html")
+;;   [config chapters]
+;;   [:head :title] (content (str (:title config) " " (:subtitle config)))
+;;   [:#front_matter] (content (title config) (toc chapters))
+;;   [:#main_text] (content (no-heading (first chapters) (libretokindlehtml.libreoffice/paragraph-maid)) 
+;;                          (map #(chapter % (libretokindlehtml.libreoffice/paragraph-maid)) (rest chapters))))
+
 (deftemplate novel (file "resources/templates/novel.html")
   [config chapters]
   [:head :title] (content (str (:title config) " " (:subtitle config)))
   [:#front_matter] (content (title config) (toc chapters))
-  [:#main_text] (content (no-heading (first chapters) (libretokindlehtml.libreoffice/paragraph-maid)) 
-                         (map #(chapter % (libretokindlehtml.libreoffice/paragraph-maid)) (rest chapters))))
+  [:#main_text] (content (map #(chapter % (libretokindlehtml.libreoffice/strawberry-sunflower-maid)) chapters)))
 
 (defn template-main
   "Assembles the text into its final form."
