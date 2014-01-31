@@ -26,8 +26,12 @@
  ; so it can be redefined for other types of heading.
 ;;(def select-chapter-head  [[:h3 first-of-type] :> text-node])
 
-;; The Strawberry Sunflower heading selector.
-(def select-chapter-head [[:p (attr= :align "CENTER")]])
+;; The Strawberry Sunflower heading selector and paragraph selector.
+;; We have to get the text-node for the heading because we don't know
+;; how many layers of pointless font and span tags are inside the
+;; header's node. With the standard paragraphs we just shove in the
+;; pointless 
+(def select-chapter-head [[:p (attr= :align "CENTER")] text-node])
 (def select-standard-paragraph [[:p (attr= :align "LEFT")]])
 
 ; utilities
@@ -73,7 +77,7 @@
     (if (not= 1 (count headtext))
       (throw (ex-info "insert-heading says: selector yields non-unique answer."
                       {:type "Bad selector" :cause headtext}))
-      (html-content (str "<a id=\"" (to-id name) "\">" (:content (first headtext)) "</a>")))))
+      (content {:tag :a, :attrs {:id (to-id name)}, :content [(first headtext)]}))))
     ; Sets anchor whose id is the chapter's name, read from the
     ; metadata. Used as target by table of contents.
 

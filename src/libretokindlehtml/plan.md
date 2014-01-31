@@ -235,3 +235,40 @@ I think after all I do like the idea of writing your own file of Clojure code to
 ## January 27th, 2014:
 
 I wrote a Python script that drags down a table of HTML entities with their Unicode equivalents and stores it in a CSV. Clojure can parse CSVs with a library on GitHub, so do that and do post-processing where you search for all the characters and replace them with the entity ref version (e.g. — gets replaced with &mdash;). I did this in Emacs with Of Night, so now I'll do it automatically.
+
+## January 28th, 2014:
+
+Strawberry Sunflower builds now. The problems we had were:
+
+* I stupidly mis-cased the directory name (it's "Magical 4koma **s**tory", not "**S**tory").
+* The Strawberry Sunflower files didn't have anything in their style tags, so the style extracting functions were returning nil. I modified the function to check whether its argument was nil and return an empty string if so; this way it works just like if we had a style string, but nothing happens to the style.
+* The files also had whitespace (newlines) that got extracted by mine-all into the list of resources. We then passed that list to make-paragraphs, which expects to be able to look up things in its arguments. Since it couldn't, we got ClassCastException. I fixed this by having chapter filter its list of raws and only include maps (using map? as the filtering predicate). I thought about using fn? but I can't see ever wanting to use a function there.
+* The headings didn't get filled in properly. The selector I was using for Of Night headings didn't work with Strawberry Sunflower. I fixed this by changing the structure slightly; the extract-heading function was designed with the assumption that the heading would always be the first line. I knew when I wrote it that this assumption wasn't tenable, but I just wanted to get the book built. Now the extract-heading function just finds a paragraph that fits its selector; the heading has to be uniquely defined by its selector, and the function throws an exception if that's not the case. The chapter template now forms a list of raws by selecting just the paragraphs that fit a standard paragraph selector that you also have to write.
+
+I think that particular design is all right (though I could see having a book that's so broken you can't uniquely define a selector that gets just the header, and another that gets just the standard paragraphs), but I had to modify the code a lot. Fortunately, since I was sort of thinking about user customization, the places I had to modify were pretty limited; they were all in the novel.clj file. I also wrote a new cleaner function inside libreoffice and modified novel.clj to use it. (By the way, in Strawberry Sunflower all the spans were pointless because it used <i> and <b> tags for italic and bold, so I could just unwrap them all, as well as all the pointless font tags. That was pretty nice; the HTML looks pretty clean now.) I added the select-standard-paragraphs variable, and I changed the novel template to not call no-heading first since all the chapters in Strawberry Sunflower have headings. But to make the program work well, there has to be some kind of way to customize these things. (If I were reading data defined by a user, I would just enforce a particular format convention and we wouldn't need the customization. But I'm reading in awful HTML created by word processor programs.)
+
+I kept jumping around on how to handle these customizations, because some of them seem to require new code (like the cleaner function and making new templates) and others can be handled pretty simply with flags in the json config (like the heading/noheading rule—you could just have a boolean variable "heading on first?").
+
+I might like to use Clojure's read-string/eval. Since it's user-inputted data and it's not online where malicious users can get at it (it's just a desktop app. Even my web interface doesn't seem to be happening, and that was just for fun anyway). That can handle the heading issue; you'd do this:
+
+{
+    "select-standard-paragraph": "[[:p (attr= :class "standard")]]",
+    "select-header": "[[:h2 first-of-type]]",
+    "no-heading": "#{\"Chapter 1\", \"Chapter 29\"}"
+}
+
+Then Clojure can read-string those, store them somewhere, and eval and use when needed. That just leaves the cleaner function. I wonder if we could do something like this:
+
+    "cleaning": ["[:p :span] unwrap", "[text-node] (do-> #(clojure.string/replace % #"^\s+" ""))"]
+
+(or as one long string) and pass that to transformation (which is a macro, so you can just pass it stuff without evaling it, I assume, and if not, we can probably still eval it and pass it in).
+
+With that approach, it might be good to dump the JSON; I liked learning about it, but it seems to make more sense to have a file of Clojure code that contains a config map in a Clojure map structure (or possibly a record, which can be defined elsewhere, to cut down on validation). Then we can read-string the whole map/record and get it that way. In retrospect I feel stupid for not thinking of that earlier since it is a Lisp power to be able to read and execute your own data structures as code like nothing. That way when we write the selectors and cleaner function, we have a whole Clojure environment going on and minimize processing. So we could just do:
+
+{
+    :heading-selector [[:p first-of-type]],
+    :paragraph-selector [[:p (attr= :class "standard")]],
+    :cleaner (fn [] (transformation ...))
+}
+
+I think that sounds good.
