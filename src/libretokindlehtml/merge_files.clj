@@ -3,7 +3,7 @@
 ; one html file. You can get a list of html files turned into
 ; a list of enlive resources, and you can get them all merged
 ; into one html resource which can be written back to a file
-; by write-resource.
+
 (ns libretokindlehtml.merge-files
   "Merge multiple html files into one file, get the content of the body
    tag, or get a list of files as Enlive resources."

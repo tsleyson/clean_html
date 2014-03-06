@@ -272,3 +272,5 @@ With that approach, it might be good to dump the JSON; I liked learning about it
 }
 
 I think that sounds good.
+
+Note: we don't need no-heading anymore. If we have a heading selector that's uniquely defined, then in a chapter with no heading, nothing should be selected by that selector. Then it'll just fill in an empty string, like it was doing with Strawberry Sunflower before I changed it to get the headings, and we'll have no heading. 

@@ -69,12 +69,12 @@
       (testing "Throw an exception on nil"
         (is (thrown-with-msg? clojure.lang.ExceptionInfo #"string is nil" (to-id nil))))))
 
-(defn- insert-heading
+(defn insert-heading
   "Extracts heading text and inserts into tag."
-  [paragraphs]
-  (let [headtext (select paragraphs select-chapter-head)
+  [paragraphs heading-selector]
+  (let [headtext (select paragraphs heading-selector)
         {name :name} (meta paragraphs)]
-    (if (not= 1 (count headtext))
+    (if (< 1 (count headtext))  ; 1 < count  allows 0, i.e. no heading.
       (throw (ex-info "insert-heading says: selector yields non-unique answer."
                       {:type "Bad selector" :cause headtext}))
       (content {:tag :a, :attrs {:id (to-id name)}, :content [(first headtext)]}))))
@@ -83,6 +83,7 @@
 
 ; Later I want to be able to get rid of this.
 (defn add-styles
+  "Adds a style attribute to text to maintain bold and italics."
   [raws]
   (let [{style-list :styles} (meta raws)]
     (reduce #(let [[selec style-str] %2]
@@ -94,14 +95,19 @@
   "Returns a function that generates paragraphs from given sequence 
    of Enlive data, with cleanup as its cleaner."
   ;; If para doesn't have function nature (e.g. it's a string),
-  ;; we get ClassCastException.
+  ;; we get ClassCastException. We expect maps (Enlive tags).
   [raws maid]
-  (clone-for [para raws]
-             (content (maid (para :content)))))
+  (if (not (every? ifn? raws))
+    (throw (ex-info "make-paragraphs says: Raw paragraphs are invalid."
+                    {:type "Bad paragraph in raws"
+                     :cause "Paragraph does not implement Ifn, so is not a map."}))
+    (clone-for [para raws]
+               (content (maid (para :content))))))
 
 ; snippets
 
 ; For when your chapter doesn't have a heading, e.g. Of Night's prologue.
+;; Should now be obsolete due to update to insert-heading and heading selection.
 (defsnippet no-heading (file "resources/templates/chaptersnip.html") [:.chapter]
   [raws maid]
   [:.chaptertext :p.standard] (make-paragraphs raws maid))
@@ -111,16 +117,15 @@
 ; But I don't like that.
 ; You still have to call it like that, but novel takes care of that now
 ; so you can just call (novel config material). Novel uses mine-all.
-; Has problems if first line isn't heading. Use no-heading for that.
 (defsnippet chapter (file "resources/templates/chaptersnip.html") [:.chapter]
-  [paragraphs & cleanup]
-  [:.heading] (insert-heading paragraphs)
-  [:.chaptertext :p.standard]  (let [ raws (filter map? (select paragraphs select-standard-paragraph))
+  [paragraphs config]
+  [:.heading] (insert-heading paragraphs (:heading-selector config))
+  [:.chaptertext :p.standard]  (let [ raws (filter map? (select paragraphs (:paragraph-selector config)))
                                       body (add-styles 
                                             (with-meta raws (meta paragraphs)))
-                                      maid (if (nil? cleanup)
-                                             identity
-                                             (first cleanup))]
+                                      maid (when-let [c (:cleaner config)]
+                                             c
+                                             identity)]
                                  (make-paragraphs body maid)))
 
 ; Expects the ordered list of chapters, with metadata, provided by list-of-resources.
@@ -154,7 +159,7 @@
   [config chapters]
   [:head :title] (content (str (:title config) " " (:subtitle config)))
   [:#front_matter] (content (title config) (toc chapters))
-  [:#main_text] (content (map #(chapter % (libretokindlehtml.libreoffice/strawberry-sunflower-maid)) chapters)))
+  [:#main_text] (content (map #(chapter % config) chapters)))
 
 (defn template-main
   "Assembles the text into its final form."

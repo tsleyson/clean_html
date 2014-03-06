@@ -7,6 +7,16 @@
            [libretokindlehtml.test.core :refer :all]))
 ; I could rewrite a lot of the lets with a fixture but I won't.
 
+(defn setup
+  [test]
+  (def config-map  {:directory "test-resources/testdata/", 
+                    :order {"ClojureDocs - clojure.core_atom.html" 0
+                            "ClojureDocs - clojure.core_for.html" 1
+                            "ClojureDocs - clojure.pprint.html"   2}
+                    :paragraph-selector [:p]})
+  (test))
+(use-fixtures :once setup)
+
 ;; Note: replace \r\n with \n on Windows, just for the test since
 ;; having \r\n on Windows is correct in general.
 (deftest test-mine-content
@@ -21,11 +31,16 @@
                  (clojure.string/replace #"\r\n" "\n"))
              correct)))
     (testing "Mining from an Enlive html resource"
-      (is (= (-> output (file) (enlive/html-resource) (mine-content) (pprint) (with-out-str)))))))
+      (is (= (-> output
+                 (file)
+                 (enlive/html-resource)
+                 (mine-content)
+                 (pprint)
+                 (with-out-str)))))))
 
 (deftest test-list-of-resources
   (let [correct-str (slurp "test-resources/listofres.txt")
-        result (list-of-resources (config-map))
+        result (list-of-resources config-map)
         fromstr (list-of-resources "test-resources/testdata/testconfig.json")]
     (do
       (testing "Listing from a config map" 
