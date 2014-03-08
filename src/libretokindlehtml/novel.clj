@@ -8,6 +8,7 @@
             [clojure.java.io :refer [file reader writer]]
             [clojure.string :as s]
             [clojure.test :refer [with-test is testing]]
+            [clojure.pprint :refer [pprint]]
             [libretokindlehtml.merge-files :refer [mine-all]]))
 ; Note to future self: I think the snippets you're defining are
 ; too complicated because they're doing too much at once. It would
@@ -167,10 +168,10 @@
   [:#main_text] (content (map #(chapter % config) chapters)))
 
 (defn template-main
-  "Assembles the text into its final form."
+  "Assembles the text into its final form. Writes to file and returns
+  the name of that file."
   [config]
-  (let [
-        text (mine-all config)
+  (let [text (mine-all config)
         html (apply str (cons "<? xml version=\"1.0\" encoding=\"UTF-8\" ?>"
                               (novel config text)))
         fname (str (:directory config)
@@ -180,5 +181,5 @@
                                ".html")]
     (do 
       (with-open [w (writer fname)]
-          (.write w html))
+          (pprint html w))
       fname)))
