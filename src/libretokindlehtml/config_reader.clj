@@ -1,9 +1,10 @@
-; config_reader.clj
-; Functions that read the configuration files. The config files are
-; written in JSON and decoded using clojure.data.json
+;;;; config_reader.clj
+;;;; Functions that read the configuration files. The config files are
+;;;; written in Clojure.
+
 (ns libretokindlehtml.config-reader
   (:require [clojure.set :as set]
-            [net.cgrand.enlive-html :refer :all]))  ; For evaling cleaners.
+            [libretokindlehtml.config-loader :refer :all]))  ; 
 
 ;; Here are the fruits of my time spent on 4clojure--compare with
 ;; version in config_reader_json file.
@@ -58,7 +59,8 @@ validation and keeps :order of chapters as vector."
   ;; order-map replaces the vector with a map giving the chapter ordering. Save
   ;; validation by requiring the ordering as a vector and not a map.
   [config-path]
-  (when-let [cf (validate-config (order-map (read-config-file config-path)))]
+  (setup-config-ns)
+  (when-let [cf (validate-config (order-map (load-config config-path)))]
     cf))
 ; Throws an exception from inside validate-map when
 ; invalid.
