@@ -7,14 +7,14 @@
  :authors ["Trisdan Leyson"],
  :heading-selector [[:p (attr= :align "CENTER")]],
  :paragraph-selector [[:p (attr= :align "LEFT")]],
- :cleaner (fn []
-            (transformation
-             [#{:span :font}]
-             unwrap
-             ;; unwrap pointless spans and fonts, which is all of them in StrawSun.
-             [text-node]
-             (do->
-              #(clojure.string/replace % #"\p{Z}" " ")
-              #(clojure.string/replace % #"^\s+" "")
-              #(clojure.string/replace % #"--" "\u2014"))))
+ :cleaner-reqs (require '[net.cgrand.enlive-html :refer :all])
+ :cleaner (transformation
+           [#{:span :font}]
+           unwrap
+           ;; unwrap pointless spans and fonts, which is all of them in StrawSun.
+           [text-node]
+           (do->
+            #(clojure.string/replace % #"\p{Z}" " ")
+            #(clojure.string/replace % #"^\s+" "")
+            #(clojure.string/replace % #"--" "\u2014")))
 }

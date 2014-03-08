@@ -3,6 +3,7 @@
 and call for really complex tests, so they get their own file and don't have to
 share template-helpers."
   (:require [libretokindlehtml.novel :refer :all]
+            [libretokindlehtml.test.core :refer [equal-by-line]]
             [net.cgrand.enlive-html :refer :all]
             [clojure.test :refer [testing deftest use-fixtures is are]]
             [clojure.pprint :refer [pprint]]
@@ -39,7 +40,7 @@ and replaces Windows line endings with Unix"
                              :content [{:tag :a,
                                         :attrs {:id "name"}
                                         :content ["heading text"]}]}
-                            {:tag :p, :attrs (:class "standard"),
+                            {:tag :p, :attrs {:class "standard"}
                              :content ["Some stuff that comes after the heading"]}])
 (def invalid-heading (-> [{:tag :h2, :attrs {:class "heading"}}
                           {:tag :h2, :attrs {:class "heading"}}]
@@ -57,17 +58,24 @@ and replaces Windows line endings with Unix"
                                   :content ["Some stuff that comes before the heading"]}
                                  {:tag :h2, :attrs {:class "heading"}
                                   :content ["heading text"]}
-                                 {:tag :p, :attrs (:class "standard"),
+                                 {:tag :p, :attrs {:class "standard"}
                                   :content ["Some stuff that comes after the heading"]}]
                                 (with-meta {:name "name"})))
 ;; For chapter (and others)
-(def test-config {:cleaner #(clojure.string/replace #":" "--")
-                  :title "Simple Stuff"
+(def test-config {:title "Simple Stuff"
                   :subtitle "The First Test"
                   :heading-selector [[:p (attr= :class "heading")] text-node]
                   :paragraph-selector [[:p (attr= :class "standard")]]
                   :directory "test-resources/snippettests"
-                  :order {"ch1.html": 0, "ch2.html": 1, "ch3.html": 2}})
+                  :order {"ch1.html" 0, "ch2.html" 1, "ch3.html" 2, "ch4.html" 3,
+                          "ch5.html" 4}})
+;; A copy of this with a cleaner (to mimic real-world use) is in test-resources/snippettests/testconf.clj.
+(def test-chapters (libretokindlehtml.merge-files/mine-all test-config))
+(def test-maid
+  (transformation
+   [text-node]
+   #(clojure.string/replace % #",\s*" "--")))
+
 ;; The test data for this is pretty complicated, so no with-test.
 (deftest test-insert-heading
   (testing "Normal operation, simple and complex cases"
@@ -109,4 +117,31 @@ and replaces Windows line endings with Unix"
 
 (deftest test-chapter
   (testing "Normal operation, chapter has heading"
-    (let )))
+    (are [saved generated] (= saved generated)
+         (slurp "test-resources/snippettests/ch1.html.correct")
+         (result-string chapter (first test-chapters) test-config)
+         (slurp "test-resources/snippettests/ch2.html.correct")
+         (result-string chapter (second test-chapters) test-config)
+         (slurp "test-resources/snippettests/ch3.html.correct")
+         (result-string chapter (nth test-chapters 2) test-config)))
+  (testing "Normal operation, chapter has no heading"
+    (is (= (slurp "test-resources/snippettests/ch4.html.correct")
+           (result-string chapter (nth test-chapters 3) test-config))))
+  (testing "Chapter contains extra garbage not matched by either selector"
+    (is (= (result-string chapter
+                          not-so-simple-skeleton
+                          {:directory "not going in a file",
+                           :order {"nss" 0},
+                           :heading-selector [[:h2 (attr= :class "heading")]],
+                           :paragraph-selector [[:p (attr= :class "standard")]]})
+           (slurp "test-resources/snippettests/extragarbage.html.correct")))) ; Use not-so-simple-skeleton.
+  (testing "Normal operation with text-level cleaner function"
+    (is (= (slurp "test-resources/snippettests/ch1.cleaner.correct")
+           (result-string chapter
+                          (first test-chapters)
+                          (assoc test-config :cleaner test-maid)))))
+  (testing "A cleaner read from a string"
+    (let [cf (libretokindlehtml.config-reader/read-config "test-resources/snippettests/testconf.clj")]
+      (is (= (slurp "ch5.html.correct")
+             (chapter (nth test-chapters 4) cf))))))
+;; TODO Add case with cleaner that unwraps pointless spans and divs.

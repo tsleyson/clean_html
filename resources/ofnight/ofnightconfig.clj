@@ -9,22 +9,21 @@
  :paragraph-selector [:p]
  :title "Of Night Book 1",
  :subtitle "Reversal of Expectations",
- ;; :cleaner (fn
- ;;            []
- ;;            (transformation 
- ;;             {[:br] [:span]} #(-> % (second) (wrap-standard))
- ;;             ;; Meant to fix that <shift><ret> crap where it uses a br
- ;;             ;; instead of a new paragraph.
- ;;             [:span (but (attr? :style))]
- ;;             unwrap
- ;;             ;; unwrap pointless spans.
- ;;             [text-node]
- ;;             (do->
- ;;              #(clojure.string/replace % #"\p{Z}" " ")
- ;;              #(clojure.string/replace % #"^\s+" "")
- ;;              #(clojure.string/replace % #"--" "\u2014")
- ;;              )
+ :cleaner-reqs (require '[net.cgrand.enlive-html :refer :all])
+ ;; :cleaner (transformation 
+ ;;           {[:br] [:span]} #(-> % (second) ((wrap :p {:class "standard"})))
+ ;;           ;; Meant to fix that <shift><ret> crap where it uses a br
+ ;;           ;; instead of a new paragraph.
+ ;;           [:span (but (attr? :style))]
+ ;;           unwrap
+ ;;           ;; unwrap pointless spans.
+ ;;           [text-node]
+ ;;           (do->
+ ;;            #(clojure.string/replace % #"\p{Z}" " ")
+ ;;            #(clojure.string/replace % #"^\s+" "")
+ ;;            #(clojure.string/replace % #"--" "\u2014")
+ ;;            )
  ;;                                        ; remove extra whitespace at the start of a paragraph.
- ;;             ))
+ ;;           )
  ;; Breaks tests. See test/libretokindlehtml.config_reader.clj for reason.
 }

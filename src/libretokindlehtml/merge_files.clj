@@ -102,9 +102,9 @@
 (defmulti list-of-resources
   "Returns a list of html resources from the files in the config map's :order field.
    Can take either an already-read config map or a path to a config file."
-  type)
+  associative?)
 
-(defmethod list-of-resources clojure.lang.PersistentArrayMap
+(defmethod list-of-resources true
   [config]
   (let [{order :order, direc :directory} config
         files (keys order)]
@@ -124,7 +124,7 @@
     ; as the name metadatum and to get the position. Then sorts the
     ; resulting list by metadata position.
 
-(defmethod list-of-resources java.lang.String
+(defmethod list-of-resources false
   [path-to-config]
   (list-of-resources (read-config path-to-config)))
 
@@ -163,4 +163,8 @@
    returns the mined content of all resources in that list.
    Preserves metadata. Takes same argument types as list-of-resources."
   [config]
-  (map #(with-meta (mine-content %) (meta %)) (list-of-resources config)))
+  (try
+    (map #(with-meta (mine-content %) (meta %)) (list-of-resources config))
+    (catch java.io.FileNotFoundException fnfe ; Retry with / at end.
+      (let [newconf (assoc config :directory (str (:directory config) "/"))]
+        (map #(with-meta (mine-content %) (meta %)) (list-of-resources newconf))))))

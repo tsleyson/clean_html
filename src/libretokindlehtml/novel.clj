@@ -74,7 +74,7 @@
   [paragraphs heading-selector]
   (let [headtext (select paragraphs heading-selector)
         {name :name} (meta paragraphs)]
-    (if (< 1 (count headtext))  ; 1 < count  allows 0, i.e. no heading.
+    (if (< 1 (count headtext))  ; 1 < count allows 0, i.e. no heading.
       (throw (ex-info "insert-heading says: selector yields non-unique answer."
                       {:type "Bad selector" :cause headtext}))
       (content {:tag :a, :attrs {:id (to-id name)}, :content [(first headtext)]}))))
@@ -117,13 +117,18 @@
 ; But I don't like that.
 ; You still have to call it like that, but novel takes care of that now
 ; so you can just call (novel config material). Novel uses mine-all.
+;; DOES NOT correctly handle cases where there is text before the
+;; chapter heading. To deal with this we would need a new snippet
+;; with a paragraph tag before the heading tag (that we could hang
+;; clones on) and a new defsnippet to populate them correctly. Not
+;; gonna deal with it right now. 
 (defsnippet chapter (file "resources/templates/chaptersnip.html") [:.chapter]
   [paragraphs config]
   [:.heading] (insert-heading paragraphs (:heading-selector config))
   [:.chaptertext :p.standard]  (let [ raws (filter map? (select paragraphs (:paragraph-selector config)))
                                       body (add-styles 
                                             (with-meta raws (meta paragraphs)))
-                                      maid (when-let [c (:cleaner config)]
+                                      maid (if-let [c (:cleaner config)]
                                              c
                                              identity)]
                                  (make-paragraphs body maid)))

@@ -1,6 +1,7 @@
 (ns libretokindlehtml.test.config-reader
   (:require [libretokindlehtml.config-reader :refer :all]
-            [clojure.test :refer :all]))
+            [clojure.test :refer :all]
+            [net.cgrand.enlive-html :refer :all]))
 ; The fixture might have stuff we don't use in every test,
 ; but running tests isn't part of the program so it's okay
 ; if it takes a minute.
@@ -102,3 +103,11 @@
 ; and you can check its message like this:
 ; (is (thrown-with-msg? ExceptionClass #"Regex that matches 
 ; the message you're expecting" (form that throws exception)))
+
+
+;; (testing "Cleaner function gets evaluated properly"
+;;     (let [strawsuncf (read-config "resources/strawberrysunflower/config.clj")]
+;;       (is (ifn? (:cleaner strawsuncf)))
+;;       (is (= ["{:tag :p :content [\"the content—that we wanted\"]}"]
+;;              ((:cleaner strawsuncf)
+;;               "{:tag :p :content [\"the content--that we wanted\"]}")))))

@@ -71,6 +71,8 @@
 
 ; If list-of-resources and mine-content both work, mine-all shouldn't
 ; have any problems, so there is no test for it.
+;; TODO: Add a test for mine-all (it now tries to recover from a
+;; FileNotFoundException by adding / to the end of the directory path.)
 
 (deftest test-private-helpers
   (run-tests 'libretokindlehtml.merge-files))

@@ -2,7 +2,8 @@
 ; Functions that read the configuration files. The config files are
 ; written in JSON and decoded using clojure.data.json
 (ns libretokindlehtml.config-reader
-  (:require [clojure.set :as set]))
+  (:require [clojure.set :as set]
+            [net.cgrand.enlive-html :refer :all]))  ; For evaling cleaners.
 
 ;; Here are the fruits of my time spent on 4clojure--compare with
 ;; version in config_reader_json file.
@@ -22,7 +23,8 @@
    otherwise returns nil."
   [config-map]
   (let [valid-keys #{:directory, :order, :title, :subtitle, :authors,
-                     :heading-selector, :paragraph-selector, :cleaner}
+                     :heading-selector, :paragraph-selector, :cleaner,
+                     :cleaner-reqs}
         requ-keys #{:directory, :order, :paragraph-selector}
         map-keys (into #{} (keys config-map))
         messages (map message-on-error 

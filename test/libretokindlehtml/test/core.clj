@@ -11,7 +11,7 @@
 ; files and namespaces for each file. Then you can use fixtures. With this I can't
 ; use them because the data for each test is completely different.
 
-(defn compare-files-by-line
+(defn equal-by-line
   "Compares two files line-by-line, using BufferedReader and line-seq."
   [f1 f2]
   (with-open [r1 (reader f1)
@@ -51,6 +51,6 @@
 (deftest test-full-program
   (testing "Strawberry Sunflower basic HTML generation"
     (do (-main "resources/strawberrysunflower/config.clj")
-        (is (true? (compare-files-by-line
+        (is (true? (equal-by-line
                     "resources/strawberrysunflower/Strawberry Sunflower Book 1 Sunshine in the Garden.html"
                     "test-resources/testhtml/strawsunbk1.html"))))))
