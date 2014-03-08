@@ -125,10 +125,10 @@
 (defsnippet chapter (file "resources/templates/chaptersnip.html") [:.chapter]
   [paragraphs config]
   [:.heading] (insert-heading paragraphs (:heading-selector config))
-  [:.chaptertext :p.standard]  (let [ raws (filter map? (select paragraphs (:paragraph-selector config)))
-                                      body (add-styles 
+  [:.chaptertext :p.standard]  (let [raws (filter map? (select paragraphs (:paragraph-selector config)))
+                                     body (add-styles 
                                             (with-meta raws (meta paragraphs)))
-                                      maid (if-let [c (:cleaner config)]
+                                     maid (if-let [c (:cleaner config)]
                                              c
                                              identity)]
                                  (make-paragraphs body maid)))
@@ -153,7 +153,7 @@
                         [:.author] (content author)))
 
 ;; The template novel for Of Night
-;; (deftemplate novel (file "resources/templates/novel.html")
+;; (novel (file "resources/templates/novel.html")
 ;;   [config chapters]
 ;;   [:head :title] (content (str (:title config) " " (:subtitle config)))
 ;;   [:#front_matter] (content (title config) (toc chapters))
@@ -169,7 +169,8 @@
 (defn template-main
   "Assembles the text into its final form."
   [config]
-  (let [text (mine-all config)
+  (let [
+        text (mine-all config)
         html (apply str (cons "<? xml version=\"1.0\" encoding=\"UTF-8\" ?>"
                               (novel config text)))
         fname (str (:directory config)

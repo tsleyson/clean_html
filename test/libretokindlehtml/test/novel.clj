@@ -142,6 +142,6 @@ and replaces Windows line endings with Unix"
                           (assoc test-config :cleaner test-maid)))))
   (testing "A cleaner read from a string"
     (let [cf (libretokindlehtml.config-reader/read-config "test-resources/snippettests/testconf.clj")]
-      (is (= (slurp "ch5.html.correct")
-             (chapter (nth test-chapters 4) cf))))))
+      (is (= (slurp "test-resources/snippettests/ch5.html.correct")
+             (result-string chapter (nth test-chapters 4) cf))))))
 ;; TODO Add case with cleaner that unwraps pointless spans and divs.
