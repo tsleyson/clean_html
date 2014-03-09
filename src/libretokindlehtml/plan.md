@@ -274,3 +274,24 @@ With that approach, it might be good to dump the JSON; I liked learning about it
 I think that sounds good.
 
 Note: we don't need no-heading anymore. If we have a heading selector that's uniquely defined, then in a chapter with no heading, nothing should be selected by that selector. Then it'll just fill in an empty string, like it was doing with Strawberry Sunflower before I changed it to get the headings, and we'll have no heading. 
+
+# Totally different now!! March 8th, 2014
+
+I realized that I'm an idiot, and I was using JSON to read and transport data when I'm using Lisp, the language whose whole selling point is that the code is also data that can read, transport, and modify itself. JSON is good, mind you, but I have Lisp! Why would I need something else when I have Lisp! Therefore I'm an idiot.
+
+So the config files are now written in Clojure. Each config file is a Clojure map containing 
+
+- __title__ The title, a string.
+- __subtitle__ Also a string.
+- __authors__ A vector of author name strings.
+- __directory__ Same as JSON version.
+- __order__ Same as JSON version, but with a way shorter function to convert them into maps that I was able to write because I spent all that time on 4Clojure. 
+- __heading-selector__ An Enlive selector to find the heading of each chapter.
+- __paragraph-selector__ An Enlive selector to find the regular paragraphs of each chapter.
+- __cleaner__ A function, which can use any Enlive or clojure.core functions, to clean up the text of your paragraphs (e.g. get rid of pointless span and font tags, get rid of pointless whitespace, change weird Unicode spaces into normal ones, fix inconsistent autoreplace of -- with —, and so on. It's quixotic to think you can fix HTML that horrible with just this, but it's a start.
+
+The keys of the map are Clojure keywords. __order__, __paragraph-selector__, and __directory__ are required. The others are optional; if you don't enter a title, it gets replaced by "default", while the others pretty much get replaced by nothing. Heading-selector can be defined to leave headings empty when a chapter doesn't have one, so Of Night's special-purpose no-heading snippet is obsolete. Currently, no matter where the heading appears in the text, it gets moved to the top of the chapter, so that's a weakness in the current version. I'd prefer to have it keep the position, but it has to do with how the templates are defined and how the program inserts things into the template instead of preserving the original HTML, so for now I don't see a way to fix this. If I do write a book where the headings come after some chapter text, I might just insert them by hand. You still have to deal with HTML entities and <br> inside <p> by hand. I might add a post-processing function to the config map that runs directly on the string version after it's all been built; then you can do things with plain regular expressions that can't be done by Enlive (like replacing stuff with HTML entities, which can't be done because Enlive escapes anything starting with & into &amp; so you can't include escapes. 
+
+The program reads the Clojure map using load-file. I found some nice code on Github that dynamically generates a namespace and populates it with whatever stuff you want in it, then loads a file into it. My first approach was using eval and read-string, but that didn't work because of namespace problems (basically I was expecting eval to have dynamic scope, and it doesn't; it starts its own little pocket namespace and populates it on its own). 
+
+Anyway it works now, and it's much, much easier to modify for new books than it was. I might like to separate the cleaner and selectors from the rest so you can keep reusing them with different lists of chapters and directories. (Alternately, build a fancier interface that generates the config files on the fly from user input.)

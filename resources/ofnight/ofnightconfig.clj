@@ -9,7 +9,6 @@
  :paragraph-selector [:p]
  :title "Of Night Book 1",
  :subtitle "Reversal of Expectations",
- :cleaner-reqs (require '[net.cgrand.enlive-html :refer :all])
  ;; :cleaner (transformation 
  ;;           {[:br] [:span]} #(-> % (second) ((wrap :p {:class "standard"})))
  ;;           ;; Meant to fix that <shift><ret> crap where it uses a br

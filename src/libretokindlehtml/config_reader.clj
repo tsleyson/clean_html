@@ -24,8 +24,7 @@
    otherwise returns nil."
   [config-map]
   (let [valid-keys #{:directory, :order, :title, :subtitle, :authors,
-                     :heading-selector, :paragraph-selector, :cleaner,
-                     :cleaner-reqs}
+                     :heading-selector, :paragraph-selector, :cleaner}
         requ-keys #{:directory, :order, :paragraph-selector}
         map-keys (into #{} (keys config-map))
         messages (map message-on-error 

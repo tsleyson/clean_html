@@ -5,16 +5,19 @@
  :title "Strawberry Sunflower Book 1",
  :subtitle "Sunshine in the Garden",
  :authors ["Trisdan Leyson"],
- :heading-selector [[:p (attr= :align "CENTER")]],
+ ;; Selecting text-node ditches pointless span and font tags inside heading..
+ :heading-selector [[:p (attr= :align "CENTER")] text-node],
  :paragraph-selector [[:p (attr= :align "LEFT")]],
- :cleaner-reqs (require '[net.cgrand.enlive-html :refer :all])
  :cleaner (transformation
+           ;; unwrap pointless spans and fonts, which is all of them in StrawSun.
            [#{:span :font}]
            unwrap
-           ;; unwrap pointless spans and fonts, which is all of them in StrawSun.
+           ;; Try to get rid of br inside paragraphs again.
+           [:p :br]
+           ;; Text-level cleaning.
            [text-node]
            (do->
-            #(clojure.string/replace % #"\p{Z}" " ")
-            #(clojure.string/replace % #"^\s+" "")
-            #(clojure.string/replace % #"--" "\u2014")))
+            #(string/replace % #"\p{Z}" " ")
+            #(string/replace % #"^\s+" "")
+            #(string/replace % #"--" "\u2014")))
 }

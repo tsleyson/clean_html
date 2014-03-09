@@ -17,24 +17,6 @@
 ; had another snippet that defines the chapter heading, and just
 ; used it inside the chapter snippet. Something to think about.
 
-;; WARNING!!!
-;; I modified the code to build Strawberry Sunflower, because I'm a
-;; lazy ass. Make sure to put it back for Of Night.
-
-; selector definitions
-
- ; Selects the text under the first h3 node. Made this a var
- ; so it can be redefined for other types of heading.
-;;(def select-chapter-head  [[:h3 first-of-type] :> text-node])
-
-;; The Strawberry Sunflower heading selector and paragraph selector.
-;; We have to get the text-node for the heading because we don't know
-;; how many layers of pointless font and span tags are inside the
-;; header's node. With the standard paragraphs we just shove in the
-;; pointless 
-(def select-chapter-head [[:p (attr= :align "CENTER")] text-node])
-(def select-standard-paragraph [[:p (attr= :align "LEFT")]])
-
 ; utilities
 
 (-> (defn- remove-extension
@@ -172,7 +154,7 @@
   the name of that file."
   [config]
   (let [text (mine-all config)
-        html (apply str (cons "<? xml version=\"1.0\" encoding=\"UTF-8\" ?>"
+        html (apply str (cons "<? xml version=\"1.0\" encoding=\"Latin-1\" ?>"
                               (novel config text)))
         fname (str (:directory config)
                                (if-let [title (:title config)]
@@ -181,5 +163,5 @@
                                ".html")]
     (do 
       (with-open [w (writer fname)]
-          (pprint html w))
+          (.write w html))
       fname)))
