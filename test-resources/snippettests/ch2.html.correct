@@ -1,0 +1,27 @@
+({:tag :div,
+  :attrs {:class "chapter"},
+  :content
+  ["\n      "
+   {:tag :h2,
+    :attrs {:class "heading"},
+    :content
+    [{:tag :a,
+      :attrs {:id "ch2"},
+      :content ["Chapter 2: The Deadly Test"]}]}
+   "\n      "
+   {:tag :div,
+    :attrs {:class "chaptertext"},
+    :content
+    ["\n        "
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content ("It was a deadly Clojure application.")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content ("Oh so deadly, yet so beautiful.")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content
+      ("It was fatal from the moment I set eyes on it. I knew it was Clojure.")}
+     "\n      "]}
+   "\n    "]})

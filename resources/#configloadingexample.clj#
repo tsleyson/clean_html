@@ -1,0 +1,48 @@
+;; Not real code; not meant to be run.
+(ns libretokindlehtml.config-loader)
+
+;; Examples from http://stackoverflow.com/questions/8627880/how-do-i-eval-a-clojure-data-structure-within-the-context-of-a-namespace
+(defn setup-config-space
+  []
+  (binding [*ns* *ns*]  ; Preserve outer value of *ns*.
+    (in-ns 'config.namespace) ; This changes the 'binding' *ns*.
+    (refer-clojure) ; Bring in clojure.core.
+    (use 'config.helpers))) ; Bring in helper macros / functions.
+
+;; As another example, see
+;; https://gist.github.com/paulosuzart/4727858#file-init-clj. We see
+;; under setup-config-ns how I'd go about including Enlive or other
+;; libraries. 
+
+;; Speculation on how this works, but...
+(defn load-config
+  [path]
+  (binding [*ns* *ns*] ; Again, preserve outer value of *ns*.
+                                        ; See (doc binding).
+    (in-ns 'config.namespace) ; Bind *ns* to 'config.namespace (just
+                              ; inside this binding.
+    (load-file path))) ; Now we're loading the file into
+                       ; config.namespace. setup-config-space has
+                       ; already populated config.namespace with all
+                       ; the helper functions, and apparently
+                       ; namespaces aren't garbage-collected or
+                       ; anything even if they're not bound (makes
+                       ; sense, that would be how you can write
+                       ; clojure.string/blank? from anywhere in any
+                       ; program and have it work). So namespaces
+                       ; exist as global programmatic objects, I
+                       ; assume, because we have the same values
+                       ; associated with config.namespace as we did
+                       ; above in a completely different function.
+
+;; So since we're in config.namespace when we load the file,
+;; everything in it is loaded into the same namespace as we loaded our
+;; helpers into. And it's all together.
+
+;; So basically what this does is dynamically create a namespace into
+;; which we dynamically load everything we want, including the config
+;; file and everything it needs to do its work. This could also be a
+;; good approach to creating a sandbox where you can evaluate user
+;; code with eval--instead of using (refer-clojure) in the setup, pick
+;; some minimal set of functions to make available to users, and only
+;; load those.

@@ -1,0 +1,23 @@
+({:tag :div,
+  :attrs {:class "chapter"},
+  :content
+  ["\n      "
+   {:tag :h2,
+    :attrs {:class "heading"},
+    :content
+    [{:tag :a,
+      :attrs {:id "ch3"},
+      :content ["Chapter 3: The Final Test"]}]}
+   "\n      "
+   {:tag :div,
+    :attrs {:class "chaptertext"},
+    :content
+    ["\n        "
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content ("It was the last test on this little blue planet.")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content ("It was the last test, and I failed.")}
+     "\n      "]}
+   "\n    "]})

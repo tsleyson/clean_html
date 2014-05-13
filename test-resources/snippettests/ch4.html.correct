@@ -1,0 +1,23 @@
+({:tag :div,
+  :attrs {:class "chapter"},
+  :content
+  ["\n      "
+   {:tag :h2,
+    :attrs {:class "heading"},
+    :content [{:tag :a, :attrs {:id "ch4"}, :content [nil]}]}
+   "\n      "
+   {:tag :div,
+    :attrs {:class "chaptertext"},
+    :content
+    ["\n        "
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content ("It was the end.")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content ("The tests were over.")}
+     {:tag :p,
+      :attrs {:class "standard"},
+      :content ("And so was my heart.")}
+     "\n      "]}
+   "\n    "]})
